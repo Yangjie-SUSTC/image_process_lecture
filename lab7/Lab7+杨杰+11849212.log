@@ -1,0 +1,2033 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.9.17)  29 OCT 2018 21:41
+entering extended mode
+**Lab7+杨杰+11849212.tex
+(D:\graduated\Image_process\lab\lab_report\lab7\Lab7+杨杰+11849212.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks17
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\geometry\geometry.cfg))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\CJK.sty
+Package: CJK 2008/12/29 4.8.2
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+Package: MULEenc 2008/12/29 4.8.2
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\CJK.enc
+File: CJK.enc 2008/12/29 4.8.2
+)
+LaTeX Info: Redefining \selectfont on input line 756.
+\CJK@indent=\box28
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\CJKnumb.sty
+Package: CJKnumb 2008/12/29 4.8.2
+\CJK@q=\count93
+\CJK@r=\count94
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\CJKulem.sty
+Package: CJKulem 2008/12/29 4.8.2
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ulem\ulem.sty
+\UL@box=\box29
+\UL@hyphenbox=\box30
+\UL@skip=\skip43
+\UL@hook=\toks18
+\UL@height=\dimen111
+\UL@pe=\count95
+\UL@pixel=\dimen112
+\ULC@box=\box31
+Package: ulem 2011/03/18
+\ULdepth=\dimen113
+)
+\UL@lastkern=\dimen114
+\CJK@skip=\skip44
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\psfrag\psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count96
+\pfg@scount=\count97
+\pfg@temp=\write3
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip45
+\f@ncyO@elh=\skip46
+\f@ncyO@erh=\skip47
+\f@ncyO@olh=\skip48
+\f@ncyO@orh=\skip49
+\f@ncyO@elf=\skip50
+\f@ncyO@erf=\skip51
+\f@ncyO@olf=\skip52
+\f@ncyO@orf=\skip53
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fncychap\fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip54
+\mylen=\skip55
+\myhi=\skip56
+\px=\skip57
+\py=\skip58
+\pyy=\skip59
+\pxx=\skip60
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\lastpage\lastpage.sty
+Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fourier\fourier.sty
+Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fourier\fourier-orns.sty
+Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 59.
+\symotherletters=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 61.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 69.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 72.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 114.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+14.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 114.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 114
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 114.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 116.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 187.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 210.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 215.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 225.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 227.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 229.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 231.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 233.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 235.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 237.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 239.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 241.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 243.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 247.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 248.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 249.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 250.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 251.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 252.
+LaTeX Font Info:    Redeclaring math accent \check on input line 253.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 254.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
+\symUfutm=\mathgroup5
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\babel\babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(F:\appinstall\CTeX\MiKTeX\tex\latex\00miktex\bblopts.cfg
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\babel\english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\babel\babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count98
+\U@D=\dimen117
+)
+\l@british = a dialect from \language0
+\l@UKenglish = a dialect from \language0
+\l@american = a dialect from \language0
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip61
+
+For additional information on amsmath, use the `?' option.
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen118
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip10
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks20
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks21
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks22
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 128.
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ams\classes\amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip64
+\thm@postskip=\skip65
+\thm@headsep=\skip66
+\dth@everypar=\toks29
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\paralist\paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip67
+\plpartopsep=\skip68
+\plitemsep=\skip69
+\plparsep=\skip70
+\pl@lab=\toks30
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\lipsum\lipsum.sty
+Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count111
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\tools\varioref.sty
+Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
+\c@vrcnt=\count112
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+\headpic=\box34
+
+<school.png, id=1, 957.5775pt x 245.41687pt>
+File: school.png Graphic file (type png)
+ <use school.png>
+Package pdftex.def Info: school.png used on input line 82.
+(pdftex.def)             Requested size: 149.8695pt x 38.41139pt.
+\pp=\box35
+
+<department.png, id=3, 335.75438pt x 63.23625pt>
+File: department.png Graphic file (type png)
+ <use department.png>
+Package pdftex.def Info: department.png used on input line 84.
+(pdftex.def)             Requested size: 156.48792pt x 38.41194pt.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\unicode\utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\unicode\ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\unicode\data\uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count113
+\uc@combtoks=\toks33
+\uc@combtoksb=\toks34
+\uc@temptokena=\toks35
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\todonotes\todonotes.sty
+Package: todonotes 2011/10/22 .dtx Todonotes source and documentation.
+Package: todonotes 2011/10/22
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
+\XKV@depth=\count114
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks38
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
+\pgfutil@abb=\box36
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks39
+\pgfkeys@temptoks=\toks40
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks41
+))
+\pgf@x=\dimen127
+\pgf@y=\dimen128
+\pgf@xa=\dimen129
+\pgf@ya=\dimen130
+\pgf@xb=\dimen131
+\pgf@yb=\dimen132
+\pgf@xc=\dimen133
+\pgf@yc=\dimen134
+\w@pgf@writea=\write4
+\r@pgf@reada=\read1
+\c@pgf@counta=\count115
+\c@pgf@countb=\count116
+\c@pgf@countc=\count117
+\c@pgf@countd=\count118
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+))) (F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count119
+\pgfsyssoftpath@bigbuffer@items=\count120
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen135
+\pgfmath@count=\count121
+\pgfmath@box=\box37
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.
+code.tex)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.te
+x)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.cod
+e.tex)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
+)) (F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count122
+))
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen136
+\pgf@picmaxx=\dimen137
+\pgf@picminy=\dimen138
+\pgf@picmaxy=\dimen139
+\pgf@pathminx=\dimen140
+\pgf@pathmaxx=\dimen141
+\pgf@pathminy=\dimen142
+\pgf@pathmaxy=\dimen143
+\pgf@xx=\dimen144
+\pgf@xy=\dimen145
+\pgf@yx=\dimen146
+\pgf@yy=\dimen147
+\pgf@zx=\dimen148
+\pgf@zy=\dimen149
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code
+.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen150
+\pgf@path@lasty=\dimen151
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen152
+\pgf@shorten@start@additional=\dimen153
+) (F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box38
+\pgf@hbox=\box39
+\pgf@layerbox@main=\box40
+\pgf@picture@serial@count=\count123
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.
+tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen154
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.co
+de.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen155
+\pgf@pt@y=\dimen156
+\pgf@pt@temp=\dimen157
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.cod
+e.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen158
+\pgf@sys@shading@range@num=\count124
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box41
+)) (F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.
+tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+))) (F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box42
+) (F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen159
+\pgf@nodesepend=\dimen160
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+)) (F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
+(F:\appinstall\CTeX\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex))
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen161
+\pgffor@skip=\dimen162
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.cod
+e.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count125
+\pgfplotmarksize=\dimen163
+)
+\tikz@lastx=\dimen164
+\tikz@lasty=\dimen165
+\tikz@lastxsaved=\dimen166
+\tikz@lastysaved=\dimen167
+\tikzleveldistance=\dimen168
+\tikzsiblingdistance=\dimen169
+\tikz@figbox=\box43
+\tikz@tempbox=\box44
+\tikztreelevel=\count126
+\tikznumberofchildren=\count127
+\tikznumberofcurrentchild=\count128
+\tikz@fig@count=\count129
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count130
+\pgfmatrixcurrentcolumn=\count131
+\pgf@matrix@numberofcolumns=\count132
+)
+\tikz@expandcount=\count133
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+rarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(F:\appinstall\CTeX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+rarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+) (F:\appinstall\CTeX\MiKTeX\tex\latex\tools\calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count134
+\calc@Bcount=\count135
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count136
+\calc@Cskip=\skip73
+)
+\c@@todonotes@numberoftodonotes=\count137
+) (F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\psnfss\pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\hyperref\hyperref.sty
+Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+\@linkdim=\dimen172
+\Hy@linkcounter=\count138
+\Hy@pagecounter=\count139
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\hyperref\pd1enc.def
+File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count140
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\00miktex\hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 3925.
+Package hyperref Info: Hyper figures OFF on input line 4046.
+Package hyperref Info: Link nesting OFF on input line 4051.
+Package hyperref Info: Hyper index ON on input line 4054.
+Package hyperref Info: Plain pages OFF on input line 4061.
+Package hyperref Info: Backreferencing OFF on input line 4066.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4284.
+\c@Hy@tempcnt=\count141
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4637.
+\Fld@menulength=\count142
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
+Package hyperref Info: Hyper figures OFF on input line 5757.
+Package hyperref Info: Link nesting OFF on input line 5762.
+Package hyperref Info: Hyper index ON on input line 5765.
+Package hyperref Info: backreferencing OFF on input line 5772.
+Package hyperref Info: Link coloring ON on input line 5775.
+Package hyperref Info: Link coloring with OCG OFF on input line 5782.
+Package hyperref Info: PDF/A mode OFF on input line 5787.
+LaTeX Info: Redefining \ref on input line 5827.
+LaTeX Info: Redefining \pageref on input line 5831.
+\Hy@abspage=\count143
+\c@Item=\count144
+\c@Hfootnote=\count145
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\hyperref\hpdftex.def
+File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
+\Fld@listcount=\count146
+\c@bookmark@seq@number=\count147
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip74
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box45
+\beforetitleunit=\skip75
+\aftertitleunit=\skip76
+\ttl@plus=\dimen175
+\ttl@minus=\dimen176
+\ttl@toksa=\toks47
+\titlewidth=\dimen177
+\titlewidthlast=\dimen178
+\titlewidthfirst=\dimen179
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\mdframed\mdframed.sty
+Package: mdframed 2012/03/04 v1.4: mdframed
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\expl3.sty
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3names.sty
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3bootstrap.sty
+Package: l3bootstrap 2011/12/29 v3110 L3 Experimental bootstrap code
+)
+Package: l3names 2011/12/30 v3113 L3 Experimental namespace for primitives
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\misc\etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count148
+)
+Package: expl3 2012/02/26 v3471 L3 Experimental code bundle wrapper
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3basics.sty
+Package: l3basics 2012/02/26 v3460 L3 Experimental basic definitions
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3expan.sty
+Package: l3expan 2012/02/26 v3460 L3 Experimental argument expansion
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3tl.sty
+Package: l3tl 2012/02/26 v3460 L3 Experimental token lists
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3seq.sty
+Package: l3seq 2012/01/09 v3158 L3 Experimental sequences and stacks
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3int.sty
+Package: l3int 2012/02/26 v3460 L3 Experimental integers
+\c_max_int=\count149
+\l_tmpa_int=\count150
+\l_tmpb_int=\count151
+\l_tmpc_int=\count152
+\g_tmpa_int=\count153
+\g_tmpb_int=\count154
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3quark.sty
+Package: l3quark 2012/02/12 v3384 L3 Experimental quarks
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3prg.sty
+Package: l3prg 2012/02/26 v3464 L3 Experimental control structures
+\g_prg_map_int=\count155
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3clist.sty
+Package: l3clist 2012/02/26 v3460 L3 Experimental comma separated lists
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3token.sty
+Package: l3token 2012/02/26 v3460 L3 Experimental token manipulation
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3prop.sty
+Package: l3prop 2012/02/26 v3460 L3 Experimental property lists
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3msg.sty
+Package: l3msg 2012/02/26 v3470 L3 Experimental messages
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3file.sty
+Package: l3file 2012/02/26 v3464 L3 Experimental file and I/O operations
+\l_iow_stream_int=\count156
+\l_iow_line_length_int=\count157
+\l_iow_target_length_int=\count158
+\l_iow_current_line_int=\count159
+\l_iow_current_word_int=\count160
+\l_iow_current_indentation_int=\count161
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3skip.sty
+Package: l3skip 2012/02/26 v3460 L3 Experimental dimensions and skips
+\l_tmpa_dim=\dimen180
+\l_tmpb_dim=\dimen181
+\l_tmpc_dim=\dimen182
+\g_tmpa_dim=\dimen183
+\g_tmpb_dim=\dimen184
+\l_tmpa_skip=\skip77
+\l_tmpb_skip=\skip78
+\l_tmpc_skip=\skip79
+\g_tmpa_skip=\skip80
+\g_tmpb_skip=\skip81
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3keys.sty
+Package: l3keys 2011/12/22 v3086 L3 Experimental key-value interfaces
+\g_keyval_level_int=\count162
+\l_keys_choice_int=\count163
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3fp.sty
+Package: l3fp 2012/02/06 v3315 L3 Experimental floating-point operations
+\c_one_million=\count164
+\c_one_hundred_million=\count165
+\c_five_hundred_million=\count166
+\c_one_thousand_million=\count167
+\c_fp_pi_by_four_decimal_int=\count168
+\c_fp_pi_by_four_extended_int=\count169
+\c_fp_pi_decimal_int=\count170
+\c_fp_pi_extended_int=\count171
+\c_fp_two_pi_decimal_int=\count172
+\c_fp_two_pi_extended_int=\count173
+\l_fp_count_int=\count174
+\l_fp_div_offset_int=\count175
+\l_fp_exp_integer_int=\count176
+\l_fp_exp_decimal_int=\count177
+\l_fp_exp_extended_int=\count178
+\l_fp_exp_exponent_int=\count179
+\l_fp_input_a_sign_int=\count180
+\l_fp_input_a_integer_int=\count181
+\l_fp_input_a_decimal_int=\count182
+\l_fp_input_a_exponent_int=\count183
+\l_fp_input_b_sign_int=\count184
+\l_fp_input_b_integer_int=\count185
+\l_fp_input_b_decimal_int=\count186
+\l_fp_input_b_exponent_int=\count187
+\l_fp_input_a_extended_int=\count188
+\l_fp_input_b_extended_int=\count189
+\l_fp_mul_a_i_int=\count190
+\l_fp_mul_a_ii_int=\count191
+\l_fp_mul_a_iii_int=\count192
+\l_fp_mul_a_iv_int=\count193
+\l_fp_mul_a_v_int=\count194
+\l_fp_mul_a_vi_int=\count195
+\l_fp_mul_b_i_int=\count196
+\l_fp_mul_b_ii_int=\count197
+\l_fp_mul_b_iii_int=\count198
+\l_fp_mul_b_iv_int=\count199
+\l_fp_mul_b_v_int=\count200
+\l_fp_mul_b_vi_int=\count201
+Normal \count register pool exhausted, switching to extended pool.
+\l_fp_mul_output_int=\count277
+\l_fp_output_sign_int=\count278
+\l_fp_output_integer_int=\count279
+\l_fp_output_decimal_int=\count280
+\l_fp_output_exponent_int=\count281
+\l_fp_output_extended_int=\count282
+\l_fp_round_position_int=\count283
+\l_fp_round_target_int=\count284
+\l_fp_split_sign_int=\count285
+\l_fp_internal_int=\count286
+\l_fp_trig_octant_int=\count287
+\l_fp_trig_sign_int=\count288
+\l_fp_trig_decimal_int=\count289
+\l_fp_trig_extended_int=\count290
+\l_fp_internal_dim=\dimen185
+\l_fp_internal_skip=\skip82
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3box.sty
+Package: l3box 2012/02/18 v3432 L3 Experimental boxes
+\l_tmpb_box=\box46
+\l_box_top_dim=\dimen186
+\l_box_bottom_dim=\dimen187
+\l_box_left_dim=\dimen188
+\l_box_right_dim=\dimen189
+\l_box_top_new_dim=\dimen190
+\l_box_bottom_new_dim=\dimen191
+\l_box_left_new_dim=\dimen192
+\l_box_right_new_dim=\dimen193
+\l_box_internal_box=\box47
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3coffins.sty
+Package: l3coffins 2012/02/26 v3460 L3 Experimental coffin code layer
+\l_coffin_internal_box=\box48
+\l_coffin_internal_dim=\dimen194
+\l_coffin_offset_x_dim=\dimen195
+\l_coffin_offset_y_dim=\dimen196
+\l_coffin_x_dim=\dimen197
+\l_coffin_y_dim=\dimen198
+\l_coffin_x_prime_dim=\dimen199
+\l_coffin_y_prime_dim=\dimen200
+\l_coffin_Depth_dim=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\l_coffin_Height_dim=\dimen256
+\l_coffin_TotalHeight_dim=\dimen257
+\l_coffin_Width_dim=\dimen258
+\c_empty_coffin=\box49
+\l_coffin_aligned_coffin=\box50
+\l_coffin_aligned_internal_coffin=\box51
+\l_coffin_bounding_shift_dim=\dimen259
+\l_coffin_left_corner_dim=\dimen260
+\l_coffin_right_corner_dim=\dimen261
+\l_coffin_bottom_corner_dim=\dimen262
+\l_coffin_top_corner_dim=\dimen263
+\l_coffin_scaled_total_height_dim=\dimen264
+\l_coffin_scaled_width_dim=\dimen265
+\l_coffin_display_coffin=\box52
+\l_coffin_display_coord_coffin=\box53
+\l_coffin_display_pole_coffin=\box54
+\l_coffin_display_offset_dim=\dimen266
+\l_coffin_display_x_dim=\dimen267
+\l_coffin_display_y_dim=\dimen268
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3color.sty
+Package: l3color 2011/09/07 v2776 L3 Experimental colour support
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\l3kernel\l3luatex.sty
+Package: l3luatex 2012/02/09 v3355 L3 Experimental LuaTeX-specific functions
+\g_cctab_allocate_int=\count291
+\g_cctab_stack_int=\count292
+))
+Package: xparse 2012/02/26 v3471 L3 Experimental document command parser
+\l_xparse_current_arg_int=\count293
+\l_xparse_m_args_int=\count294
+\l_xparse_mandatory_args_int=\count295
+\l_xparse_processor_int=\count296
+\l_xparse_v_nesting_int=\count297
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count298
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\zref-abspage.sty
+Package: zref-abspage 2011/03/18 v2.21 Module abspage for zref (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\zref-base.sty
+Package: zref-base 2011/03/18 v2.21 Module base for zref (HO)
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\oberdiek\auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 707.
+Package zref Info: New property: default on input line 708.
+Package zref Info: New property: page on input line 709.
+)
+\c@abspage=\count299
+Package zref Info: New property: abspage on input line 62.
+)
+\mdf@templength=\skip83
+\c@mdf@globalstyle@cnt=\count300
+\mdf@skipabove@length=\skip84
+\mdf@skipbelow@length=\skip85
+\mdf@leftmargin@length=\skip86
+\mdf@rightmargin@length=\skip87
+\mdf@innerleftmargin@length=\skip88
+\mdf@innerrightmargin@length=\skip89
+\mdf@innertopmargin@length=\skip90
+\mdf@innerbottommargin@length=\skip91
+\mdf@splittopskip@length=\skip92
+\mdf@splitbottomskip@length=\skip93
+\mdf@outermargin@length=\skip94
+\mdf@innermargin@length=\skip95
+\mdf@linewidth@length=\skip96
+\mdf@innerlinewidth@length=\skip97
+\mdf@middlelinewidth@length=\skip98
+\mdf@outerlinewidth@length=\skip99
+\mdf@roundcorner@length=\skip100
+\mdf@footenotedistance@length=\skip101
+\mdf@userdefinedwidth@length=\skip102
+\mdf@frametitleaboveskip@length=\skip103
+\mdf@frametitlebelowskip@length=\skip104
+\mdf@frametitlerulewidth@length=\skip105
+\mdf@frametitleleftmargin@length=\skip106
+\mdf@frametitlerightmargin@length=\skip107
+\mdf@shadowsize@length=\skip108
+\mdf@frametitlebox=\box55
+\mdf@footnotebox=\box56
+\mdf@splitbox@one=\box57
+\mdf@splitbox@two=\box58
+\mdfsplitboxwidth=\skip109
+\mdfsplitboxtotalwidth=\skip110
+\mdfsplitboxheight=\skip111
+\mdfsplitboxdepth=\skip112
+\mdfsplitboxtotalheight=\skip113
+\mdfframetitleboxwidth=\skip114
+\mdfframetitleboxtotalwidth=\skip115
+\mdfframetitleboxheight=\skip116
+\mdfframetitleboxdepth=\skip117
+\mdfframetitleboxtotalheight=\skip118
+\mdffootnoteboxwidth=\skip119
+\mdffootnoteboxtotalwidth=\skip120
+\mdffootnoteboxheight=\skip121
+\mdffootnoteboxdepth=\skip122
+\mdffootnoteboxtotalheight=\skip123
+\mdftotallinewidth=\skip124
+\mdfboundingboxwidth=\skip125
+\mdfboundingboxtotalwidth=\skip126
+\mdfboundingboxheight=\skip127
+\mdfboundingboxdepth=\skip128
+\mdfboundingboxtotalheight=\skip129
+\mdf@freevspace@length=\skip130
+\mdf@horizontalwidthofbox@length=\skip131
+\mdf@verticalmarginwhole@length=\skip132
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newmdtheoremenv with arg. spec. 'O{} m o m o ' on
+. line 483.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \mdtheorem with arg. spec. ' O{} m o m o ' on line
+. 563.
+.................................................
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\mdframed\md-frame-0.mdf
+File: md-frame-0.mdf 2012/03/04 v1.4: md-frame-0
+)
+\c@mdf@zref@counter=\count301
+Package zref Info: New property: mdf@pagevalue on input line 764.
+\mdf@horizontalspaceofbox=\skip133
+)
+(D:\graduated\Image_process\lab\lab_report\lab7\mcode.sty
+-- Package: `mcode' 2.7 <2015/11/11> --
+Package: mcode 2015/11/11 2.7
+ - settings optimized for display (colour formating)
+ - line numbering enabled
+ - literate programming (character replacements) enabled
+ - automatic line breaking enabled (careful, buggy!)
+ - framed listings
+(F:\appinstall\CTeX\MiKTeX\tex\latex\listings\listings.sty
+\lst@mode=\count302
+\lst@gtempboxa=\box59
+\lst@token=\toks48
+\lst@length=\count303
+\lst@currlwidth=\dimen269
+\lst@column=\count304
+\lst@pos=\count305
+\lst@lostspace=\dimen270
+\lst@width=\dimen271
+\lst@newlines=\count306
+\lst@lineno=\count307
+\lst@maxwidth=\dimen272
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count308
+\lst@skipnumbers=\count309
+\lst@framebox=\box60
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+\lbreakdots=\box61
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 230.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+(F:\appinstall\CTeX\MiKTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip134
+\subfigcapskip=\skip135
+\subfigcaptopadj=\dimen273
+\subfigbottomskip=\skip136
+\subfigcapmargin=\dimen274
+\subfiglabelskip=\skip137
+\c@subfigure=\count310
+\c@lofdepth=\count311
+\c@subtable=\count312
+\c@lotdepth=\count313
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(F:\appinstall\CTeX\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip138
+\subfig@bottom=\skip139
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\tools\longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip140
+\LTright=\skip141
+\LTpre=\skip142
+\LTpost=\skip143
+\LTchunksize=\count314
+\LTcapwidth=\dimen275
+\LT@head=\box62
+\LT@firsthead=\box63
+\LT@foot=\box64
+\LT@lastfoot=\box65
+\LT@cols=\count315
+\LT@rows=\count316
+\c@LT@tables=\count317
+\c@LT@chunks=\count318
+\LT@p@ftn=\toks49
+)
+(D:\graduated\Image_process\lab\lab_report\lab7\pythonhighlight.sty
+Package: pythonhighlight 2011/09/19 python code highlighting; provided by Olivi
+er Verdier <olivier.verdier@gmail.com>
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(D:\graduated\Image_process\lab\lab_report\lab7\Lab7+杨杰+11849212.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 169.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 169
+.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fourier\fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 169.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 169
+.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fourier\fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 169.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 169
+.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fourier\fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 169.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 169.
+
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 169.
+
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fourier\t1futs.fd
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=14.5pt
+* \headsep=25.0pt
+* \topskip=49.79231pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(F:\appinstall\CTeX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count319
+\scratchdimen=\dimen276
+\scratchbox=\box66
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen277
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks51
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 169.
+ (F:\appinstall\CTeX\MiKTeX\tex\latex\unicode\ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box67
+Package hyperref Info: Link coloring ON on input line 169.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\hyperref\nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(F:\appinstall\CTeX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count325
+LaTeX Info: Redefining \Ref on input line 498.
+)
+LaTeX Info: Redefining \ref on input line 169.
+LaTeX Info: Redefining \pageref on input line 169.
+LaTeX Info: Redefining \nameref on input line 169.
+
+(D:\graduated\Image_process\lab\lab_report\lab7\Lab7+杨杰+11849212.out)
+(D:\graduated\Image_process\lab\lab_report\lab7\Lab7+杨杰+11849212.out)
+\@outlinefile=\write5
+LaTeX Info: Redefining \Ref on input line 169.
+\c@lstlisting=\count326
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\standard.bdg
+File: standard.bdg 2008/12/29 4.8.2
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\extended.enc
+File: extended.enc 2008/12/29 4.8.2
+)
+(F:\appinstall\CTeX\MiKTeX\tex\latex\cjk\extended.chr
+File: extended.chr 2008/12/29 4.8.2
+)
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 192.
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 20
+4.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\fourier\fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 204.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 204.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 204.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 204.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 204.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 204.
+LaTeX Font Info:    Try loading font information for U+msa on input line 204.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 204.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+<logo.png, id=65, 414.54875pt x 298.11375pt>
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 227.
+(pdftex.def)             Requested size: 316.52783pt x 227.62204pt.
+ [1
+Non-PDF special ignored!
+
+{F:/appinstall/CTeX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}} <
+D:/graduated/Image_process/lab/lab_report/lab7/logo.png>] (D:\graduated\Image_p
+rocess\lab\lab_report\lab7\Lab7+杨杰+11849212.toc
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
+)
+\tf@toc=\write6
+
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.241 \newpage
+               [1
+
+ <D:/graduated/Image_process/lab/lab_report/lab7/school.png> <D:/graduated/Imag
+e_process/lab/lab_report/lab7/department.png>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 272.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 279.
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.302 \end{equation}
+                     [1]
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 332.
+
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 332.
+
+
+Underfull \hbox (badness 10000) detected at line 332
+ []$[]  [] []$ [][][]  
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] <python/cameraWithNoise_original.jpg, id=124, 256.96pt x 256.96pt>
+File: python/cameraWithNoise_original.jpg Graphic file (type jpg)
+
+<use python/cameraWithNoise_original.jpg>
+Package pdftex.def Info: python/cameraWithNoise_original.jpg used on input line
+ 351.
+(pdftex.def)             Requested size: 113.81102pt x 113.81163pt.
+
+<python/cameraWithNoise_noise.jpg, id=125, 282.43117pt x 282.43117pt>
+File: python/cameraWithNoise_noise.jpg Graphic file (type jpg)
+
+<use python/cameraWithNoise_noise.jpg>
+Package pdftex.def Info: python/cameraWithNoise_noise.jpg used on input line 35
+3.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/cameraWithNoise_denoise.jpg, id=126, 282.43117pt x 282.43117pt>
+File: python/cameraWithNoise_denoise.jpg Graphic file (type jpg)
+
+<use python/cameraWithNoise_denoise.jpg>
+Package pdftex.def Info: python/cameraWithNoise_denoise.jpg used on input line 
+355.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/cameraWithNoise_hist.jpg, id=127, 419.59962pt x 312.35094pt>
+File: python/cameraWithNoise_hist.jpg Graphic file (type jpg)
+
+<use python/cameraWithNoise_hist.jpg>
+Package pdftex.def Info: python/cameraWithNoise_hist.jpg used on input line 357
+.
+(pdftex.def)             Requested size: 227.62404pt x 113.80934pt.
+
+<python/LenaWithNoise_original.jpg, id=135, 487.8225pt x 487.8225pt>
+File: python/LenaWithNoise_original.jpg Graphic file (type jpg)
+
+<use python/LenaWithNoise_original.jpg>
+Package pdftex.def Info: python/LenaWithNoise_original.jpg used on input line 3
+67.
+(pdftex.def)             Requested size: 113.80461pt x 113.81102pt.
+
+<python/LenaWithNoise_fft_log.jpg, id=136, 282.43117pt x 282.43117pt>
+File: python/LenaWithNoise_fft_log.jpg Graphic file (type jpg)
+
+<use python/LenaWithNoise_fft_log.jpg>
+Package pdftex.def Info: python/LenaWithNoise_fft_log.jpg used on input line 36
+9.
+(pdftex.def)             Requested size: 113.81082pt x 113.81102pt.
+
+<python/LenaWithNoise_mask_70.jpg, id=137, 282.43117pt x 282.43117pt>
+File: python/LenaWithNoise_mask_70.jpg Graphic file (type jpg)
+
+<use python/LenaWithNoise_mask_70.jpg>
+Package pdftex.def Info: python/LenaWithNoise_mask_70.jpg used on input line 37
+1.
+(pdftex.def)             Requested size: 113.81082pt x 113.81102pt.
+
+<python/LenaWithNoise_mask_sft.jpg, id=138, 282.43117pt x 282.43117pt>
+File: python/LenaWithNoise_mask_sft.jpg Graphic file (type jpg)
+
+<use python/LenaWithNoise_mask_sft.jpg>
+Package pdftex.def Info: python/LenaWithNoise_mask_sft.jpg used on input line 3
+73.
+(pdftex.def)             Requested size: 113.81082pt x 113.81102pt.
+
+<python/LenaWithNoise_noise.jpg, id=139, 282.43117pt x 282.43117pt>
+File: python/LenaWithNoise_noise.jpg Graphic file (type jpg)
+
+<use python/LenaWithNoise_noise.jpg>
+Package pdftex.def Info: python/LenaWithNoise_noise.jpg used on input line 375.
+
+(pdftex.def)             Requested size: 113.81082pt x 113.81102pt.
+
+<python/LenaWithNoise_denoise.jpg, id=140, 282.43117pt x 282.43117pt>
+File: python/LenaWithNoise_denoise.jpg Graphic file (type jpg)
+
+<use python/LenaWithNoise_denoise.jpg>
+Package pdftex.def Info: python/LenaWithNoise_denoise.jpg used on input line 37
+7.
+(pdftex.def)             Requested size: 113.81082pt x 113.81102pt.
+
+<python/LenaWithNoise_hist.jpg, id=141, 419.59962pt x 312.35094pt>
+File: python/LenaWithNoise_hist.jpg Graphic file (type jpg)
+
+<use python/LenaWithNoise_hist.jpg>
+Package pdftex.def Info: python/LenaWithNoise_hist.jpg used on input line 379.
+(pdftex.def)             Requested size: 227.62404pt x 113.80934pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3 <D:/graduated/Image_process/lab/lab_report/lab7/python/cameraWithNoise_origi
+nal.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/cameraWithNoise
+_noise.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/cameraWithNo
+ise_denoise.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/cameraW
+ithNoise_hist.jpg>] <python/lenaD1_original.jpg, id=154, 256.96pt x 256.96pt>
+File: python/lenaD1_original.jpg Graphic file (type jpg)
+
+<use python/lenaD1_original.jpg>
+Package pdftex.def Info: python/lenaD1_original.jpg used on input line 406.
+(pdftex.def)             Requested size: 113.81102pt x 113.81163pt.
+
+<python/lenaD2_original.jpg, id=155, 256.96pt x 256.96pt>
+File: python/lenaD2_original.jpg Graphic file (type jpg)
+
+<use python/lenaD2_original.jpg>
+Package pdftex.def Info: python/lenaD2_original.jpg used on input line 406.
+(pdftex.def)             Requested size: 113.81102pt x 113.81163pt.
+
+<python/lenaD3_original.jpg, id=156, 256.96pt x 256.96pt>
+File: python/lenaD3_original.jpg Graphic file (type jpg)
+
+<use python/lenaD3_original.jpg>
+Package pdftex.def Info: python/lenaD3_original.jpg used on input line 406.
+(pdftex.def)             Requested size: 113.81102pt x 113.81163pt.
+
+<python/lenaD1_hist.jpg, id=157, 413.23985pt x 312.35094pt>
+File: python/lenaD1_hist.jpg Graphic file (type jpg)
+
+<use python/lenaD1_hist.jpg>
+Package pdftex.def Info: python/lenaD1_hist.jpg used on input line 407.
+(pdftex.def)             Requested size: 113.81102pt x 86.02307pt.
+
+<python/lenaD2_hist.jpg, id=158, 419.59962pt x 312.35094pt>
+File: python/lenaD2_hist.jpg Graphic file (type jpg)
+
+<use python/lenaD2_hist.jpg>
+Package pdftex.def Info: python/lenaD2_hist.jpg used on input line 407.
+(pdftex.def)             Requested size: 113.81102pt x 84.72192pt.
+
+<python/lenaD3_hist.jpg, id=159, 419.59962pt x 312.35094pt>
+File: python/lenaD3_hist.jpg Graphic file (type jpg)
+
+<use python/lenaD3_hist.jpg>
+Package pdftex.def Info: python/lenaD3_hist.jpg used on input line 407.
+(pdftex.def)             Requested size: 113.81102pt x 84.72192pt.
+
+<python/lenaD1_amf.jpg, id=160, 282.43117pt x 282.43117pt>
+File: python/lenaD1_amf.jpg Graphic file (type jpg)
+
+<use python/lenaD1_amf.jpg>
+Package pdftex.def Info: python/lenaD1_amf.jpg used on input line 409.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD2_amf.jpg, id=161, 282.43117pt x 282.43117pt>
+File: python/lenaD2_amf.jpg Graphic file (type jpg)
+
+<use python/lenaD2_amf.jpg>
+Package pdftex.def Info: python/lenaD2_amf.jpg used on input line 409.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD3_amf.jpg, id=162, 282.43117pt x 282.43117pt>
+File: python/lenaD3_amf.jpg Graphic file (type jpg)
+
+<use python/lenaD3_amf.jpg>
+Package pdftex.def Info: python/lenaD3_amf.jpg used on input line 409.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD1_gmf.jpg, id=163, 282.43117pt x 282.43117pt>
+File: python/lenaD1_gmf.jpg Graphic file (type jpg)
+
+<use python/lenaD1_gmf.jpg>
+Package pdftex.def Info: python/lenaD1_gmf.jpg used on input line 410.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD2_gmf.jpg, id=164, 282.43117pt x 282.43117pt>
+File: python/lenaD2_gmf.jpg Graphic file (type jpg)
+
+<use python/lenaD2_gmf.jpg>
+Package pdftex.def Info: python/lenaD2_gmf.jpg used on input line 410.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD3_gmf.jpg, id=165, 282.43117pt x 282.43117pt>
+File: python/lenaD3_gmf.jpg Graphic file (type jpg)
+
+<use python/lenaD3_gmf.jpg>
+Package pdftex.def Info: python/lenaD3_gmf.jpg used on input line 410.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD1_median.jpg, id=166, 282.43117pt x 282.43117pt>
+File: python/lenaD1_median.jpg Graphic file (type jpg)
+
+<use python/lenaD1_median.jpg>
+Package pdftex.def Info: python/lenaD1_median.jpg used on input line 411.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD2_median.jpg, id=167, 282.43117pt x 282.43117pt>
+File: python/lenaD2_median.jpg Graphic file (type jpg)
+
+<use python/lenaD2_median.jpg>
+Package pdftex.def Info: python/lenaD2_median.jpg used on input line 411.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD3_median.jpg, id=168, 282.43117pt x 282.43117pt>
+File: python/lenaD3_median.jpg Graphic file (type jpg)
+
+<use python/lenaD3_median.jpg>
+Package pdftex.def Info: python/lenaD3_median.jpg used on input line 411.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD1_atmf.jpg, id=169, 282.43117pt x 282.43117pt>
+File: python/lenaD1_atmf.jpg Graphic file (type jpg)
+
+<use python/lenaD1_atmf.jpg>
+Package pdftex.def Info: python/lenaD1_atmf.jpg used on input line 415.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD2_atmf.jpg, id=170, 282.43117pt x 282.43117pt>
+File: python/lenaD2_atmf.jpg Graphic file (type jpg)
+
+<use python/lenaD2_atmf.jpg>
+Package pdftex.def Info: python/lenaD2_atmf.jpg used on input line 415.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD3_atmf.jpg, id=171, 282.43117pt x 282.43117pt>
+File: python/lenaD3_atmf.jpg Graphic file (type jpg)
+
+<use python/lenaD3_atmf.jpg>
+Package pdftex.def Info: python/lenaD3_atmf.jpg used on input line 415.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD1_admf.jpg, id=172, 282.43117pt x 282.43117pt>
+File: python/lenaD1_admf.jpg Graphic file (type jpg)
+
+<use python/lenaD1_admf.jpg>
+Package pdftex.def Info: python/lenaD1_admf.jpg used on input line 417.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD2_admf.jpg, id=173, 282.43117pt x 282.43117pt>
+File: python/lenaD2_admf.jpg Graphic file (type jpg)
+
+<use python/lenaD2_admf.jpg>
+Package pdftex.def Info: python/lenaD2_admf.jpg used on input line 417.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+<python/lenaD3_admf.jpg, id=174, 282.43117pt x 282.43117pt>
+File: python/lenaD3_admf.jpg Graphic file (type jpg)
+
+<use python/lenaD3_admf.jpg>
+Package pdftex.def Info: python/lenaD3_admf.jpg used on input line 417.
+(pdftex.def)             Requested size: 113.81102pt x 113.81082pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <D:/graduated/Image_process/lab/lab_report/lab7/python/LenaWithNoise_origina
+l.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/LenaWithNoise_fft
+_log.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/LenaWithNoise_
+mask_70.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/LenaWithNoi
+se_mask_sft.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/LenaWit
+hNoise_noise.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/LenaWi
+thNoise_denoise.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/Len
+aWithNoise_hist.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <D:/graduated/Image_process/lab/lab_report/lab7/python/lenaD1_original.jpg> 
+<D:/graduated/Image_process/lab/lab_report/lab7/python/lenaD2_original.jpg> <D:
+/graduated/Image_process/lab/lab_report/lab7/python/lenaD3_original.jpg> <D:/gr
+aduated/Image_process/lab/lab_report/lab7/python/lenaD1_hist.jpg> <D:/graduated
+/Image_process/lab/lab_report/lab7/python/lenaD2_hist.jpg> <D:/graduated/Image_
+process/lab/lab_report/lab7/python/lenaD3_hist.jpg> <D:/graduated/Image_process
+/lab/lab_report/lab7/python/lenaD1_amf.jpg> <D:/graduated/Image_process/lab/lab
+_report/lab7/python/lenaD2_amf.jpg> <D:/graduated/Image_process/lab/lab_report/
+lab7/python/lenaD3_amf.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/pyt
+hon/lenaD1_gmf.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/lena
+D2_gmf.jpg> <D:/graduated/Image_process/lab/lab_report/lab7/python/lenaD3_gmf.j
+pg> <D:/graduated/Image_process/lab/lab_report/lab7/python/lenaD1_median.jpg> <
+D:/graduated/Image_process/lab/lab_report/lab7/python/lenaD2_median.jpg> <D:/gr
+aduated/Image_process/lab/lab_report/lab7/python/lenaD3_median.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 451.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 451.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <D:/graduated/Image_process/lab/lab_report/lab7/python/lenaD1_atmf.jpg> <D:/
+graduated/Image_process/lab/lab_report/lab7/python/lenaD2_atmf.jpg> <D:/graduat
+ed/Image_process/lab/lab_report/lab7/python/lenaD3_atmf.jpg> <D:/graduated/Imag
+e_process/lab/lab_report/lab7/python/lenaD1_admf.jpg> <D:/graduated/Image_proce
+ss/lab/lab_report/lab7/python/lenaD2_admf.jpg> <D:/graduated/Image_process/lab/
+lab_report/lab7/python/lenaD3_admf.jpg>]
+(D:\graduated\Image_process\lab\lab_report\lab7\lab7.py
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 9.
+
+(F:\appinstall\CTeX\MiKTeX\tex\latex\base\ts1cmtt.fd
+File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]) 
+AED: lastpage setting LastPage
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 45.36197pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
+ (D:\graduated\Image_process\lab\lab_report\lab7\Lab7+杨杰+11849212.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
+
+
+Package rerunfilecheck Warning: File `Lab7+杨杰+11849212.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Lab7+杨杰+11849212.out':
+(rerunfilecheck)             Before: 6703CF4E29FAE1F796874B52D1348F8A;2461
+(rerunfilecheck)             After:  F297D99998896F4126875A81E3C128B1;837.
+ ) 
+Here is how much of TeX's memory you used:
+ 26895 strings out of 495354
+ 450022 string characters out of 3183243
+ 1334309 words of memory out of 3000000
+ 29054 multiletter control sequences out of 15000+200000
+ 116012 words of font info for 113 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 63i,13n,93p,883b,1786s stack positions out of 5000i,500n,10000p,200000b,50000s
+{F:/appinstall/CTeX/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{F:/appi
+nstall/CTeX/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}{F:/appinstall/CTeX
+/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<F:/appinstall/CTeX/MiKTeX/fonts/type1/
+public/fourier/fourier-mex.pfb><F:/appinstall/CTeX/MiKTeX/fonts/type1/public/fo
+urier/fourier-ms.pfb><F:/appinstall/CTeX/MiKTeX/fonts/type1/adobe/utopia/putb8a
+.pfb><F:/appinstall/CTeX/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><F:/appinst
+all/CTeX/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb><F:/appinstall/CTeX/MiKTeX
+/fonts/type1/public/cm-super/sfst1000.pfb><F:/appinstall/CTeX/MiKTeX/fonts/type
+1/public/cm-super/sftt1000.pfb><F:/appinstall/CTeX/MiKTeX/fonts/type1/urw/couri
+er/ucrr8a.pfb>
+Output written on Lab7+杨杰+11849212.pdf (14 pages, 18326029 bytes).
+PDF statistics:
+ 620 PDF objects out of 1000 (max. 8388607)
+ 332 named destinations out of 1000 (max. 500000)
+ 300 words of extra memory for PDF output out of 10000 (max. 10000000)
+

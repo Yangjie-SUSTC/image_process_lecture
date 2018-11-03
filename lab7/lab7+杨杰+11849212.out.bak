@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section*.2}{Introduction}{}% 1
+\BOOKMARK [1][-]{section*.3}{Method}{}% 2
+\BOOKMARK [2][-]{section*.4}{Camera with noise}{section*.3}% 3
+\BOOKMARK [2][-]{section*.5}{Lena with noise}{section*.3}% 4
+\BOOKMARK [2][-]{section*.6}{Arithmetic mean filter}{section*.3}% 5
+\BOOKMARK [2][-]{section*.7}{Geometric mean filter}{section*.3}% 6
+\BOOKMARK [2][-]{section*.8}{Median filter}{section*.3}% 7
+\BOOKMARK [2][-]{section*.9}{Alpha-trimmed mean filter}{section*.3}% 8
+\BOOKMARK [2][-]{section*.10}{Adaptive median filter}{section*.3}% 9
+\BOOKMARK [1][-]{section*.11}{Results}{}% 10
+\BOOKMARK [2][-]{section*.12}{Noise reconstruction}{section*.11}% 11
+\BOOKMARK [2][-]{section*.13}{Noise filters}{section*.11}% 12
+\BOOKMARK [1][-]{section*.14}{Discussion}{}% 13
+\BOOKMARK [1][-]{section*.15}{Supplementary}{}% 14
