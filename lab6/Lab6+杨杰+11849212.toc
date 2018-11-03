@@ -1,0 +1,12 @@
+\select@language {english}
+\contentsline {section}{\textbf {Introduction}}{1}{section*.2}
+\contentsline {section}{\textbf {Method}}{1}{section*.3}
+\contentsline {subsection}{Homomorphic filter}{1}{section*.4}
+\contentsline {subsection}{Bandreject filter}{1}{section*.5}
+\contentsline {subsection}{Image correlation}{2}{section*.6}
+\contentsline {section}{\textbf {Results}}{2}{section*.7}
+\contentsline {subsection}{Homomorphic filter}{2}{section*.8}
+\contentsline {subsection}{Bandreject filter}{5}{section*.9}
+\contentsline {subsection}{Image correlation}{6}{section*.10}
+\contentsline {section}{\textbf {Discussion}}{7}{section*.11}
+\contentsline {section}{\textbf {Supplementary}}{7}{section*.12}

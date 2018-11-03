@@ -1,0 +1,10 @@
+\select@language {english}
+\contentsline {section}{\textbf {Introduction}}{1}{section*.2}
+\contentsline {section}{\textbf {Method}}{1}{section*.3}
+\contentsline {section}{\textbf {Results}}{2}{section*.4}
+\contentsline {subsection}{\textbf {Filter}}{2}{section*.5}
+\contentsline {subsubsection}{Lena}{2}{section*.6}
+\contentsline {subsubsection}{Bridge}{3}{section*.7}
+\contentsline {section}{\textbf {Fingerprint sharpen}}{5}{section*.8}
+\contentsline {section}{\textbf {Discussion}}{8}{section*.9}
+\contentsline {section}{\textbf {Supplementary}}{8}{section*.10}

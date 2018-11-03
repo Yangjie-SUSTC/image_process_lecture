@@ -1,0 +1,805 @@
+
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for
+% including it in another document. To do this, you have two options:
+%
+% 1) Copy/paste everything between \begin{document} and \end{document}
+% starting at \begin{titlepage} and paste this into another LaTeX file where you
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and
+% move this file to the same directory as the LaTeX file you wish to add it to.
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+%\documentclass[UTF8]{ctexart}
+
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+ \setlength{\topskip}{1.75cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 0pt % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=2cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+%---------------代码插入-------------------------
+
+\usepackage{listings}
+\lstset{language=C++}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = C++,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE South University of Science and Technology of China}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\large class project 3}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Fourier Transform}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{Jianhong Shi} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=5cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge Fourier Transform}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerate}
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+%\end{enumerate}
+\section{\textbf{Introduction}}\ \ \ \ \ \ \
+
+In most common conditions, the talk about the image in space domain, which indicate the intensity distribution of a image. However, an image can be transformed to frequency domain by Fourier transform. Because image is discrete matrix, it is discrete Fourier transform (DFT).
+
+In space domain, the matrix indicate power distribution in each frequency component. So that we can process image in frequency domain which can be very easy to do filtering. This powerful method nowadays applied broadly in lots of fields.
+
+In this experiment, we will write DFT function to implement 2D DFT for all provided images and analyze their
+transformed images in frequency domain. We will also reconstruct lena.pgm using the magnitude and phase images in frequency domain respectively and analyze the results.
+
+
+
+
+
+\section{\textbf{Method}}\ \ \ \ \ \ \
+
+For each image, we can calculate its frequency component by \eref{eq:DFT}, $M,N$ is the length and width as image, respectively. This progress is DFT. After that, we can do reverse transform to reconstruct image,\eref{eq:DFT} which transform image from frequency domain to spatial domain.
+\begin{equation}\label{eq:DFT}
+F(u,v)=\sum ^{M-1}_{x=0}\sum ^{N-1}_{y=0}f(x,y)e^{-j2\pi(ux/M+vy/N)}
+\end{equation}
+
+\begin{equation}\label{eq:IDFT}
+f(x,y)= \frac{1}{MN}\sum ^{M-1}_{u=0}\sum ^{N-1}_{v=0}F(u,v)e^{j2\pi(ux/M+vy/N)}
+\end{equation}
+In frequency domain, the low frequency component at the corner while high frequency at the center. To make it clear, we can shift original point to the image center, so that from center to edge, the frequency gradually decrease. This shift step can be done base on \eref{eq:shift}. by multiply $(-1)^{(x+y)}$ in frequency domain or spatial domain before DFT.
+
+\begin{equation}\label{eq:shift}
+\begin{array}{ccc}
+f(x,y)(-1)^{x+y} &\Leftrightarrow &F(u-M/2,v-N/2)\\
+f(x-M/2,y-N/2)&\Leftrightarrow  &F(u,v)(-1)^{u+v}
+\end{array}
+\end{equation}
+
+The full steps in this lab is indicated in \eref{eq:IDFT}. First, we multiply image with $(-1)^{(x+y)}$ , then do DFT to transform image to frequency domain.
+For reverse DFT (IDFT), we can do DFT to frequency image then get its real part, finally multiply it with $(-1)^{(x+y)}$ to reconstruct image.
+
+\begin{equation}\label{eq:IDFT}
+f(x,y) \xrightarrow{*(-1)^{x+y}}g(x,y)  \xrightarrow{\mathfrak{F}} F(u,v) \xrightarrow{\mathfrak{F}} f(u,v)\xrightarrow{\mathfrak{Re}} \mathfrak{Re}(f(u,v))\xrightarrow{*(-1)^{x+y}} f(x,y)
+\end{equation}
+
+
+
+
+\subsection{Bicubic interpolation}\ \ \ \ \ \ \
+
+
+
+
+
+\section{\textbf{Results}}\ \ \ \ \ \ \
+
+
+\subsection{\textbf{DFT}}\ \ \ \ \ \ \
+We find that after DFT, the magnitude is two weak to see, so I choose to plot the log form of magnitude.
+%\begin{itemize}
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/bridge_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/bridge_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/bridge_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/bridge_DFT_phase.jpg}}
+\caption{Fourier transform of bridge image}
+\label{fig:bridge}
+\end{figure}
+
+From bridge image, the main is at low frequency part, it has bright line on vertical and horizontal axis. The vertical one is brighter that horizontal one. Because the brighter part in image is the bridge while it is on horizontal axis.\fref{fig:bridge}. The phase image seems to be no order.
+
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/circles_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/circles_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/circles_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/circles_DFT_phase.jpg}}
+\caption{Fourier transform of circles image}
+\label{fig:circles}
+\end{figure}
+
+For circles image,\fref{fig:circles} there are several circle line around center and phase image also be symmetrical
+
+For crosses image,\fref{fig:crosses} there are several diagonal vertical and horizontal lines, so that we can see for lines in magnitude image, the phase image also be ordered.
+
+For goldhill image,\fref{fig:goldhill}, it has house with white walls, which induce bright vertical line and closer horizontal areal in magnitude image, in phase image, we can see vertical line.
+
+For horiz image,\fref{fig:horiz}, it has several vertical lines in image, so that we can see a bright vertical line in magnitude image and the phase image be very ordered.
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/crosses_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/crosses_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/crosses_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/crosses_DFT_phase.jpg}}
+\caption{Fourier transform of crosses image}
+\label{fig:crosses}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/goldhill_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/goldhill_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/goldhill_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/goldhill_DFT_phase.jpg}}
+\caption{Fourier transform of goldhill image}
+\label{fig:goldhill}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/horiz_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/horiz_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/horiz_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/horiz_DFT_phase.jpg}}
+\caption{Fourier transform of horiz image}
+\label{fig:horiz}
+\end{figure}
+
+
+
+
+
+For montage image \fref{fig:montage}, it be divided into four parts, however, the magnitude image is not the combine of part parts individually, each part has similar magnitude image. The phase image also be divided into four parts.
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/montage_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/montage_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/montage_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/montage_DFT_phase.jpg}}
+\caption{Fourier transform of montage image}
+\label{fig:montage}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/noise_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/noise_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/noise_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/noise_DFT_phase.jpg}}
+\caption{Fourier transform of noise image}
+\label{fig:noise}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/rampe128_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/rampe128_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/rampe128_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/rampe128_DFT_phase.jpg}}
+\caption{Fourier transform of rampe128 image}
+\label{fig:rampe128}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/rampr128_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/rampr128_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/rampr128_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/rampr128_DFT_phase.jpg}}
+\caption{Fourier transform of rampr128 image}
+\label{fig:rampr128}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/lena_original.jpg}}
+\subfigure[magnitude ]{
+\includegraphics[width=4 cm]{matlab1/lena_DFT_mag.jpg}}
+\subfigure[log magnitude]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/lena_DFT_mag_log.jpg}}
+\subfigure[phase]{
+\includegraphics[width=4 cm]{matlab1/lena_DFT_phase.jpg}}
+\caption{Fourier transform of lena image}
+\label{fig:lena}
+\end{figure}
+
+\subsection{\textbf{Image reduction}}\ \ \ \ \ \ \
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{matlab1/lena_original.jpg}}
+\subfigure[magnitude]{
+\includegraphics[width=4 cm]{matlab1/lena_IDFT_mag_log.jpg}}
+\subfigure[log phase]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{matlab1/lena_IDFT_phase_log.jpg}}
+\subfigure[magnitude $\&$ phase]{
+\includegraphics[width=4 cm]{matlab1/lena_IDFT.jpg}}
+\caption{Reconstructed lena image}
+\label{fig:lena}
+\end{figure}
+
+
+
+\section{\textbf{Discussion}}\ \ \ \ \ \
+
+In this experiment, we can find that when use alternative line reduction to reduce image size, it is easy to calculate but it may remove some horizontal or vertical lines, especially when these lines are very narrow. This may cause information drop.
+
+When use pixel replication to enlarge image size, it is also very easy to calculate. But it will cause steps at edge when edge is not horizontal or vertical.
+
+When use nearest enlargement to enlarge image size, it is easy to calculate and will reduce the step, but may cause intensity step, especially when pattern is very narrow.
+
+When use bilinear interpolation to enlarge image size, the edge will be smooth , but it will blur the image, reduce the resolution.
+
+When use bilinear interpolation to enlarge image size, the edge will be shaper than bilinear interpolation, but the calculation is more complex and takes longer times to do interpolation. When there is intensity step at edge, it may induce pixel misplace.
+\section{\textbf{Reference}}\ \ \ \ \ \
+
+\url{https://blog.csdn.net/zhangfuliang123/article/details/76659467}
+
+\section{\textbf{Supplementary}}\ \ \ \ \ \
+
+This is the code used in this project.
+\begin{lstlisting}[title=C++ code for image processing]
+#include <opencv2/opencv.hpp>
+#include <iostream>
+#include <string>
+#include<math.h>
+using namespace cv;
+using namespace std;
+
+
+struct ImgProp{
+	string img_fold;
+	//string save_fold;
+	string type;
+	string img_name;
+	string mark;
+	Mat img;
+	
+
+
+};
+
+//enum functype{ ALR, FLR, Pixen, NEE, Bilinear, Bicubic, FLE };
+enum interptype{ PXR,NEE, Bilinear, Bicubic };
+double PXRenlargement(int x, int y, double Xscale, double Yscale, Mat img){
+	//imshow("cedhihfji" ,img);
+	//cout << "Nearest enlargement" << endl;
+	double val;
+	double xhat = x / Xscale;
+	double yhat = y / Yscale;
+
+	int xproj = ceil(xhat);
+	int yproj = ceil(yhat);
+	val = (double)(*(img.data + img.step[0] * xproj + img.step[1] * yproj));
+	//cout << x << "," << y << "-->" << xhat << "," << yhat << "\t\t" << val << endl;
+	return val;
+
+}
+double Nearestenlargement(int x, int y, double Xscale, double Yscale,Mat img){
+	//imshow("cedhihfji" ,img);
+	//cout << "Nearest enlargement" << endl;
+	double val;
+	double xhat = x / Xscale;
+	double yhat = y / Yscale;
+	
+	int xproj = (ceil(xhat)-xhat)<0.5 ? floor(xhat) :ceil(xhat);
+	int yproj = (ceil(yhat) - yhat)<0.5 ? floor(yhat) : ceil(yhat);
+	val = (double)(*(img.data + img.step[0] * xproj + img.step[1] * yproj));
+	//cout << x << "," << y << "-->" << xhat << "," << yhat << "\t\t" << val << endl;
+	return val;
+
+}
+double Bilinearinterpolation(int x, int y, double Xscale, double Yscale, Mat img){
+	//cout << "Bilinear interpolation" << endl;
+	double val;
+	double xhat = x / Xscale;
+	double yhat = y / Yscale;
+	int x_left = floor(xhat);
+	int x_right = ceil(xhat);
+	int y_left = floor(yhat);
+	int y_right = ceil(yhat);
+	double ll = (double)(*(img.data + img.step[0] * x_left + img.step[1] * y_left));
+	double lr = (double)(*(img.data + img.step[0] * x_left + img.step[1] * y_right));
+	double rl = (double)(*(img.data + img.step[0] * x_right + img.step[1] * y_left));
+	double rr = (double)(*(img.data + img.step[0] * x_right + img.step[1] * y_right));
+	double p = xhat - x_left;
+	double q = yhat - y_left;
+	
+	val = (1 - q)*(p*rl + (1 - p)*ll) + q*(p*lr + (1 - p)*rr);
+	return val;
+
+}
+
+
+double wcubic(double x,double a){
+	double w = 0;
+	if (x < 0) x = -x;
+	if (x < 1) w = (a + 2)*pow(x, 3) - (a + 3)*pow(x, 2) + 1;
+	else if (x<2)  w = a *pow(x, 3) - 5*a*pow(x, 2) + 8*a*x+4;
+	return w;
+}
+Mat get_S_mat(double v){
+	double a = -1;
+	Mat S(4, 1, CV_64FC1);
+	S.at<double>(0, 0) = wcubic(1+v, a);
+	S.at<double>(1, 0) = wcubic( v,  a);
+	S.at<double>(2, 0) = wcubic(1-v, a);
+	S.at<double>(3, 0) = wcubic(2-v, a);
+	return S;
+}
+
+
+double Bilcubicinterpolation(int x, int y, double Xscale, double Yscale, Mat img){
+	//cout << "Bicubic interpolation" << endl;
+	double val;
+	
+	double xhat = x / Xscale;
+	double yhat = y / Yscale;
+	int i = floor(xhat);
+	int j = floor(yhat);
+	double u = xhat - i;
+	double v = yhat - j;
+	
+	Mat B(4, 4, CV_64FC1);
+	for (int k = 0; k < 4;++k)
+	for (int m = 0; m < 4; ++m)
+		B.at<double>(k, m) = (double)(*(img.data + img.step[0] * (i + k - 1) + img.step[1] * (j + m - 1)));
+		//cout << k << m << endl;
+	
+	Mat A = get_S_mat(u);
+	Mat C= get_S_mat(v);
+	Mat ABC= A.t()*B*C;
+	
+
+	val = ABC.at<double>(0, 0);
+	
+	
+	/*
+	cout << "test\n" << test<< endl;
+
+	cout << "yiyiyi" << (double)(*(B.data + B.step[0] * 0 + B.step[1] * 0)) << endl;
+	cout << "onoeone" << (double)(*(B.data + B.step[1] * 0 + B.step[1] * 1)) << endl;
+	cout << "jdfksfjdlk" << (double)(*(B.data + B.step[1] * 2 + B.step[1] * 3)) << endl;
+	cout << "A\n" << A << "\nB\n" << B << "\nC\n" << C << "\nABC\n" << ABC << "\nval\t" << val << endl;
+	*/
+	return val;
+}
+
+
+
+
+
+
+Mat img_resize(Mat img, double Xscale, double Yscale, interptype intype){
+	int xsize = img.rows;
+	int ysize = img.cols;
+	int xlen = floor(xsize*Xscale);
+	int ylen = floor(ysize*Yscale);
+	Mat ima(xlen, ylen, CV_8UC1);
+	
+	for (int x = 0; x <xlen; ++x){
+		uchar * p = ima.ptr<uchar>(x);
+		for (int y = 0; y <ylen; ++y){
+
+			switch (intype){
+			case PXR:p[y] = PXRenlargement(x, y, Xscale, Yscale, img); break;
+			case NEE:p[y] = Nearestenlargement(x, y, Xscale, Yscale, img); break;
+			case Bilinear:p[y] = Bilinearinterpolation(x, y, Xscale, Yscale, img); break;
+			case Bicubic:p[y] = Bilcubicinterpolation(x, y, Xscale, Yscale, img); break;
+			default: cout << "Interpoletation type error !" << endl; break;
+			}
+			
+		}
+		//cout << x << ":\t" << endl;
+	}
+	return ima;
+
+}
+void img_save(ImgProp imgprop){
+	string save_path = imgprop.img_fold + imgprop.img_name + "_" + imgprop.mark + imgprop.type;
+	imwrite(save_path, imgprop.img);
+	imshow(imgprop.mark + "    " + imgprop.img_name, imgprop.img);
+}
+
+
+int main()
+{
+	ImgProp imgprop = {
+		"D://graduated//Image_process//lab//PGM_images//",
+		".pgm" };
+	ImgProp imgsave = { "D://graduated//Image_process//lab//lab_report//lab2//imagesave//",
+		".jpg" };
+	for (int i = 1; i < 3; i++)
+	{
+		if (i == 1)imgprop.img_name = "crosses";
+		else imgprop.img_name = "circles";
+		imgsave.img_name = imgprop.img_name;
+		string img_path = imgprop.img_fold + imgprop.img_name + imgprop.type;
+		Mat img = imread(img_path);
+		
+		imshow("original    " + imgprop.img_name, img);
+		imgsave.img = img;
+		imgsave.mark = "original";
+		img_save(imgsave);
+		
+		
+		// enlage int times
+		imgsave.img = img_resize(img, 2, 3, PXR);
+		imgsave.mark = "PXR_2x3";
+		img_save(imgsave);
+		imgsave.img = img_resize(img, 2, 3, NEE);
+		imgsave.mark = "NEE_2x3";
+		img_save(imgsave);
+		
+		imgsave.img = img_resize(img, 2, 3, Bilinear);
+		imgsave.mark = "Bilinear_2x3";
+		img_save(imgsave);
+	
+		imgsave.img = img_resize(img,2, 3, Bicubic);
+		imgsave.mark = "Bicubic_2x3";
+		img_save(imgsave);
+		// enlage fravtal  times
+		imgsave.img = img_resize(img, 1.7, 1.7, PXR);
+		imgsave.mark = "PXR_1_7x1_7";
+		img_save(imgsave);
+		imgsave.img = img_resize(img, 1.7, 1.7, NEE);
+		imgsave.mark = "NEE_1_7x1_7";
+		img_save(imgsave);
+
+		imgsave.img = img_resize(img, 1.7, 1.7, Bilinear);
+		imgsave.mark = "Bilinear_1_7x1_7";
+		img_save(imgsave);
+
+		imgsave.img = img_resize(img, 1.7, 1.7, Bicubic);
+		imgsave.mark = "Bicubic_1_7x1_7";
+		img_save(imgsave);
+		// reduce fractal times
+		imgsave.img = img_resize(img, 0.7, 0.7, PXR);
+		imgsave.mark = "PXR_0_7x0_7";
+		img_save(imgsave);
+		imgsave.img = img_resize(img, 0.7, 0.7, NEE);
+		imgsave.mark = "NEE_0_7x0_7";
+		img_save(imgsave);
+
+		imgsave.img = img_resize(img, 0.7, 0.7, Bilinear);
+		imgsave.mark = "Bilinear_0_7x0_7";
+		img_save(imgsave);
+
+		imgsave.img = img_resize(img, 0.7, 0.7, Bicubic);
+		imgsave.mark = "Bicubic_0_7x0_7";
+		img_save(imgsave);
+		// reduce int times
+		imgsave.img = img_resize(img, 0.5, 0.5, PXR);
+		imgsave.mark = "PXR_0_5x0_5";
+		img_save(imgsave);
+		imgsave.img = img_resize(img, 0.5, 0.5, NEE);
+		imgsave.mark = "NEE_0_5x0_5";
+		img_save(imgsave);
+
+		imgsave.img = img_resize(img, 0.5, 0.5, Bilinear);
+		imgsave.mark = "Bilinear_0_5x0_5";
+		img_save(imgsave);
+
+		imgsave.img = img_resize(img, 0.5, 0.5, Bicubic);
+		imgsave.mark = "Bicubic_0_5x0_5";
+		img_save(imgsave);
+		
+		
+
+	}
+
+
+	waitKey(0);
+	return 0;
+}
+
+
+
+
+\end{lstlisting}
+
+\end{CJK*}
+\end{document}

@@ -1,0 +1,13 @@
+\select@language {english}
+\contentsline {section}{\textbf {Introduction}}{1}{section*.2}
+\contentsline {section}{\textbf {Method}}{1}{section*.3}
+\contentsline {subsection}{Alternative line reduction \& pixel replication}{1}{section*.4}
+\contentsline {subsection}{Nearest enlargement}{1}{section*.5}
+\contentsline {subsection}{Bilinear interpolation}{1}{section*.6}
+\contentsline {subsection}{Bicubic interpolation}{2}{section*.7}
+\contentsline {section}{\textbf {Results}}{3}{section*.8}
+\contentsline {subsection}{\textbf {Image reduction}}{4}{section*.9}
+\contentsline {subsection}{\textbf {Image enlargement}}{4}{section*.10}
+\contentsline {section}{\textbf {Discussion}}{7}{section*.11}
+\contentsline {section}{\textbf {Reference}}{7}{section*.12}
+\contentsline {section}{\textbf {Supplementary}}{7}{section*.13}

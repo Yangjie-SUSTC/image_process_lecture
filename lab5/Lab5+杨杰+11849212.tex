@@ -1,0 +1,1574 @@
+
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for
+% including it in another document. To do this, you have two options:
+%
+% 1) Copy/paste everything between \begin{document} and \end{document}
+% starting at \begin{titlepage} and paste this into another LaTeX file where you
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and
+% move this file to the same directory as the LaTeX file you wish to add it to.
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+%\documentclass[UTF8]{ctexart}
+
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+ \setlength{\topskip}{1.75cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 0pt % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=2cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+%---------------代码插入-------------------------
+\usepackage{longtable}
+\usepackage{listings}
+\lstset{language=C++}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = matlab,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE South University of Science and Technology of China}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\large class project 4}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Frequency Domain Filtering}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{Jianhong Shi} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=5cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge Frequency Domain Filtering}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerate}
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+%\end{enumerate}
+\section{\textbf{Introduction}}\ \ \ \ \ \ \
+
+Image filtering is a common used method to separate different component from original image. To do this work, it is difficult in spatial domain. In spatial domain, threshold and gradient is common used method, however, these method only consider pixel individually or several pixels around it. When we transfer image into frequency domain, we can divide it into low frequency and high frequency part, so we can easy to do filter and then reconstruct what we want. In frequency domain, multiply equals to convolution in spatial domain, so that this filtering has global influence.
+
+In frequency domain, we should select proper filters, base on cut off frequency, we can divide filers into low pass filter, high pass filter and band pass filter. For low pass filter we want it can let low frequency pass while block higher frequency. However, this ideal filter does not exist in nature, so we design use some mathematical expressions to approach it,like Butterworth filter.
+
+In this experiment, we will construct different filter and learn how to use then to filter image in frequency domain. Finally, high pass filter will be used to sharp image.
+
+
+\section{\textbf{Method}}\ \ \ \ \ \ \
+
+Filter is the transfer function in frequency domain. Image can be transform to frequency domain, then multiply with the filter select what we want. For ideal low pass filter.\eref{eq:ILPF} $D_0$ is the cut off frequency, it only pass frequency component which lower that $D_0$. In this report, we set $\frac{D_0}{D}$ as cut off frequency. But for Gibson effect, when we do reverse FFT to reconstruction, the ideal low pass filter (ILPF)whill induce ringing artifacts in image.\fref{fig:LPF}
+
+\begin{equation}\label{eq:ILPF}
+H(u,v)=
+\left\{
+\begin{array}{lr}
+1 & if D(u,v)\leq D_0\\
+0 & if D(u,v)> D_0
+\end{array}
+\right.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\subfigure[Ideal low pass filter]{
+\includegraphics[height=4 cm]{matlab2/IF.png}}
+\subfigure[Butterworth filter]{
+\includegraphics[height=4 cm]{matlab2/BF.png}}
+\subfigure[Gaussian filter]{
+\includegraphics[height=4 cm]{matlab2/GF.png}}
+\caption{Low pass filters }
+\label{fig:LPF}
+\end{figure}
+
+Butterworth filter (GLPF) is a wildly used low pass filter, when $D_0$ increase, it scut off frequency also increase, $n$ is the order of it.\eref{eq:BLPF} This polynomial filter can recede the ringing artifacts, for it has tails after cut off frequency.\fref{fig:LPF} But as $n$ increase, the ringing artifacts will increase.
+\begin{equation}\label{eq:BLPF}
+H(u,v)=\frac{1}{1+[\frac{D(u,v)}{D_0}]^{2n}}
+\end{equation}
+Gaussian filter (gLPF) is another common used low pass filter, it use Guassian function as transfer function,\eref{eq:GLPF}, it can remove ringing artifacts perfectly in reconstruct image.
+\fref{fig:LPF}
+\begin{equation}\label{eq:GLPF}
+H(u,v)=e^{-D^2(u,v)/2D_0^2}
+\end{equation}
+
+High frequency filter is opposite to low frequency filter, it will block low frequency component. So that we can revers low pass filter to construct high frequency filter.\eref{eq:HPF}
+\begin{equation}\label{eq:HPF}
+H(u,v)=a-H_{LPF}
+\end{equation}
+
+To do frequency filtering, we can multiply the filter to get what we want in frequency,\eref{eq:PF} it is more easy to do in frequency domain. Because, in spatial domain, we should do convolution.
+\begin{equation}\label{eq:PF}
+G(u,v)=H(u,v)F(u,v)
+\end{equation}
+
+
+
+
+
+
+\section{\textbf{Results}}\ \ \ \ \ \ \
+\vspace{-1cm}
+\subsection{\textbf{Filter}}
+\vspace{-0.5cm}
+\subsubsection{Lena}
+\setlength{\intextsep}{0.1cm}
+\setlength{\abovecaptionskip}{0.05cm}
+%%--------------------------------------------  ILPF 0.1------------------------
+
+
+
+
+
+%\begin{table}[H]
+%\centering
+%\begin{tabular}{rccc}
+%   $D_0$& IHPF& BHPF & GHPF \\
+%
+%  0.1& \includegraphics[width=4 cm]{matlab2/lena_ILPF_1.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BLPF_1.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GLPF_1.jpg} \\
+%  0.3& \includegraphics[width=4 cm]{matlab2/lena_ILPF_3.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BLPF_3.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GLPF_3.jpg} \\
+%  0.6& \includegraphics[width=4 cm]{matlab2/lena_ILPF_6.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BLPF_6.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GLPF_6.jpg} \\
+%\end{tabular}
+%%\end{table}
+
+We use ILPF, BLPF and GLPF to filter lena image and set $D_0 = 0.1, 0.3, 0.6, 0.9$, respectively. The use filtered to reconstruction. The filter process in indicate in \fref{fig:lena_ILPF}, we first do FFT to lena image, to transfer it into frequency domain and set $H(x,y)$ base on $D_0$. Then multiply $F(u,v)$ with $H(x,y)$, finally do IFFT to reconstruct image.
+
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+\includegraphics[width=4 cm]{matlab2/lena_original.jpg}}
+\subfigure[$F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/lena_ILPF_1_F_log.jpg}}
+\subfigure[$H(x,y)$]{
+\includegraphics[width=4 cm]{matlab2/lena_ILPF_1_H.jpg}}
+\subfigure[$H(x,y)*F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/lena_ILPF_1_HF_log.jpg}}
+\caption{ILPF filtering process of lena image with $D_0=0.1$ }
+\label{fig:lena_ILPF}
+\end{figure}
+
+The reconstruct image is indicated in \fref{fig:lena}. It is clear to see that with low cut off frequency, the image is more blur. Compare to BLPF and GLPF, ILPF has clear ringing artifacts in reconstruction,especially in low cut off frequency situation. When $D_0 >0.6$, there is no remarkable difference for three filters.
+\begin{longtable}{rccc}
+\centering
+$D_0$& ILPF& BLPH & GLPF \\
+
+  0.1& \includegraphics[width=4 cm]{matlab2/lena_ILPF_1.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BLPF_1.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GLPF_1.jpg} \\
+  0.3& \includegraphics[width=4 cm]{matlab2/lena_ILPF_3.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BLPF_3.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GLPF_3.jpg} \\
+  0.6& \includegraphics[width=4 cm]{matlab2/lena_ILPF_6.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BLPF_6.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GLPF_6.jpg} \\
+  0.9& \includegraphics[width=4 cm]{matlab2/lena_ILPF_9.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BLPF_9.jpg} & \includegraphics[width=4cm]{matlab2/lena_GLPF_9.jpg} \\
+\end{longtable}
+\begin{figure}[H]
+\caption{filtered lena image  with different low pass filters and $D_0$ }\label{fig:lena}
+\end{figure}
+
+
+
+\subsubsection{Bridge}\ \ \ \ \ \ \
+
+We also test these filters in bridge image.The filter process in indicate in \fref{fig:bridge_GLPF}. Compare to ILPF, GLPF also has weight in higher frequency than $D_0$, so that with same $D_0$, GLPF has high frequency component.
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+\includegraphics[width=4 cm]{matlab2/bridge_original.jpg}}
+\subfigure[$F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/bridge_GLPF_1_F_log.jpg}}
+\subfigure[$H(x,y)$]{
+\includegraphics[width=4 cm]{matlab2/bridge_GLPF_1_H.jpg}}
+\subfigure[$H(x,y)*F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/bridge_GLPF_1_HF_log.jpg}}
+\caption{GLPF filtering process of  bridge image with $D_0=0.1$ }
+\label{fig:bridge_GLPF}
+\end{figure}
+
+
+The reconstruct image is indicated in \fref{fig:bridge}. We can still find low $D_0$ cause blur image, for low cut cut off frequency loss too much detail information of image. The ringing artifacts effect in bridge is not clear that lena image, the reason may be that bridge image has more complex background, which let ringing artifacts is difficult to be seen.
+
+
+
+
+
+\begin{longtable}{rccc}
+   $D_0$& IHPF& BHPF & GHPF \\
+
+  0.1& \includegraphics[width=4 cm]{matlab2/bridge_ILPF_1.jpg} &\includegraphics[width=4 cm]{matlab2/bridge_BLPF_1.jpg} & \includegraphics[width=4 cm]{matlab2/bridge_GLPF_1.jpg} \\
+  0.3& \includegraphics[width=4 cm]{matlab2/bridge_ILPF_3.jpg} &\includegraphics[width=4 cm]{matlab2/bridge_BLPF_3.jpg} & \includegraphics[width=4 cm]{matlab2/bridge_GLPF_3.jpg} \\
+  0.6& \includegraphics[width=4 cm]{matlab2/bridge_ILPF_6.jpg} &\includegraphics[width=4 cm]{matlab2/bridge_BLPF_6.jpg} & \includegraphics[width=4 cm]{matlab2/bridge_GLPF_6.jpg} \\
+   \vspace{-0.8cm}\\
+  0.9& \includegraphics[width=4 cm]{matlab2/bridge_ILPF_9.jpg} &\includegraphics[width=4 cm]{matlab2/bridge_BLPF_9.jpg} & \includegraphics[width=4cm]{matlab2/bridge_GLPF_9.jpg} \\
+\end{longtable}
+\begin{figure}[H]
+\caption{filtered bridge image  with different low pass filters and $D_0$ }\label{fig:bridge}
+\end{figure}
+
+
+%--------------------------------------------  ILPF 0.1------------------------
+
+%\subsection{\textbf{ILPF}}\ \ \ \ \ \ \
+
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_1.jpg}}
+%\caption{ILPF filtered lena image with $D_0=0.1$ }
+%\label{fig:lena_ILPF_0.1}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_1.jpg}}
+%\caption{ILPF filtered bridge image with $D_0=0.1$ }
+%\label{fig:bridge_ILPF_0.1}
+%\end{figure}
+%%%--------------------------------------------  ILPF 0.1------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_3.jpg}}
+%\caption{ILPF filtered lena image with $D_0=0.3$ }
+%\label{fig:lena_ILPF_0.3}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_3.jpg}}
+%\caption{ILPF filtered bridge image with $D_0=0.3$ }
+%\label{fig:bridge_ILPF_0.3}
+%\end{figure}
+%
+%%%%--------------------------------------------  ILPF 0.3------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_6.jpg}}
+%\caption{ILPF filtered lena image with $D_0=0.6$ }
+%\label{fig:lena_ILPF_0.6}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_6.jpg}}
+%\caption{ILPF filtered bridge image with $D_0=0.6$ }
+%\label{fig:bridge_ILPF_0.6}
+%\end{figure}
+%%%%--------------------------------------------  ILPF 0.6------------------------
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_ILPF_9.jpg}}
+%\caption{ILPF filtered lena image with $D_0=0.9$ }
+%\label{fig:lena_ILPF_0.9}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_ILPF_9.jpg}}
+%\caption{ILPF filtered bridge image with $D_0=0.9$ }
+%\label{fig:bridge_ILPF_0.9}
+%\end{figure}
+%
+%
+%%%%--------------------------------------------  ILPF 0.9------------------------
+%
+%
+%%%%--------------------------------------------  ILPF 0.9------------------------
+%
+%
+%
+%%%--------------------------------------------  BLPF 0.1------------------------
+%
+%
+%
+%
+%%--------------------------------------------  BLPF 0.1------------------------
+%
+%\subsection{\textbf{BLPF}}\ \ \ \ \ \ \
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_1.jpg}}
+%\caption{BLPF filtered lena image with $D_0=0.1$ }
+%\label{fig:lena_BLPF_0.1}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_1.jpg}}
+%\caption{BLPF filtered bridge image with $D_0=0.1$ }
+%\label{fig:bridge_BLPF_0.1}
+%\end{figure}
+%%%--------------------------------------------  BLPF 0.1------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_3.jpg}}
+%\caption{BLPF filtered lena image with $D_0=0.3$ }
+%\label{fig:lena_BLPF_0.3}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_3.jpg}}
+%\caption{BLPF filtered bridge image with $D_0=0.3$ }
+%\label{fig:bridge_BLPF_0.3}
+%\end{figure}
+%
+%%%%--------------------------------------------  BLPF 0.3------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_6.jpg}}
+%\caption{BLPF filtered lena image with $D_0=0.6$ }
+%\label{fig:lena_BLPF_0.6}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_6.jpg}}
+%\caption{BLPF filtered bridge image with $D_0=0.6$ }
+%\label{fig:bridge_BLPF_0.6}
+%\end{figure}
+%%%%--------------------------------------------  BLPF 0.6------------------------
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_BLPF_9.jpg}}
+%\caption{BLPF filtered lena image with $D_0=0.9$ }
+%\label{fig:lena_BLPF_0.9}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_BLPF_9.jpg}}
+%\caption{BLPF filtered bridge image with $D_0=0.9$ }
+%\label{fig:bridge_BLPF_0.9}
+%\end{figure}
+%
+%
+%%%%--------------------------------------------  BLPF 0.9------------------------
+%
+%
+%%%%--------------------------------------------  BLPF 0.9------------------------
+%
+%
+%\subsection{\textbf{GLPF}}\ \ \ \ \ \ \
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_1.jpg}}
+%\caption{GLPF filtered lena image with $D_0=0.1$ }
+%\label{fig:lena_GLPF_0.1}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_1.jpg}}
+%\caption{GLPF filtered bridge image with $D_0=0.1$ }
+%\label{fig:bridge_GLPF_0.1}
+%\end{figure}
+%%%--------------------------------------------  GLPF 0.1------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_3.jpg}}
+%\caption{GLPF filtered lena image with $D_0=0.3$ }
+%\label{fig:lena_GLPF_0.3}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_3.jpg}}
+%\caption{GLPF filtered bridge image with $D_0=0.3$ }
+%\label{fig:bridge_GLPF_0.3}
+%\end{figure}
+%
+%%%%--------------------------------------------  GLPF 0.3------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_6.jpg}}
+%\caption{GLPF filtered lena image with $D_0=0.6$ }
+%\label{fig:lena_GLPF_0.6}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/bridge_GLPF_6.jpg}}
+%\caption{GLPF filtered bridge image with $D_0=0.6$ }
+%\label{fig:bridge_GLPF_0.6}
+%\end{figure}
+%%%%--------------------------------------------  GLPF 0.6------------------------
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/lena_GLPF_9.jpg}}
+%\caption{GLPF filtered lena image with $D_0=0.9$ }
+%\label{fig:lena_GLPF_0.9}
+%\end{figure}
+
+
+
+
+%%%--------------------------------------------  GLPF 0.9------------------------
+
+
+
+%%
+%
+%
+%
+%
+%
+
+
+
+
+
+
+
+
+
+
+
+\section{\textbf{Fingerprint sharpen}}\ \ \ \ \ \
+
+After above exercise, we have already know how to filter image in frequency domain, now will use high pass filter to extract high frequency of image.
+
+We choose two fingerprint images.\fref{fig:fingerprint_origuinal}, then do FFT to it and filter with high pass filter, which generate base on \eref{eq:HPF}. Finally use a threshold to binarize itto get sharped image. \fref{fig:fingerprint2_HPFB_0.3}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[fingerprint 1]{
+\includegraphics[width=4 cm]{matlab2/fingerprint1_original.jpg}}
+\hspace{4cm}
+\subfigure[fingerprint 2]{
+\includegraphics[width=4 cm]{matlab2/fingerprint2_original.jpg}}
+\caption{Original image of fingerprint images}
+\label{fig:fingerprint_origuinal}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[$F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3_F_log.jpg}}
+\subfigure[$H(x,y)$]{
+\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3_H.jpg}}
+\subfigure[$H(x,y)*F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3_HF_log.jpg}}
+\subfigure[filtered]{
+\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3.jpg}}
+\caption{BHPF filtered bridge image with $D_0=0.3$ }
+\label{fig:fingerprint2_HPFB_0.3}
+\end{figure}
+
+\fref{fig:fingerprint1_HPFG_0.6} is the filtered image of GHPF with $D_0=0.6$, it seem to see that the filtered image be clear that original image, because it remove smug in original image which in low frequency part.
+
+But for \fref{fig:fingerprint2_HPFB_0.3}, the filtered fingerprint i image, there still are several smug in image, to remove these smug, we can use threshold to ignore it.
+\begin{figure}[H]
+\centering
+\subfigure[$F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6_F_log.jpg}}
+\subfigure[$H(x,y)$]{
+\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6_H.jpg}}
+\subfigure[$H(x,y)*F(u,v)$]{
+\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6_HF_log.jpg}}
+\subfigure[filtered]{
+\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6.jpg}}
+\caption{GHPF filtered lena image with $D_0=0.6$ }
+\label{fig:fingerprint1_HPFG_0.6}
+\end{figure}
+
+
+
+
+\fref{fig:fingerprint1} is the sharpen image of fingerprint 1 image with different image and cut off frequency. It is clear to see that, lower cutoff frequency will make greater performance, for when $D_0>0.1$ have already remove mian smug in low frequency, increase cut off frequency will remove more information which let reconstruction be more difficult.
+
+\begin{longtable}{rccc}
+
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+   $D_0$& IHPF& BHPF & GHPF \\
+
+  0.1& \includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_sharp_1.jpg} &\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_sharp_1.jpg} & \includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_sharp_1.jpg} \\
+  0.3& \includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_sharp_3.jpg} &\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_sharp_3.jpg} & \includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_sharp_3.jpg} \\
+  0.6& \includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_sharp_6.jpg} &\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_sharp_6.jpg} & \includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_sharp_6.jpg} \\
+    \\
+  0.9& \includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_sharp_9.jpg} &\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_sharp_9.jpg} & \includegraphics[width=4cm]{matlab2/fingerprint1_HPFG_sharp_9.jpg} \\
+\end{longtable}
+
+\begin{figure}[H]
+\caption{Fingerprint 1 image sharpen with different filters and $D_0$ }\label{fig:fingerprint1}
+\end{figure}
+\vspace{0.5cm}
+
+
+\fref{fig:fingerprint2} is the sharpen image of fingerprint 2 image with different image and cut off frequency. It is clear to see that only when $D_0\leq0.3$, the result is acceptabl
+\vspace{0.5cm}
+\begin{longtable}{rccc}
+%\setlength{\floatsep{-1cm}}
+
+\setlength{\abovecaptionskip}{-2cm}
+\setlength{\belowcaptionskip}{-2cm}
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+   $D_0$& IHPF& BHPF & GHPF \\
+
+  0.1& \includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_sharp_1.jpg} &\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_sharp_1.jpg} & \includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_sharp_1.jpg} \\
+  0.3& \includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_sharp_3.jpg} &\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_sharp_3.jpg} & \includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_sharp_3.jpg} \\
+  0.6& \includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_sharp_6.jpg} &\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_sharp_6.jpg} & \includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_sharp_6.jpg} \\
+  \\
+  \\
+  0.9& \includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_sharp_9.jpg} &\includegraphics[width=4 
+  cm]{matlab2/fingerprint2_HPFB_sharp_9.jpg} & \includegraphics[width=4cm]{matlab2/fingerprint2_HPFB_sharp_9.jpg} \\
+\end{longtable}
+
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{-2cm}
+\caption{Fingerprint 2 image sharpen with different filters and $D_0$ }
+\label{fig:fingerprint2}
+\end{figure}
+
+
+%
+%%%--------------------------------------------  IHPF 0.1------------------------
+%
+%
+%
+%
+%%--------------------------------------------  IHPF 0.1------------------------
+%
+%\subsection{\textbf{IHPF}}\ \ \ \ \ \ \
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_1.jpg}}
+%\caption{IHPF filtered lena image with $D_0=0.1$ }
+%\label{fig:fingerprint1_HPFI_0.1}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_1.jpg}}
+%\caption{IHPF filtered bridge image with $D_0=0.1$ }
+%\label{fig:fingerprint2_HPFI_0.1}
+%\end{figure}
+%%%--------------------------------------------  IHPF 0.1------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_3.jpg}}
+%\caption{IHPF filtered lena image with $D_0=0.3$ }
+%\label{fig:fingerprint1_HPFI_0.3}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_3.jpg}}
+%\caption{IHPF filtered bridge image with $D_0=0.3$ }
+%\label{fig:fingerprint2_HPFI_0.3}
+%\end{figure}
+%
+%%%%--------------------------------------------  IHPF 0.3------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_6.jpg}}
+%\caption{IHPF filtered lena image with $D_0=0.6$ }
+%\label{fig:fingerprint1_HPFI_0.6}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_6.jpg}}
+%\caption{IHPF filtered bridge image with $D_0=0.6$ }
+%\label{fig:fingerprint2_HPFI_0.6}
+%\end{figure}
+%%%%--------------------------------------------  IHPF 0.6------------------------
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFI_9.jpg}}
+%\caption{IHPF filtered lena image with $D_0=0.9$ }
+%\label{fig:fingerprint1_HPFI_0.9}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFI_9.jpg}}
+%\caption{IHPF filtered bridge image with $D_0=0.9$ }
+%\label{fig:fingerprint2_HPFI_0.9}
+%\end{figure}
+%
+%
+%%%%--------------------------------------------  IHPF 0.9------------------------
+%
+%
+%%%%--------------------------------------------  IHPF 0.9------------------------
+%
+%
+%
+%%%--------------------------------------------  BHPF 0.1------------------------
+%
+%
+%
+%
+%%--------------------------------------------  BHPF 0.1------------------------
+%
+%\subsection{\textbf{BHPF}}\ \ \ \ \ \ \
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_1.jpg}}
+%\caption{BHPF filtered lena image with $D_0=0.1$ }
+%\label{fig:fingerprint1_HPFB_0.1}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_1.jpg}}
+%\caption{BHPF filtered bridge image with $D_0=0.1$ }
+%\label{fig:fingerprint2_HPFB_0.1}
+%\end{figure}
+%%%--------------------------------------------  BHPF 0.1------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_3.jpg}}
+%\caption{BHPF filtered lena image with $D_0=0.3$ }
+%\label{fig:fingerprint1_HPFB_0.3}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_3.jpg}}
+%\caption{BHPF filtered bridge image with $D_0=0.3$ }
+%\label{fig:fingerprint2_HPFB_0.3}
+%\end{figure}
+%
+%%%%--------------------------------------------  BHPF 0.3------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_6.jpg}}
+%\caption{BHPF filtered lena image with $D_0=0.6$ }
+%\label{fig:fingerprint1_HPFB_0.6}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_6.jpg}}
+%\caption{BHPF filtered bridge image with $D_0=0.6$ }
+%\label{fig:fingerprint2_HPFB_0.6}
+%\end{figure}
+%%%%--------------------------------------------  BHPF 0.6------------------------
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFB_9.jpg}}
+%\caption{BHPF filtered lena image with $D_0=0.9$ }
+%\label{fig:fingerprint1_HPFB_0.9}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFB_9.jpg}}
+%\caption{BHPF filtered bridge image with $D_0=0.9$ }
+%\label{fig:fingerprint2_HPFB_0.9}
+%\end{figure}
+%
+%
+%%%%--------------------------------------------  BHPF 0.9------------------------
+%
+%
+%%%%--------------------------------------------  BHPF 0.9------------------------
+%
+%
+%\subsection{\textbf{GHPF}}\ \ \ \ \ \ \
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_1.jpg}}
+%\caption{GHPF filtered lena image with $D_0=0.1$ }
+%\label{fig:fingerprint1_HPFG_0.1}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_1_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_1_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_1_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_1.jpg}}
+%\caption{GHPF filtered bridge image with $D_0=0.1$ }
+%\label{fig:fingerprint2_HPFG_0.1}
+%\end{figure}
+%%%--------------------------------------------  GHPF 0.1------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_3.jpg}}
+%\caption{GHPF filtered lena image with $D_0=0.3$ }
+%\label{fig:fingerprint1_HPFG_0.3}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_3_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_3_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_3_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_3.jpg}}
+%\caption{GHPF filtered bridge image with $D_0=0.3$ }
+%\label{fig:fingerprint2_HPFG_0.3}
+%\end{figure}
+%
+%%%%--------------------------------------------  GHPF 0.3------------------------
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_6.jpg}}
+%\caption{GHPF filtered lena image with $D_0=0.6$ }
+%\label{fig:fingerprint1_HPFG_0.6}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_6_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_6_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_6_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_6.jpg}}
+%\caption{GHPF filtered bridge image with $D_0=0.6$ }
+%\label{fig:fingerprint2_HPFG_0.6}
+%\end{figure}
+%%%%--------------------------------------------  GHPF 0.6------------------------
+%
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint1_HPFG_9.jpg}}
+%\caption{GHPF filtered lena image with $D_0=0.9$ }
+%\label{fig:fingerprint1_HPFG_0.9}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\subfigure[$F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_9_F_log.jpg}}
+%\subfigure[$H(x,y)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_9_H.jpg}}
+%\subfigure[$H(x,y)*F(u,v)$]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_9_HF_log.jpg}}
+%\subfigure[filtered]{
+%\includegraphics[width=4 cm]{matlab2/fingerprint2_HPFG_9.jpg}}
+%\caption{GHPF filtered bridge image with $D_0=0.9$ }
+%\label{fig:fingerprint2_HPFG_0.9}
+%\end{figure}
+%
+%
+%%%%--------------------------------------------  GHPF 0.9------------------------\
+%
+%
+
+
+
+%%% result
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\textbf{Discussion}}\ \ \ \ \ \
+
+In this experiment, we can find that although ideal filter has best frequency cut off performance, it will cause artifact effect. In practical, Gaussain or Butterworth filter has better performance. At the same time, we should select proper cut off frequency, bad cut off frequency will loss too much information, which will cause problem in reconstruction.
+
+
+\section{\textbf{Supplementary}}\ \ \ \ \ \
+
+This is the code used in this project.
+\begin{lstlisting}[title=MATLAB code for image processing]
+
+close all
+clear
+clc
+%%
+imapath='D:\graduated\Image_process\lab\PGM_images\';
+savepath='D:\graduated\Image_process\lab\lab_report\lab5\matlab2\';
+namelist={ 'bridge', 'lena'};
+Doset=[ 0.1, 0.3, 0.6, 0.9 ];
+for i=1:length(namelist)
+    name=namelist{i};
+    imgpath=[imapath,name,'.pgm'];
+    ima=imread(imgpath);
+    ima=ima(:,:,1);
+    ima=double(ima);
+    imwrite(disima(ima),[savepath,name,'_original','.jpg'])
+
+     
+     fimg= mydft2(ima);
+    for k=1:length(Doset)
+        Do=Doset(k);
+        HIL=ILPF(Do,ima);
+        HBL=BLPF(Do,2,ima);
+        HGL=GLPF(Do,ima);
+
+        ifimg=FF(HIL,fimg,'_ILPF',Do,name);
+        ifimg=FF(HBL,fimg,'_BLPF',Do,name);
+        ifimg=FF(HBL,fimg,'_GLPF',Do,name);
+    end
+
+end
+
+namelist={ 'fingerprint1', 'fingerprint2'};
+
+for i=1:length(namelist)
+    name=namelist{i};
+    imgpath=[imapath,name,'.pgm'];
+    ima=imread(imgpath);
+    ima=ima(:,:,1);
+    ima=double(ima);
+    imwrite(disima(ima),[savepath,name,'_original','.jpg'])
+
+   
+    fimg= mydft2(ima);
+    for k=1:length(Doset)
+        Do=Doset(k);
+        HPFI(fimg,name,Do,ima);
+        HPFB(fimg,name,Do,ima);
+        HPFG(fimg,name,Do,ima);
+
+    end
+
+
+
+end
+
+
+
+function ifimg=FF(H,fimg,mark,Do,name)
+cot=['_',num2str(Do*10)];
+savepath='D:\graduated\Image_process\lab\lab_report\lab5\matlab2\';
+imwrite(disima(log(H*1000000000+1)),[savepath,name,mark,cot,'_H','.jpg'])
+imwrite(disima(log(fimg)),[savepath,name,mark,cot,'_F_log','.jpg'])
+F=fimg.*H;
+imwrite(disima(log(F)),[savepath,name,mark,cot,'_HF_log','.jpg'])
+
+ifimg=myidft2(F);
+imwrite(disima(real(ifimg)),[savepath,name,mark,cot,'.jpg'])
+end
+
+function []=HPsharp(ima,H,fimg,mark,Do,name)
+cot=['_',num2str(Do*10)];
+savepath='D:\graduated\Image_process\lab\lab_report\lab5\matlab2\';
+ifimg=FF(H,fimg,mark,Do,name);
+
+sima=real(ifimg);%
+
+
+sharpima=im2bw(disima(sima)) ;
+imwrite(disima(sharpima),[savepath,name,mark,'_sharp',cot,'.jpg'])
+
+
+
+end
+
+function H=ILPF(Do,ima)
+    M=size(ima,1);
+    N=size(ima,2);
+    H=ones(M);
+    r=Do*M/2;
+    for x=1:M
+        for y=1:N
+            u = x - M / 2;
+			v = N / 2 - y;
+            R=sqrt(u^2+v^2);
+            if R>r
+                H(x,y)=0;
+            end
+
+
+        end
+    end
+
+end
+
+function H=BLPF(Do,n,ima)
+    M=size(ima,1);
+    N=size(ima,2);
+    H=ones(M);
+    r=Do*M/2;
+    for x=1:M
+        for y=1:N
+            u = x - M / 2;
+			v = N / 2 - y;
+            R=sqrt(u^2+v^2);
+
+            H(x,y)=1/(1+(R/r)^(2*n));
+
+        end
+    end
+
+end
+
+
+function H=GLPF(Do,ima)
+    M=size(ima,1);
+    N=size(ima,2);
+    H=ones(M);
+    r=Do*M/2;
+    for x=1:M
+        for y=1:N
+            u = x - M / 2;
+			v = N / 2 - y;
+            R=sqrt(u^2+v^2);
+            a=0.5*(R/r)^2;
+            H(x,y)=1/exp(a);
+
+        end
+    end
+
+end
+
+
+
+
+function H=HPFG(fimg,name,Do,ima)
+H=-1*GLPF(Do,ima);
+H=H-min(min(H));
+H=1-GLPF(Do,ima);
+HPsharp(ima,H,fimg,'_HPFG',Do,name);
+end
+
+function H=HPFI(fimg,name,Do,ima)
+H=-1*ILPF(Do,ima);
+H=H-min(min(H));
+H=1-ILPF(Do,ima);
+HPsharp(ima,H,fimg,'_HPFI',Do,name);
+end
+
+function H=HPFB(fimg,name,Do,ima)
+H=-1*BLPF(Do,4,ima);
+H=H-min(min(H));
+H=1-BLPF(Do,4,ima);
+HPsharp(ima,H,fimg,'_HPFB',Do,name);
+end
+
+function dima= disima(ima)
+
+ima=round(abs(ima));
+ima(ima==inf)=0;
+maxL=255;
+minL=0;
+mL=maxL-minL;
+maxv=max(max(ima));
+minv=min(min(ima));
+L=maxv-minv;
+dima=(ima-minv)*mL/L+minL;
+%dima=histeq(dima);
+dima=uint8(dima);
+
+end
+
+
+
+
+function myfima= mydft2(I)
+
+M=size(I,1);
+N=size(I,2);
+myfima=zeros(M,N);
+for u=0:M-1
+    for v=0:N-1
+        temp=0;
+        for x=0:M-1
+            for y=0:N-1
+            temp=temp+I(x+1,y+1)*((-1)^(x+y))*exp(-1i*2*pi*(u*x/M+v*y/N));%*((-1)^(x+y))
+            end
+        end
+
+        myfima(u+1,v+1)=temp;
+
+    end
+end
+
+end
+
+function myfima= myidft2(I)
+
+M=size(I,1);
+N=size(I,2);
+myfima=zeros(M,N);
+for x=0:M-1
+    for y=0:N-1
+        temp=0;
+        for u=0:M-1
+            for v=0:N-1
+                temp=temp+I(u+1,v+1)*exp(1i*2*pi*(u*x/M+v*y/N));%*((-1)^(x+y))
+
+            end
+        end
+        myfima(x+1,y+1)=real(temp)/(M*N)*((-1)^(x+y));
+
+    end
+end
+
+end
+}
+
+
+
+
+\end{lstlisting}
+
+\end{CJK*}
+\end{document}

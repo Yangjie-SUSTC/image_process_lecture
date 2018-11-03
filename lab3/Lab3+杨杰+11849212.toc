@@ -1,0 +1,21 @@
+\select@language {english}
+\contentsline {section}{\textbf {Introduction}}{1}{section*.2}
+\contentsline {section}{\textbf {Method}}{1}{section*.3}
+\contentsline {subsection}{\textbf {Translation}}{1}{section*.4}
+\contentsline {subsection}{\textbf {Rotation}}{1}{section*.5}
+\contentsline {subsection}{\textbf {Shear operations}}{2}{section*.6}
+\contentsline {subsection}{\textbf {Smoothing}}{2}{section*.7}
+\contentsline {subsection}{\textbf {Sharpening}}{2}{section*.8}
+\contentsline {subsection}{\textbf {Gamma correction}}{3}{section*.9}
+\contentsline {subsection}{\textbf {Histogram enhancement}}{3}{section*.10}
+\contentsline {section}{\textbf {Results}}{3}{section*.11}
+\contentsline {subsection}{\textbf {Translation}}{4}{section*.12}
+\contentsline {subsection}{\textbf {Rotation}}{4}{section*.13}
+\contentsline {subsection}{\textbf {Shear operations}}{4}{section*.14}
+\contentsline {subsection}{\textbf {Smoothing}}{5}{section*.15}
+\contentsline {subsection}{\textbf {Sharpening}}{6}{section*.16}
+\contentsline {subsection}{\textbf {Gamma correction}}{7}{section*.17}
+\contentsline {subsection}{\textbf {Histogram enhancement}}{8}{section*.18}
+\contentsline {section}{\textbf {Discussion}}{8}{section*.19}
+\contentsline {section}{\textbf {Reference}}{8}{section*.20}
+\contentsline {section}{\textbf {Supplementary}}{8}{section*.21}

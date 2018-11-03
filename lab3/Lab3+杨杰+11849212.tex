@@ -1,0 +1,1062 @@
+
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for
+% including it in another document. To do this, you have two options:
+%
+% 1) Copy/paste everything between \begin{document} and \end{document}
+% starting at \begin{titlepage} and paste this into another LaTeX file where you
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and
+% move this file to the same directory as the LaTeX file you wish to add it to.
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+%\documentclass[UTF8]{ctexart}
+
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+ \setlength{\topskip}{1.75cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 0pt % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=2cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+%---------------代码插入-------------------------
+
+\usepackage{listings}
+\lstset{language=C++}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = C++,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE South University of Science and Technology of China}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\large class project 2}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Affine Transformations and Intensity Transformations }\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{Jianhong Shi} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=5cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge Affine Transformations and Intensity}}
+\centerline{\textbf{\huge Transformations}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerate}
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+%\end{enumerate}
+\section{\textbf{Introduction}}\ \ \ \ \ \ \
+
+Image affine transformation is a kind of method to change image shape, which can be divided into image translation, rotation, shear operation and scaling. All of the affine transformations can be expressed as a matrix transform. The transformed image can be calculated from original image multiply by a transform matrix.\eref{eq:tr} Change the matrix, the transformation can be done.
+\begin{equation}\label{eq:tr}
+  g(x,y)=I(x,y)*T
+\end{equation}
+
+Intensity transformation is a another common used image process method. It use a filter to change the intensity of pixel locally. It slides a N$\times$N filter through image, at each step, it choose all pixel in windows, then change their intensity base on the transformation rules. Intensity transformation can be used to smooth and sharpening image by use different filters. Another kind of intensity transform is gamma correction,which used to change image intensity globally to adjust image contrast.
+
+In this experiment, we will determine the transformation matrix of each affine transformation and show how these transformations change image shape. We will also do intensity transformation such as smoothing, sharpening and gamma correction to comprehend how intensity transformation works.
+
+
+\section{\textbf{Method}}\ \ \ \ \ \ \
+
+\subsection{\textbf{Translation}}\ \ \ \ \ \ \
+
+Translation used to translate image in horizontal and vertical image, it dose not change image shape or size, just change the pixel index in. \eref{m:trans} is its transformation.
+
+\begin{equation}\label{m:trans}
+T_{trans}=
+\left(
+  \begin{array}{ccc}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    tx & ty & 1 \\
+  \end{array}
+\right)
+\end{equation}
+
+\subsection{\textbf{Rotation}}\ \ \ \ \ \ \
+
+Rotation used to rotate image counterclockwise by $\theta$. But before rotation, original point should be set at the center of image. \eref{m:rota} is its transformation. And rotation will change image size because the image is storages as matrix, after rotation interpolation also be used to smooth image. In this experiment, we choose bilinear interpolation.
+\begin{equation}\label{m:rota}
+T_{rotate}=
+\left(
+  \begin{array}{ccc}
+    cos \theta & sin \theta & 0 \\
+    -sin \theta & cos \theta & 0 \\
+    0 & 0 & 1 \\
+  \end{array}
+\right)
+\end{equation}
+\subsection{\textbf{Shear operations}}\ \ \ \ \ \ \
+
+Shear operation used to distort image, it can change image in one dimension while remain another one. For example, vertical shear pull image in vertical axis but remain horizontal axis. \eref{m:sv} is its transformation. Horizontal shear pull image in horizontal axis but remain vertical axis. \eref{m:sh} is its transformation. It also need padding in another axis, for it change image size.
+\begin{equation}\label{m:sv}
+T_{sv}=
+\left(
+  \begin{array}{ccc}
+    1 & 0 & 0 \\
+    s_v & 1 & 0 \\
+    0 & 0 & 1 \\
+  \end{array}
+\right)
+\end{equation}
+
+\begin{equation}\label{m:sh}
+T_{sh}=
+\left(
+  \begin{array}{ccc}
+    1 & s_h & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1 \\
+  \end{array}
+\right)
+\end{equation}
+\subsection{\textbf{Smoothing}}\ \ \ \ \ \ \
+
+There are three filters to do image smoothing: averaging, median and binarization. They has different filters.\eref{eq:ave}. For averaging filter, it set pixel as the average intensity of whole window while median filter chooses medium. Binarization filter do binarization in each window, the threshold can be set, in this experiment we choose OTSU method to determine threshold automatically.
+\begin{equation}\label{eq:ave}
+  g(x,y)=\frac{\sum^a_{s=-a}\sum^b_{t=-b}w(s,t)f(x+s,y+t)}{\sum^a_{s=-a}\sum^b_{t=-b}w(s,t)}
+\end{equation}
+
+
+\subsection{\textbf{Sharpening}}\ \ \ \ \ \ \
+
+There are two methods to sharper image, they use different spatial filters. Sobel is gradient filter, it calculate gradient of image. While Laplacian operator calculate second order gradient of image.\eref{m:sob} Both of them has large value near edge, So add them into original image can shaper image edge.
+\begin{equation}\label{m:sob}
+T_{sobel}=
+\left(
+  \begin{array}{ccc}
+    -1& -2 & -1 \\
+    0& 0 & 0 \\
+    1 & 2 & 1 \\
+  \end{array}
+\right)s
+\ \ \ \
+T_{laplacian}=
+  \left(
+  \begin{array}{ccc}
+    1& 1 & 1 \\
+    1& -8 & 1 \\
+    1 & 1 & 1 \\
+  \end{array}
+\right)
+\end{equation}
+
+
+
+\subsection{\textbf{Gamma correction}}\ \ \ \ \ \ \
+
+Gamma correction used to map image intensity nonlinearly by exponential function. The less $\gamma$\eref{eq:gamma} is the brighter image is, because it will increase the dark area intensity larger than brighter area. In this experiment, we set $c=1$.
+\begin{equation}\label{eq:gamma}
+  s=cr^\gamma
+\end{equation}
+\subsection{\textbf{Histogram enhancement}}\ \ \ \ \ \ \
+Histogram enhancement can be complete by histogram equalization.\eref{eq:his}. It first get the histogram of image,  then for each pixel intensity, calculate how much it accounts for whole histogram. Finally sum all intensity less than it to calculate its CDF and multiply with gray scale to map it to new intensity. For global enhancement, it calculate histogram of whole image. While local one just select one part of image as ROI, calculate the CDF in this area. In this experiment, we set the local window as 20 pixels and the gray scale as 256.
+\begin{equation}\label{eq:his}
+  S_k=(\sum^k_{j=0}\frac{n_j}{MN})(L-1)=(\sum^k_{j=0}p(r_k))(L-1)
+\end{equation}
+
+
+
+
+\section{\textbf{Results}}\ \ \ \ \ \ \
+
+There is the original image of crosses and Lena, one is binary image while another is gray image.\fref{fig:original}
+\begin{figure}[H]
+\centering
+\subfigure[Crosses]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_original.jpg}}
+\subfigure[Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/lena_original.jpg}}
+\caption{Original images}
+\label{fig:original}
+\end{figure}
+
+
+\subsection{\textbf{Translation}}\ \ \ \ \ \ \
+
+We transfer image by 30 pixels at vertical axis and 40 pixels at horizontal axis. Form \fref{fig:Translation}, the transformation is well, the image be translated to southeast while remain shape. The original position be padded as gray.
+\begin{figure}[H]
+\centering
+\subfigure[Crosses]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_Trans30_40.jpg}}
+\subfigure[Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/lena_Trans30_40.jpg}}
+\caption{Translated by 30 x 40 pixels}
+\label{fig:Translation}
+\end{figure}
+
+\subsection{\textbf{Rotation}}\ \ \ \ \ \ \
+
+The image is rotated by $45^o$, the whole image size increased and the new area is padded by gray. Actually the meaning area still same to original image size. But during rotation, interpolation be used, so the solution of image decrease, especially in crosses image.
+\begin{figure}[H]
+\centering
+\subfigure[Crosses]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_rota45.jpg}}
+\subfigure[Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/lena_rota45.jpg}}
+\caption{Rotated 45$^o$}
+\label{fig:Rotation}
+\end{figure}
+
+
+
+\subsection{\textbf{Shear operations}}\ \ \ \ \ \ \
+
+Shear operation can change image shape, from \fref{fig:Shear}, it is clear to see that horizontal shear stretch image in horizontal axis while vertical shear pull image in vertical axis. Because they change image size, they also need padding and interpolation. In shear axis, the solution decreased for interpolation.
+\begin{figure}[H]
+\centering
+\subfigure[0.3 horizontal shear]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4.5 cm]{imagesave/crosses_Shear0_H.jpg}}
+\subfigure[0.3 horizontal shear Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4.5 cm]{imagesave/lena_Shear0_H.jpg}}
+\subfigure[0.5 vertical shear crosses]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=3cm]{imagesave/crosses_Shear0_V.jpg}}
+\subfigure[0.5 vertical shear Lena]{
+\includegraphics[width= 3cm]{imagesave/lena_Shear0_V.jpg}}
+\caption{Image shear }
+\label{fig:Shear}
+\end{figure}
+
+\subsection{\textbf{Smoothing}}\ \ \ \ \ \ \
+
+In this part, we use three different filters to do smoothing. First one is average filter. The filter size is $N\times N$, set all weight as $\frac{1}{N^2}$ and do dot multiply with pixels in window, then sum all values to get the average value as new pixel intensity. It is clear to see that average filter smooth the image but also blur the image.\fref{fig:ave} The larger the filter size, the more blur the image.
+
+For median filter, the size is same. but choose the median as new pixel value. From \fref{fig:med}, the image be smooth but less blur than average filter when increase filter size. Actually it may decrease image intensity a little.
+
+For binary filter, increase filter size may make edge thicker, so that sharp image but decrease
+\begin{figure}[H]
+\centering
+\subfigure[3x3 average crosses]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_ave3.jpg}}
+\subfigure[5x5 average crosses]{
+%\label{supsubfig:dye_concentration_bias_cell}
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_ave5.jpg}}
+\subfigure[3x3 average Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/lena_ave3.jpg}}
+\subfigure[5x5 average Lena]{
+\includegraphics[width=4 cm]{imagesave/lena_ave5.jpg}}
+\caption{Image smoothing by average filter}
+\label{fig:ave}
+\end{figure}
+details.\fref{fig:bin}. The smooth performance is the worst in three filters.
+
+\begin{figure}[H]
+\centering
+\subfigure[3x3 median crosses]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_med3.jpg}}
+\subfigure[5x5 median crosses]{
+%\label{supsubfig:dye_concentration_bias_cell}
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_med5.jpg}}
+\subfigure[3x3 median Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/lena_med3.jpg}}
+\subfigure[5x5 median Lena]{
+\includegraphics[width=4 cm]{imagesave/lena_med5.jpg}}
+\caption{Image smoothing by median filter}
+\label{fig:med}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[3x3 binarization crosses]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_bin3.jpg}}
+\subfigure[5x5 binarization crosses]{
+%\label{supsubfig:dye_concentration_bias_cell}
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_bin5.jpg}}
+\subfigure[3x3 binarization Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/lena_bin3.jpg}}
+\subfigure[5x5 binarization Lena]{
+\includegraphics[width=4 cm]{imagesave/lena_bin5.jpg}}
+\caption{Image smoothing by binarization filter}
+\label{fig:bin}
+\end{figure}
+
+\subsection{\textbf{Sharpening}}\ \ \ \ \ \ \
+
+
+
+\begin{figure}[H]
+\centering
+\subfigure[Laplacian sharpened]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4.0 cm]{imagesave/crosses_Lap.jpg}}
+\subfigure[Sobel sharpened crosses]{
+%\label{supsubfig:dye_concentration_bias_cell}
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4.0 cm]{imagesave/crosses_Sob.jpg}}
+\subfigure[Laplacian sharpened ]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/lena_Lap.jpg}}
+\subfigure[Sobel sharpened Lena]{
+\includegraphics[width=4 cm]{imagesave/lena_Sob.jpg}}
+\caption{Sharpen crosses and Lena with Laplacian and Sobel operator}
+\label{fig:sharp}
+\end{figure}
+The sharp operators has high intensity near edge, so that they enhance the edge. Compare to Sobel and Laplacian operator, it is clear to see that Laplacian operator has finer edge while Sobel operator create thicker edge. It the image of Sobel operator seems more blur that Laplacian.\fref{fig:sharp} From crosses image, it is clear to see that, Laplacian operator will cause cavity in line but enhance edge while Sobel did not. This also shows that Sobel has larger action domain that Laplacian.
+
+
+\subsection{\textbf{Gamma correction}}\ \ \ \ \ \ \
+
+Form \fref{fig:ganmmacrosses}, it is clear to see the lower the $\gamma$, the brighter the image. The gamma correction can increase dark background.
+\begin{figure}[H]
+\centering
+\subfigure[$\gamma=0.1$]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_Gamma_0_1.jpg}}
+\subfigure[$\gamma=0.4$]{
+\includegraphics[width=4 cm]{imagesave/crosses_Gamma_0_4.jpg}}
+\subfigure[$\gamma=0.6$]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_Gamma_0_6.jpg}}
+\subfigure[$\gamma=0.8$]{
+\includegraphics[width=4 cm]{imagesave/crosses_Gamma_0_8.jpg}}
+\caption{Gamma correction of crosses using gamma value 0.1, 0.4, 0.6, 0.8}
+\label{fig:ganmmacrosses}
+\end{figure}
+ For Lena image, when $\gamma <0.4$, the image be overexposure.\fref{fig:ganmmaLena}. The gamma correction also enhance background.
+\begin{figure}[H]
+\centering
+\subfigure[$\gamma=0.1$]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/Lena_Gamma_0_1.jpg}}
+\subfigure[$\gamma=0.4$]{
+\includegraphics[width=4 cm]{imagesave/Lena_Gamma_0_4.jpg}}
+\subfigure[$\gamma=0.6$]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/Lena_Gamma_0_6.jpg}}
+\subfigure[$\gamma=0.8$]{
+\includegraphics[width=4 cm]{imagesave/Lena_Gamma_0_8.jpg}}
+\caption{Gamma correction of Lena using gamma value 0.1, 0.4, 0.6, 0.8}
+\label{fig:ganmmaLena}
+\end{figure}
+
+\subsection{\textbf{Histogram enhancement}}\ \ \ \ \ \ \
+
+It is clear to see that for global histogram, the crosses image has low contrast. The reason is that the image only has two intensities: 0 or 1. So it map 0 to brighter intensity. However, for Lena image, it has good performance. The reason is that the intensity distribution in Lena image is broader, so the enhancement just stretch intensity in range of 0 to 255.
+\begin{figure}[H]
+\centering
+\subfigure[Global crosses]{
+%\label{supsubfig:dye_concentration_SNR_cell}
+\includegraphics[width=4 cm]{imagesave/crosses_His_global.jpg}}
+\subfigure[Local crosses]{
+\includegraphics[width=4 cm]{imagesave/crosses_His_local.jpg}}
+\subfigure[Global Lena]{
+%\label{supsubfig:dye_concentration_bias_cell}
+\includegraphics[width=4 cm]{imagesave/Lena_His_global.jpg}}
+\subfigure[Local Lena]{
+\includegraphics[width=4 cm]{imagesave/Lena_His_local.jpg}}
+\caption{Histogram enhancement of crosses and Lena }
+\label{fig:his}
+\end{figure}
+%\begin{itemize}
+
+For local histogram enhancement. Lena has poor performance, because in selected window, the intensity distribution may be too concentrate, while crosses image has better performance than global one. Because when windows at edge, there is has balanced intensity distribution which induces shadow near edge.
+\
+\section{\textbf{Discussion}}\ \ \ \ \ \
+
+In this experiment, we can find that average filter can smooth image but also induce blur, in most situation , median filter has better performance in smoothing. For sharpening, Laplacian has finer edge than Sobel but Sobel can emphasize edge base on thicker border.Global histogram enhancement should be used when the image intensity distribute balance while local histogram enhancement can be considered in unbalanced intensity distribution.
+\section{\textbf{Reference}}\ \ \ \ \ \
+
+\url{https://blog.csdn.net/zhangfuliang123/article/details/76659467}
+
+\section{\textbf{Supplementary}}\ \ \ \ \ \
+
+This is the code used in this project.
+\begin{lstlisting}[title=C++ code for image processing]
+#include <opencv2/opencv.hpp>
+#include <iostream>
+#include <string>
+#define _USE_MATH_DEFINES
+#include<math.h>
+#include "PUABLIC.h"
+
+
+using namespace cv;
+using namespace std;
+
+
+enum Sheartype{ V,H};
+enum Smoothtype{ave,med,bin};
+enum Sharpentype{ Lap, Sob };
+double Bilinearinterpolation(double xhat, double yhat, Mat img){
+	double val;
+	int x_left = floor(xhat);
+	int x_right = ceil(xhat);
+	int y_left = floor(yhat);
+	int y_right = ceil(yhat);
+	uint ll = *(img.data + img.step[0] * x_left + img.step[1] * y_left);
+	uint lr = *(img.data + img.step[0] * x_left + img.step[1] * y_right);
+	uint rl = *(img.data + img.step[0] * x_right + img.step[1] * y_left);
+	uint rr = *(img.data + img.step[0] * x_right + img.step[1] * y_right);
+	double p = xhat - x_left;
+	double q = yhat - y_left;
+
+	val = (1 - q)*(p*rl + (1 - p)*ll) + q*(p*lr + (1 - p)*rr);
+	return val;
+
+}
+
+struct Result{
+	double x;
+	double y;
+};
+
+uint getval(int x, int y, Mat img){
+	
+	int xsize = img.rows;
+	int ysize = img.cols;
+	double val;
+	if (0 <= x&&x < xsize && 0 <= y&&y < ysize)
+		val = Bilinearinterpolation(x, y, img);
+		
+	else
+		val = 100;
+
+	return uint(val);
+
+}
+uint getvalat(int x, int y, Mat img){
+
+	int xsize = img.rows;
+	int ysize = img.cols;
+	double val;
+	if (0 <= x&&x < xsize && 0 <= y&&y < ysize + 1)
+		val = img.at<uchar>(y,x);//这样取值只有1/4大小
+
+	else
+		val = 100;
+
+	return val;
+
+}
+int getmed(Mat roi){
+	Mat mat_dst; //mat_src：需要排序的Mat类型的矩阵变量
+	Mat smat;
+	roi.copyTo(mat_dst);
+	//cout << roi << endl;
+	mat_dst = mat_dst.reshape(0, 1);
+	//cout << mat_dst << endl;
+	cv::sort(mat_dst, smat, CV_SORT_EVERY_ROW + CV_SORT_ASCENDING);
+	//cout << smat << endl;
+	int c = ceil(smat.cols / 2.0) - 1;
+	int medval =  *(mat_dst.data + mat_dst.step[1] * c);
+	return medval;
+}
+
+
+struct Result gettrans(double x, double y, Mat img,int flag){
+	struct Result trans;
+	int xsize = img.rows;
+	int ysize = img.cols;
+	if (flag){
+		trans.x = x - xsize / 2.0 +0.5;
+		trans.y = ysize/2.0 - y  -0.5;
+	}
+	else{
+		trans.x = x + xsize / 2.0 -0.5;
+		trans.y = ysize / 2.0  -0.5 - y;
+	}
+	return trans;
+
+}
+
+
+Mat Transform(int Xlen, int Ylen, Mat img, Mat T ){
+	Mat I = Mat::zeros(Xlen, Ylen, CV_8UC1);
+	for (int x = 0; x < Xlen; ++x){
+		uchar * p = I.ptr<uchar>(x);
+		for (int y = 0; y < Ylen; ++y){
+			struct Result tans = gettrans(x, y, I, 1);
+			//cout << "(x,y) (" << x << "," << y << ")\t";
+			//cout << "(tx,ty) (" << tans.x << "," << tans.y << ")\t";
+
+			Mat XY(3, 1, CV_64FC1);
+			XY.at<double>(0, 0) = tans.x;
+			XY.at<double>(1, 0) = tans.y;
+			XY.at<double>(2, 0) = 1;
+			//cout << "T " << T << "\t";
+			Mat UXY = T*XY;
+			double ux = UXY.at<double>(0, 0);
+			double uy = UXY.at<double>(1, 0);
+			tans = gettrans(ux, uy, img, 0);
+			//cout << "(ux,uy) (" << ux << "," << uy << ")\t";
+			//cout << "(ox,oy) (" << tans.x << "," << tans.y << ")\t"<<endl;
+			uint b = getval(ceil(tans.x), ceil(tans.y), img);
+			p[y] = b;
+
+		}
+
+	}
+	return I;
+
+}
+
+Mat Rotation(Mat img, double theta){
+	
+	
+	int xsize = img.rows;
+	int ysize = img.cols;
+	double r = sqrt(pow(xsize, 2) + pow(ysize, 2)) / 2.0;
+	double beta = acos(xsize / (2*r));
+	theta = theta*M_PI / 180;
+	Mat T = Mat::eye(3, 3, CV_64FC1);
+	T.at<double>(0, 0) = cos(theta);
+	T.at<double>(0, 1) = sin(theta);
+	T.at<double>(1, 0) = -sin(theta);
+	T.at<double>(1, 1) = cos(theta);
+	
+
+	double Xlen = ceil(r*max(abs(cos(beta + theta)), abs(cos(beta - theta))) * 2);
+	double Ylen = ceil(r*max(abs(sin(beta + theta)), abs(sin(beta - theta))) * 2);
+	Mat I = Transform(Xlen, Ylen, img, T);
+
+	return I;
+}
+
+
+
+Mat Translation(Mat img, double tx,double  ty){
+
+
+	int xsize = img.rows;
+	int ysize = img.cols;
+	Mat T = Mat::eye(3, 3, CV_64FC1);
+	T.at<double>(0, 2) = -tx /2.0;
+	T.at<double>(1, 2) = ty / 2.0;
+	
+
+	int Xlen = xsize + ceil(tx);
+	int Ylen = ysize + ceil(ty);
+	Mat I = Transform(Xlen, Ylen, img, T);
+	return I;
+}
+
+
+
+Mat Shear(Mat img, double s, Sheartype ST  ){
+
+	int xsize = img.rows;
+	int ysize = img.cols;
+	Mat T = Mat::eye(3, 3, CV_64FC1);
+	int Xlen = xsize;
+	int Ylen = ysize;
+	switch (ST){
+	case H:{T.at<double>(1, 0) = s;
+			Ylen += ceil(Xlen*s);
+			}
+		break;
+	case V:{T.at<double>(0, 1) = s;
+			Xlen += ceil(Ylen*s);
+			}
+		break;
+	default: cout << "Shear type error !" << endl; break;
+	}
+	Mat I = Transform(Xlen, Ylen, img, T);
+	
+	return I;
+}
+
+
+Mat Smooth(Mat img, int size, Smoothtype SMT){
+	int r = floor(size / 2);
+
+	int xsize = img.rows;
+	int ysize = img.cols;
+	int Xlen = xsize - size + 1;
+	int Ylen = ysize - size + 1;
+	Mat I = Mat::zeros(Xlen, Ylen, CV_8UC1);
+	Mat broi;
+	double b;
+	for (int x = 0; x < Xlen; ++x){
+		uchar * p = I.ptr<uchar>(x);
+		for (int y = 0; y < Ylen; ++y){
+			Mat roi(img, Rect(y, x, size,size));
+			//cout<<size << "roi\n" << roi << endl;
+			switch (SMT){
+			case ave:{Scalar c = mean(roi);
+				b = c[0];	
+			}
+				break;
+			case med:{ b = getmed(roi);
+
+
+			}
+				break;
+			case bin:{ threshold(roi, broi, 0, 255, CV_THRESH_OTSU);
+				
+				b = broi.at<uchar>(0, 0);
+				//cout << "roi" <<roi <<"\nbroi" << broi << "\n ui" << b<<endl;
+			} break;
+
+			default: cout << "Smooth type error !" << endl; break;
+			}
+			p[y] = uint(b);
+			
+
+			//Mat XY(3, 1, CV_64FC1);
+			//uint b = getval(ceil(tans.x), ceil(tans.y), img);
+			//;
+		}
+
+	}
+	return I;
+}
+
+Mat Sharpen(Mat img,  Sharpentype SPT){
+	Mat T = Mat::ones(3, 3, CV_64FC1);
+	Mat I = Mat::zeros(img.rows - 2, img.cols - 2, CV_8UC1);
+	Mat Fr;
+
+	switch (SPT){
+	case Lap: {T.at<double>(1, 1) = -8 ; }break;
+	case Sob:{ T = (Mat_<double>(3, 3) <<-1,0,1,-2,0,2,-1,0,1 ); }break;
+	default: cout << "Sharpen type error !" << endl; break;
+
+	}
+	for (int x = 0; x < img.rows-2; ++x){
+		uchar * p = I.ptr<uchar>(x);
+		for (int y = 0; y < img.cols-2; ++y){
+			Mat roi(img, Rect(y, x, 3,3));
+			roi.convertTo(Fr, CV_64FC1);
+			//cout << "roi\n" << roi << endl;
+			double AB = T.dot(Fr);
+			uint a = *(img.data + img.step[0] * (x + 1) + img.step[1] * (y + 1));
+			double c = ((AB + a) + abs(AB + a)) / 2;
+			
+			p[y] = uint(c);
+			
+			
+		}
+	}
+
+	return I;
+
+}
+
+
+Mat GammaCorect(Mat img, double gama,int c){
+
+	Mat I = Mat::zeros(img.rows , img.cols, CV_8UC1);
+	
+
+	for (int x = 0; x < img.rows; ++x){
+		uchar * p = I.ptr<uchar>(x);
+		for (int y = 0; y < img.cols; ++y){
+			
+			uint r = *(img.data + img.step[0] * x  + img.step[1] * y );
+			double s = 255.0*pow(r/255.0, gama);
+			p[y] = uint(s);
+
+
+		}
+	}
+
+	return I;
+
+}
+
+Mat HisEnh(Mat img){
+
+	Mat I = Mat::zeros(img.rows, img.cols, CV_8UC1);
+	
+	double minv = 0.0, maxv = 0.0;	
+	double* minp = &minv;	
+	double* maxp = &maxv; 	
+	minMaxIdx(img, minp, maxp);
+	//cout << *minp << endl;
+	//cout << *maxp << endl;
+	int L = *maxp - *minp + 1;
+	int histSize[] = { L }; /
+	float midRanges[] = { *minp, *maxp + 1 };
+	
+	int channels = 0;
+	MatND dstHist; //hist
+	
+	
+	const float *ranges[] = { midRanges };
+	
+	calcHist(&img, 1, &channels, Mat(), dstHist, 1, histSize, ranges, true, false);
+	//cout << dstHist << endl;
+	for (int x = 0; x < img.rows; ++x){
+		uchar * p = I.ptr<uchar>(x);
+		for (int y = 0; y < img.cols; ++y){
+			uint r = *(img.data + img.step[0] * x + img.step[1] * y);
+			int s = r - *minp+1;
+			Mat roi(dstHist, Rect(0, 0, 1,s));
+			//cout << r << "\n" << roi << endl;
+			Scalar c = sum(roi);
+			Scalar d = sum(dstHist);
+			double pk = c[0]/d[0];//get percent
+			p[y] = 255 * pk;
+		}
+	}
+	
+	return I;
+
+
+Mat Hislocal(Mat img,int size){
+	int r = floor(size / 2);
+
+	int xsize = img.rows;
+	int ysize = img.cols;
+	int Xlen = xsize - size + 1;
+	int Ylen = ysize - size + 1;
+	Mat I = Mat::zeros(Xlen, Ylen, CV_8UC1);
+
+	double b;
+	for (int x = 0; x < Xlen; ++x){
+		uchar * p = I.ptr<uchar>(x);
+		for (int y = 0; y < Ylen; ++y){
+			Mat local(img, Rect(y, x, size, size));
+			Mat hisenlocal = HisEnh(local);
+				b = hisenlocal.at<uchar>(0, 0);
+				p[y] = uint(b);
+		}
+
+	}
+	return I;
+
+}
+
+
+void lab2_main()
+{
+	ImgProp imgprop = {
+		"D://graduated//Image_process//lab//PGM_images//",
+		".pgm" };
+	ImgProp imgsave = { "D://graduated//Image_process//lab//lab_report//lab3//imagesave//",
+		".jpg" };
+	for (int i = 1; i < 3; i++)
+	{
+		if (i == 1)imgprop.img_name = "lena";
+		else imgprop.img_name = "crosses";
+		imgsave.img_name = imgprop.img_name;
+		string img_path = imgprop.img_fold + imgprop.img_name + imgprop.type;
+		Mat img = imread(img_path, 0);
+		
+		imshow("original    " + imgprop.img_name, img);
+		imgsave.img = img;
+		imgsave.mark = "original";
+		img_save(imgsave);
+
+		double tx = 30;
+		double ty = 40;
+		imgsave.img = Translation(img, tx, ty);
+		imgsave.mark = "Trans" + to_string(int(tx)) + "_" + to_string(int(ty));
+		img_save(imgsave);
+
+		double theta = 45;
+		imgsave.img = Rotation(img, theta);
+		imgsave.mark = "rota"+to_string(int(theta));
+		img_save(imgsave);
+
+		
+
+
+		double  s = 0.5;
+		imgsave.img = Shear(img, s, V);
+		imgsave.mark = "Shear" + to_string(int(s)) + "_V";
+		img_save(imgsave);
+
+		s = 0.3;
+		imgsave.img = Shear(img, s, H);
+		imgsave.mark = "Shear" + to_string(int(s)) + "_H";
+		img_save(imgsave);
+
+		int size=3;
+		imgsave.img = Smooth(img, size, ave);
+		imgsave.mark = "ave" + to_string(int(size)) ;
+		img_save(imgsave);
+		imgsave.img = Smooth(img, size, med);
+		imgsave.mark = "med" + to_string(int(size));
+		img_save(imgsave);
+		imgsave.img = Smooth(img, size, bin);
+		imgsave.mark = "bin" + to_string(int(size));
+		img_save(imgsave);
+
+		size = 5;
+		imgsave.img = Smooth(img, size, ave);
+		imgsave.mark = "ave" + to_string(int(size));
+		img_save(imgsave);
+		imgsave.img = Smooth(img, size, med);
+		imgsave.mark = "med" + to_string(int(size));
+		img_save(imgsave);
+		imgsave.img = Smooth(img, size, bin);
+		imgsave.mark = "bin" + to_string(int(size));
+		img_save(imgsave);
+
+		imgsave.img = Sharpen(img, Lap);
+		imgsave.mark = "Lap" ;
+		img_save(imgsave);
+		imgsave.img = Sharpen(img, Sob);
+		imgsave.mark = "Sob";
+		img_save(imgsave);
+		
+		int c = 1;
+		double gamaset[] = { 0.1,0.4,0.6,0.8 };
+		for (int i = 0; i < 4; i++){
+			double gama = gamaset[i];
+		imgsave.img = GammaCorect(img, gama, c);
+		imgsave.mark = "Gamma_" + to_string(int(gama)) + "_" + to_string(int(gama * 10));
+		img_save(imgsave);
+		}
+		
+		imgsave.img = HisEnh(img);
+		imgsave.mark = "His_global";
+		img_save(imgsave);
+		imgsave.img = Hislocal(img,20);
+		imgsave.mark = "His_local";
+		img_save(imgsave);
+	}
+
+
+}
+
+
+
+
+
+\end{lstlisting}
+
+\end{CJK*}
+\end{document}

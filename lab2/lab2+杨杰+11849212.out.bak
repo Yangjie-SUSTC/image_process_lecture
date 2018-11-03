@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section*.2}{Introduction}{}% 1
+\BOOKMARK [1][-]{section*.3}{Method}{}% 2
+\BOOKMARK [2][-]{section*.4}{Alternative line reduction \046 pixel replication}{section*.3}% 3
+\BOOKMARK [2][-]{section*.5}{Nearest enlargement}{section*.3}% 4
+\BOOKMARK [2][-]{section*.6}{Bilinear interpolation}{section*.3}% 5
+\BOOKMARK [2][-]{section*.7}{Bicubic interpolation}{section*.3}% 6
+\BOOKMARK [1][-]{section*.8}{Results}{}% 7
+\BOOKMARK [2][-]{section*.9}{Image reduction}{section*.8}% 8
+\BOOKMARK [2][-]{section*.10}{Image enlargement}{section*.8}% 9
+\BOOKMARK [1][-]{section*.11}{Discussion}{}% 10
+\BOOKMARK [1][-]{section*.12}{Reference}{}% 11
+\BOOKMARK [1][-]{section*.13}{Supplementary}{}% 12

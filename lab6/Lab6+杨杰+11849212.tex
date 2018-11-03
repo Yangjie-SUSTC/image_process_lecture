@@ -1,0 +1,871 @@
+
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for
+% including it in another document. To do this, you have two options:
+%
+% 1) Copy/paste everything between \begin{document} and \end{document}
+% starting at \begin{titlepage} and paste this into another LaTeX file where you
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and
+% move this file to the same directory as the LaTeX file you wish to add it to.
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+%\documentclass[UTF8]{ctexart}
+
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+ \setlength{\topskip}{1.75cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 0pt % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=1.35cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+\usepackage{longtable}
+%---------------代码插入-------------------------
+
+\usepackage{listings}
+\lstset{language=matlab}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = matlab,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\newcommand{\tref}[1]{\textbf{Tab.\ref{#1}}}
+\newcommand\mytitle{Image Restoration}
+\newcommand\myadvisor{Jianhong Shi}
+\newcommand\myshuxin{\large class project 5}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Southern University of Science and Technology}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\myshuxin}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries \mytitle}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{\myadvisor} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=8cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge \mytitle}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerateti
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+%\end{enumerate}
+\section{\textbf{Introduction}}\ \ \ \ \ \ \
+
+Image restoration is a kind of method to recover image from noised image or remove illumination light. Its core is how to process image in frequency domain with different filters. Besides this, some pre-processing step can be applied on original images so that the transfer function of filter can be easier to be found.
+
+
+In this project, we will create homomorphic filter to enhance image and use bandreject to remove  sinusoidal noise from images. Finally determine whether face in image by image correlation.
+
+
+\section{\textbf{Method}}\ \ \ \ \ \ \
+\vspace{-1cm}
+\subsection{Homomorphic filter}\ \ \ \ \ \ \
+In most practical condition, the image compose of illuminate light and reflection light.\eref{eq:f} The illuminate light light up project, then project reflect light, so that the project can be seen. In some situation, we want to remove illuminate light to enhance image especially when illuminate light is too bright.
+\begin{equation}\label{eq:f}
+  f(x,y)=i(x,y)r(xy)
+\end{equation}
+
+\begin{equation}\label{eq:HF}
+  H(u,v)=(\gamma_H - \gamma_L)[1-e^{-c\frac{D^2(u,v)}{D^2_0}}] + \gamma_L  \hspace{2cm}\gamma_H>1, \gamma_L <1
+\end{equation}
+
+To do this processing, we can use homomorphic filter. \eref{eq:HF}, which can attenuate low frequency component. Because illuminate light usually has low variation. But to use this filter, we should transfer original image to its ln form. This step let the homomorphic filter more easy to be found. Then do frequency filtering by FFT and reverse FFT. However, we used the ln form of image, so that the recover image should transfered to exponent form. Till now, we can remove illuminate light to enhance image.\eref{eq:homo}
+
+
+
+
+\begin{equation}\label{eq:homo}
+\begin{split}
+&f(x,y)      \xrightarrow{\ln}    \ln[ i(x,y)]+\ln [r(x,y)]  \xrightarrow{\mathfrak{F}}        F_i(u,v) +F_r(u,v) \\    \xrightarrow{*H} &     H*F_i +H*F_r   \xrightarrow{\mathfrak{F}} i'(x,y)+r'(x,y)
+\xrightarrow{\exp}   g(x,y)=e^{i'(x,y)}e
+^{r'(x,y)}
+\end{split}
+\end{equation}
+
+
+
+\subsection{Bandreject filter}\ \ \ \ \ \ \
+In last experiment, we used low pass filter (LPF) and high pass filter (HPF). Except them, we can also reject one region of frequency in frequency domain, this filter is bandreject filter(BRF). BRF has two important parameters, one is cut off frequency $D_0$, another is bandwidth $W$, bandwidth is the rejection region length of BRF. Like LPF abd HPF, BRF also has three common form, the ideal one reject all frequency when the distance between frequency and cut off frequency no more than half of bandwidth $W$. Butterworth and Gaussian also has their form in \tref{tab:filter}.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|ccc|}
+  \hline
+  Ideal& Butterworth& Gaussian\\
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  $ H(u,v)
+\left\{
+\begin{array}{lr}
+0 & \ |D-D_0|\leq \frac{W}{2}\\
+1& otherwise
+\end{array}
+\right.$& $H(u,v)=\frac{1}{1+[\frac{DW}{D^2-D^2_0}]^{2n}}$ & $H(u,v)=1-e^{-[\frac{D^2-D^2_0}{DW}]^2}$\\
+  \hline
+\end{tabular}
+\caption{Bandreject filters}\label{tab:filter}
+\end{table}
+
+The sinusoid noise is the noise which generated by sinusoid function. \eref{eq:noise} In frequency domian, it  is a point. Its distance from original point is the angular frequency $r$.
+
+
+\begin{equation}\label{eq:noise}
+\begin{split}
+ noise(x,y)=&A*(cos(2\pi*r*x/M)+cos(2\pi*r*y/N)+\\
+ &cos(2\pi*(r_xx/M+r_y*y/N))+cos(2\pi*(-r_x*x/M+r_y*y)/N)))\\
+ & \hspace{3cm}r_x^2+r_y^2=r^2
+\end{split}
+\end{equation}
+
+
+
+
+\subsection{Image correlation}\ \ \ \ \ \ \
+Correlation is mathematical method to calculate the related coefficient of two images. The higher the value, the more close between two images. For image, the correlation calculation is convolution. However, convolution in spatial domain can be transfered to frequency domain as multiply form.\eref{eq:conv} The convolution equals to multiply with conjugate of one frequency image. Then do reverse FFT can get the correlation matrix.
+\begin{equation}\label{eq:conv}
+  f_e(x,y)\otimes g_e(x,y)\Leftrightarrow F^*(u,v)G(u,v)
+\end{equation}
+
+
+\begin{equation}\label{eq:period}
+\begin{split}
+  P\geq &M_1+M_2-1\\
+  Q\geq &N_1+N_2-1
+  \end{split}
+\end{equation}
+
+However, the convolution my cause wraparound error. to avoid it, we should do zero padding for each image. The padding size is shown in \eref{eq:period}. Only at west north of image has value, other positions are 0.\eref{eq:pad}
+
+
+
+% conv________________________________________
+ \begin{equation}\label{eq:pad}
+ f_e(x,y)
+\left\{
+\begin{array}{lr}
+f(x,y)&0\leq x\leq M-1 \ and\  0\leq y\leq N-1\\
+0 & M\leq x\leq P\ or  N\leq x\leq Q
+\end{array}
+\right.
+\end{equation}
+
+
+
+
+
+
+\section{\textbf{Results}}\ \ \ \ \ \ \
+\vspace{-1cm}
+\subsection{Homomorphic filter}\ \ \ \ \ \ \
+In this part we choose bridge and goldhill images and set $D_0=120$, then change $\gamma_L, \gamma_H$ to see their influence.
+
+
+For bridge image, it indicate that after processed by ln function, its horizontal bright line disappeared in frequency image.\fref{fig:bridge}
+\vspace{-0.5cm}
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+\includegraphics[height=4 cm]{matlab2/bridge_original.jpg}}
+\hspace{2cm}
+\subfigure[Frequency image]{
+\includegraphics[height=4 cm]{matlab2/bridge_F.jpg}}
+\hspace{2cm}
+\subfigure[log frequency image]{
+\includegraphics[height=4 cm]{matlab2/bridge_EF.jpg}}
+
+\caption{Images of bridge}
+\label{fig:bridge}
+\end{figure}
+
+
+
+\vspace{-0.5cm}
+\begin{longtable}{rccc}
+   & $\gamma_H=1.5$& $\gamma_H=2 $&$ \gamma_H=3 $\\
+
+  \rotatebox{90}{$\gamma_L =0.1$} & \includegraphics[width=4 cm]{matlab2/bridge_homo_gl_10_gh_150_D0_120.jpg} &\includegraphics[width=4 cm]{matlab2/bridge_homo_gl_10_gh_200_D0_120.jpg} & \includegraphics[width=4 cm]{matlab2/bridge_homo_gl_10_gh_300_D0_120.jpg} \\
+  \rotatebox{90}{$\gamma_L =0.25$} & \includegraphics[width=4 cm]{matlab2/bridge_homo_gl_25_gh_150_D0_120.jpg} &\includegraphics[width=4 cm]{matlab2/bridge_homo_gl_25_gh_200_D0_120.jpg} & \includegraphics[width=4 cm]{matlab2/bridge_homo_gl_25_gh_300_D0_120.jpg} \\
+   \rotatebox{90}{$\gamma_L =0.5$} & \includegraphics[width=4 cm]{matlab2/bridge_homo_gl_50_gh_150_D0_120.jpg} &\includegraphics[width=4 cm]{matlab2/bridge_homo_gl_50_gh_200_D0_120.jpg} & \includegraphics[width=4 cm]{matlab2/bridge_homo_gl_50_gh_300_D0_120.jpg} \\
+
+\end{longtable}
+\setlength{\abovecaptionskip}{0.05cm}
+\begin{figure}[H]
+%\setlength{\abovecaptionskip}{-2cm}
+\caption{Enhance bridge by homomorphic filter with $D_0=120$ }
+\label{fig:homo_bridge}
+\end{figure}
+
+
+When $\gamma_H$ fixed, the higher $\gamma_L$, the brighter image is and the more details be enhanced. When $\gamma_L$ fixed, the lower $\gamma_H$, the brighter image is and the more details be enhanced.
+So that lower $\gamma$ induce higher image quantity.
+
+The results of goldhill image is similar with bridge image.
+
+\vspace{-0.5cm}
+\begin{figure}[H]
+\centering
+\subfigure[original]{
+\includegraphics[height=4 cm]{matlab2/goldhill_original.jpg}}
+\hspace{2cm}
+\subfigure[Frequency image]{
+\includegraphics[height=4 cm]{matlab2/goldhill_F.jpg}}
+\hspace{2cm}
+\subfigure[log frequency image]{
+\includegraphics[height=4 cm]{matlab2/goldhill_EF.jpg}}
+
+\caption{Images of goldhill}
+\label{fig:goldhill}
+\end{figure}
+
+\vspace{-0.5cm}
+\begin{longtable}{rccc}
+%\setlength{\floatsep{-1cm}}
+
+%\setlength{\abovecaptionskip}{-2cm}
+%\setlength{\belowcaptionskip}{-2cm}
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+   & $\gamma_H=1.5$& $\gamma_H=2 $&$ \gamma_H=3 $\\
+
+  \rotatebox{90}{$\gamma_L =0.1$} & \includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_10_gh_150_D0_120.jpg} &\includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_10_gh_200_D0_120.jpg} & \includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_10_gh_300_D0_120.jpg} \\
+  \rotatebox{90}{$\gamma_L =0.25$} & \includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_25_gh_150_D0_120.jpg} &\includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_25_gh_200_D0_120.jpg} & \includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_25_gh_300_D0_120.jpg} \\
+   \rotatebox{90}{$\gamma_L =0.5$} & \includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_50_gh_150_D0_120.jpg} &\includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_50_gh_200_D0_120.jpg} & \includegraphics[width=4 cm]{matlab2/goldhill_homo_gl_50_gh_300_D0_120.jpg} \\
+
+\end{longtable}
+\vspace{-0.5cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0.05cm}
+\caption{Enhance goldhill by homomorphic filter with $D_0=120$ }
+\label{fig:homo_goldhill}
+\end{figure}
+
+
+
+
+\subsection{Bandreject filter}\ \ \ \ \ \ \
+sinusoid noise is a kind of periodic noise. In this lab, we set $r=100, A=255$, and after adding noise, the image covered with periodic dark and bright blocks. The original Lena face is hard to see. In frequency domain, several points added on original frequency image. These points are located at a ring which radius is $r$.
+
+
+\begin{longtable}{rccc}
+%\setlength{\floatsep{-1cm}}
+
+%\setlength{\abovecaptionskip}{-2cm}
+%\setlength{\belowcaptionskip}{-2cm}
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+   $ $& IBJF& BBJF & GBJF \\
+
+  \rotatebox{90}{Filter} & \includegraphics[width=4 cm]{matlab2/lena_IBJHF.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BBJHF.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GBJHF.jpg} \\
+  \rotatebox{90}{Filtered} & \includegraphics[width=4 cm]{matlab2/lena_IBJF_D0_100_w_10_F.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BBJF_D0_100_w_10_F.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GBJF_D0_100_w_10_F.jpg} \\
+  \rotatebox{90}{Denoised} & \includegraphics[width=4 cm]{matlab2/lena_IBJF_D0_100_w_10.jpg} &\includegraphics[width=4 cm]{matlab2/lena_BBJF_D0_100_w_10.jpg} & \includegraphics[width=4 cm]{matlab2/lena_GBJF_D0_100_w_10.jpg} \\
+\end{longtable}
+
+\begin{figure}[H]
+%\setlength{\abovecaptionskip}{-2cm}
+\caption{Denoising Lena by different filters with $D_0=100, w=10$ }
+\label{fig:denoise}
+\end{figure}
+
+All the filters generate a attenuation ring in frequency domain, whose radius is $r$ and width is $W$. After filtering, the ring points caused by sinusoid noise be removed. For denoised image, the IBJF one has little artifact, and GBJF one still has some sinusoid noise residual. The BBJF has best performance.
+
+\begin{figure}[H]
+\vspace{0.1cm}
+\centering
+\subfigure[Lena]{
+\includegraphics[height=4 cm]{matlab2/lena_original.jpg}}
+\subfigure[noised Lena]{
+\includegraphics[height=4 cm]{matlab2/lena_Noise.jpg}}
+\subfigure[Frequency domain of Lena]{
+\includegraphics[height=4 cm]{matlab2/lena_F.jpg}}
+\subfigure[Frequency domain of noised Lena]{
+\includegraphics[height=4 cm]{matlab2/lena_Noise_F.jpg}}
+
+\caption{Images of noising}
+\label{fig:noise}
+\end{figure}
+
+
+
+
+\subsection{Image correlation}\ \ \ \ \ \ \
+In this part, I take a photo of my face in office then cut out face region as face template. Take another image of office as background, in this image, there is no face.\fref{fig:face}
+\begin{figure}[H]
+\centering
+\subfigure[face template]{
+\includegraphics[height=4 cm]{matlab2/face.jpg}}
+\hspace{2cm}
+\subfigure[face in background]{
+\includegraphics[height=4 cm]{matlab2/face_back.jpg}}
+\hspace{2cm}
+\subfigure[background]{
+\includegraphics[height=4 cm]{matlab2/back.jpg}}
+
+\caption{Images for face detection}
+\label{fig:face}
+\end{figure}
+
+Then pad zeros to original image \fref{fig:padding} until all image has the same size as \eref{eq:period}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[face template]{
+\includegraphics[height=4 cm]{matlab2/face_padding.jpg}}
+\hspace{2cm}
+\subfigure[face in background]{
+\includegraphics[height=4 cm]{matlab2/face_back_padding.jpg}}
+\hspace{2cm}
+\subfigure[background]{
+\includegraphics[height=4 cm]{matlab2/back_padding.jpg}}
+
+\caption{Padded images}
+\label{fig:padding}
+\end{figure}
+
+Finally calculate the correlation image of them. There are a spike in \ffref{fig:conv}{b}(red rectangle). While \ffref{fig:conv}{a} has no. This indicate that there are face in face in background image, this result is correction.
+\begin{figure}[H]
+\centering
+\subfigure[face-background]{
+\includegraphics[height=4 cm]{matlab2/conv_face_back.jpg}}
+\hspace{3cm}
+\subfigure[face-face in background]{
+\includegraphics[height=4 cm]{matlab2/conv_face_face_back.jpg}}
+
+\caption{Correlated images}
+\label{fig:conv}
+\end{figure}
+
+
+%\begin{itemize}
+
+\
+\section{\textbf{Discussion}}\ \ \ \ \ \
+
+In this experiment, we can find that homomorphic filter can remove illuminate light to enhance image. However the hyper parameters of the filter is hard to determine base on the original image. At most condition this is a skillful method.
+
+The bandreject filter can remove noise from image. However, it require noise concentrate in one region. usually, the noise also very to separate form original image. In practice, we often choose notch filter which only block on frequency noise. This filter is a point in frequency rather than a ring.
+
+The correlation can be used to detect whether template in a image. but this method has low accuracy. Usually this correlation will be influenced by background. The difference between negative and positive is too small to distinguish.
+
+
+
+\section{\textbf{Supplementary}}\ \ \ \ \ \
+
+This is the code used in this project.
+\begin{lstlisting}[title=matlab code for image processing]
+
+close all
+clear
+clc
+%%
+imapath='D:\graduated\Image_process\lab\PGM_images\';
+savepath='D:\graduated\Image_process\lab\lab_report\lab6\matlab2\';
+namelist={ 'bridge', 'goldhill'};
+Doset=[ 60 80 120 160 200 240 ];
+GL=[  0.1 0.25 0.5 ];
+GH=[ 1.5 2 3 ];
+%% homomorphic filter
+for i=1:length(namelist)
+    name=namelist{i};
+    imgpath=[imapath,name,'.pgm'];
+    ima=imread(imgpath);
+    ima=ima(:,:,1);
+    ima=double(ima)+1;
+    imwrite(disima(ima),[savepath,name,'_original','.jpg'])
+     fimg=fftshift(fft2(ima));
+     imwrite(disima(log(real(fimg))),[savepath,name,'_F','.jpg']);
+
+     lnima=log(ima);
+     fimg=fftshift(fft2(lnima));
+     imwrite(disima(log(real(fimg))),[savepath,name,'_EF','.jpg']);
+     %fimg= mydft2(ima);
+    for k=1:length(Doset)
+         for j=1:length(GL)
+              for m=1:length(GH)
+            Do=Doset(k);
+            gl=GL(j);
+            gh=GH(m);
+            H=homo(gl,gh,Do,1,lnima);
+            mark=['_homo_gl_',num2str(gl*100),'_gh_',num2str(gh*100),'_D0_',num2str(Do)];
+            iimg=HOMOF(H,fimg,mark,name);
+
+
+              end
+         end
+    end
+
+end
+%%  sinusoidal noise
+namelist={ 'lena'};
+
+for i=1:length(namelist)
+    name=namelist{i};
+    imgpath=[imapath,name,'.pgm'];
+    ima=imread(imgpath);
+    ima=ima(:,:,1);
+    ima=double(ima);
+    imwrite(disima(ima),[savepath,name,'_original','.jpg'])
+    fimg=fftshift(fft2(ima));
+    imwrite(disima(fimg),[savepath,name,'_F','.jpg'])
+
+    Nima=addSiNoise(ima);
+    imwrite(disima(Nima),[savepath,name,'_Noise','.jpg'])
+    Nfimg=fftshift(fft2(Nima));
+    imwrite(disima(Nfimg),[savepath,name,'_Noise_F','.jpg'])
+
+        Do=100;
+        w=10;
+
+        H=IBJF(Do,w,Nima);
+        imwrite(disima(H),[savepath,name,'_IBJHF','.jpg'])
+        mark=['_IBJF_D0_',num2str(Do),'_w_',num2str(w)];
+        img=BJ(H,Nfimg,savepath,name,mark);
+
+        H=BBJF(Do,w,2,Nima);
+        imwrite(disima(H),[savepath,name,'_BBJHF','.jpg'])
+        mark=['_BBJF_D0_',num2str(Do),'_w_',num2str(w)];
+        img=BJ(H,Nfimg,savepath,name,mark);
+
+        H=GBJF(Do,w,Nima);
+        imwrite(disima(H),[savepath,name,'_GBJHF','.jpg'])
+        mark=['_GBJF_D0_',num2str(Do),'_w_',num2str(w)];
+        img=BJ(H,Nfimg,savepath,name,mark);
+
+
+end
+%%  corelaction
+imgpath=[savepath,'face','.jpg'];
+face=double(rgb2gray(imread(imgpath)));
+imgpath=[savepath,'face_back','.jpg'];
+face_back=double(rgb2gray(imread(imgpath)));
+imgpath=[savepath,'back','.jpg'];
+back=double(rgb2gray(imread(imgpath)));
+[pface,pback]=padding(face,back);
+imwrite(disima(pface),[savepath,'face','_padding','.jpg'])
+imwrite(disima(pback),[savepath,'back','_padding','.jpg'])
+conv_F_B=ifft2(conj(fft2(pface)).*fft2(pback));
+imwrite(disima(conv_F_B),[savepath,'conv','_face_back','.jpg']);
+Oconv_F_B=removePadd(conv_F_B,back);
+imwrite(disima(Oconv_F_B),[savepath,'conv_RP','_face_back','.jpg']);
+
+[pface,pface_back]=padding(face,face_back);
+imwrite(disima(pface_back),[savepath,'face_back','_padding','.jpg']);
+conv_F_FB=ifft2(conj(fft2(pface)).*fft2(pface_back));
+%imwrite(disima(conv_F_FB),[savepath,'conv','_face_face_back','.jpg']);
+Oconv_F_B=removePadd(conv_F_FB,face_back);
+imwrite(disima(Oconv_F_B),[savepath,'conv_RP','_face_face_back','.jpg']);
+
+
+
+
+
+
+
+
+
+
+
+
+%%
+
+%% padding
+function [pima1,pima2]=padding(ima1,ima2)
+M1=size(ima1,1);
+N1=size(ima1,2);
+M2=size(ima2,1);
+N2=size(ima2,2);
+temp=zeros(M1+M2-1,N1+N2-1);
+temp(1:M1,1:N1)=ima1;
+pima1=temp;
+
+temp=zeros(M1+M2-1,N1+N2-1);
+temp(1:M2,1:N2)=ima2;
+pima2=temp;
+end
+
+%% padding
+function ima1=removePadd(pima1,oima1)
+M1=size(oima1,1);
+N1=size(oima1,2);
+
+
+ima1=pima1(1:M1,1:N1);
+
+
+end
+%%
+
+
+function H=homo(gl,gh,Do,c,lnima)
+
+ N=size(lnima,1);
+    M=size(lnima,2);
+    H=ones(M);
+    for x=1:M
+        for y=1:N
+            u = x - M / 2;
+			v = y-N / 2;
+            R=sqrt(u^2+v^2);
+
+                H(y,x)=(gh-gl)*(1-exp(-1*c*(R/Do)^2))+gl;
+
+        end
+    end
+
+end
+
+
+function ima=HOMOF(H,fimg,mark,name)
+
+savepath='D:\graduated\Image_process\lab\lab_report\lab6\matlab2\';
+
+F=fimg.*H;
+%imwrite(disima(log(F)),[savepath,name,mark,cot,'_homoF_log','.jpg'])
+ifimg=ifft2(fftshift(F));
+%ifimg=myidft2(F);
+ima=exp(real(ifimg));
+imwrite(disima(ima),[savepath,name,mark,'.jpg'])
+end
+%%
+function Nimg=addSiNoise(ima)
+
+N=size(ima,1);
+M=size(ima,2);
+noise=zeros(N,M);
+for x=1:M
+    for y=1:N
+
+        r=100;
+        ux=60;
+        vy=80;
+
+        noise(y,x)=255*(cos(2*pi*r*(x-1)/M)+cos(2*pi*r*(y-1)/N)+cos(2*pi*(ux*(x-1)/M+vy*(y-1)/N))+cos(2*pi*(-1*ux*(x-1)/M+vy*(y-1)/N)));%sin(2*pi*(ux*(x-1)/M+vy*(y-1)/N))
+
+    end
+end
+Nimg=ima+noise;
+
+end
+
+
+
+
+
+function img=BJ(H,Nfimg,savepath,name,mark)
+f=H.*Nfimg;
+imwrite(disima(f),[savepath,name,mark,'_F','.jpg'])
+img=ifft2(fftshift(f));
+imwrite(disima(img),[savepath,name,mark,'.jpg'])
+
+
+
+
+end
+
+function H=IBJF(Do,w,ima)
+    M=size(ima,2);
+    N=size(ima,1);
+    H=ones(M);
+    r=Do;
+    for x=1:M
+        for y=1:N
+            u = x - M / 2;
+			v = y - N / 2;
+            R=sqrt(u^2+v^2);
+            if abs(R-r)<=w/2
+                H(y,x)=0;
+            end
+
+        end
+    end
+
+end
+
+function H=BBJF(Do,w,n,ima)
+    M=size(ima,2);
+    N=size(ima,1);
+    H=ones(M);
+    r=Do;
+    for x=1:M
+        for y=1:N
+            u = x - M / 2;
+			v = y - N / 2;
+            R=sqrt(u^2+v^2);
+
+                H(y,x)=1/(1+(R*w/(R^2-Do^2))^(2*n));
+
+
+        end
+    end
+
+end
+
+
+function H=GBJF(Do,w,ima)
+     M=size(ima,2);
+    N=size(ima,1);
+    H=ones(M);
+    r=Do;
+    for x=1:M
+        for y=1:N
+            u = x - M / 2;
+			v = y - N / 2;
+            R=sqrt(u^2+v^2);
+            th=(R^2-Do^2)/(R*w);
+
+                H(y,x)=1-1/exp(th^2);
+
+
+        end
+    end
+
+end
+
+
+
+
+
+function dima= disima(oima)
+
+ima=round(abs(oima));
+ima(ima==inf)=0;
+maxL=255;
+minL=0;
+mL=maxL-minL;
+maxv=max(max(ima));
+minv=min(min(ima));
+L=maxv-minv;
+dima=(ima-minv)*mL/L+minL;
+%dima=histeq(dima);
+dima=uint8(dima);
+
+end
+
+
+
+
+
+
+\end{lstlisting}
+
+\end{CJK*}
+\end{document}
