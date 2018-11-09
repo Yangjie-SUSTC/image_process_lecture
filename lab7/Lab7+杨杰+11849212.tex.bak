@@ -385,20 +385,15 @@ Observe the noised Lena image, it is vary hard to determine the noise pattern \f
 
 
 \subsection{\textbf{Noise filters}}\ \ \ \ \ \ \
-The noise of all three Lena images seems to be salt and pepper noise. So that plot the histogram of each image. $LenaD2$ and $LenaD3$ image are papper salt noise for there are lost $0$ and $255$ point. However, for $LenaD1$ dose not have many extreme points. Its noise seems to be Gaussain noise.
+The noise of all three Lena images seems to be salt and pepper noise. So that plot the histogram of each image. $LenaD2$ and $LenaD3$ image are papper salt noise for there are lost $0$ and $255$ point. However, for $LenaD1$ dose not have many extreme points. Its noise seems to be Gaussian noise. \fref{fig:denoise}
 
 For $LenaD1$, median filter has best performance. Mean filter also has acceptable performance, but it induce little blur. Adaptive filter still has several granule in image.
 
-For $LenaD2$, median filter has best performance. Mean filter also has acceptable performance, but it induce little blur. Adaptive filter still has several granule in image.
+For $LenaD2$, also median filter has best performance. Alpha-trimmed mean filter also has acceptable performance, but it induce little blur. Arithmetic mean filter cannot remove noise clearly. Geometric mean filter still has many black dots in image. Adaptive filter will corrode image to produce oil painting effect.
 
-For $LenaD3$, median filter has best performance. Mean filter also has acceptable performance, but it induce little blur. Adaptive filter still has several granule in image.
+For $LenaD3$, alpha-trimmed mean filter has best performance. Median filter also has acceptable performance, but it induce little blur. Arithmetic mean filter still has several granule in image. Geometric mean filter still has many black dots in image. Adaptive filter still has several granule in image.
 
-For $LenaD3$, median filter has best performance. Mean filter also has acceptable performance, but it induce little blur. Adaptive filter still has several granule in image.
-
-For $LenaD3$, median filter has best performance. Mean filter also has acceptable performance, but it induce little blur. Adaptive filter still has several granule in image.
-
-For $LenaD3$, median filter has best performance. Mean filter also has acceptable performance, but it induce little blur. Adaptive filter still has several granule in image.
-.
+For Arithmetic mean filter $LenaD1$ has best performance. $LenaD2$ and $LenaD3$ have several granule.
 
 
 \begin{longtable}{rccc}
@@ -431,22 +426,24 @@ For $LenaD3$, median filter has best performance. Mean filter also has acceptabl
 \label{fig:denoise}
 \end{figure}
 
+For Geometric mean filter $LenaD1$ has best performance. $LenaD2$ and $LenaD3$ have dark dots. 
+
+For Median filter $LenaD2$ has best performance. $LenaD1$ and $LenaD3$ blur too much. 
+
+For Alpha-trimmed mean filter $LenaD2$ has best performance. $LenaD1$ and $LenaD3$ blur too much.
+ 
+For Adaptive mean filter $LenaD2$ has best performance. $LenaD1$ and $LenaD3$ have several granule in image.
+
 
 \
 \section{\textbf{Discussion}}\ \ \ \ \ \
 
-In this experiment, we can find that when use alternative line reduction to reduce image size, it is easy to calculate but it may remove some horizontal or vertical lines, especially when these lines are very narrow. This may cause information drop.
+In this experiment, we can find that noise can be removed by spatial filter or frequency filter. For salt pepper noise. Lots or extreme points is its character, we can remove these extreme point and mean filter or median filter to remove salt pepper noise.
 
-When use pixel replication to enlarge image size, it is also very easy to calculate. But it will cause steps at edge when edge is not horizontal or vertical.
+For line dark noise, we can use low pass filter to remove it. However, the cut off frequency setting is a skillful work.
 
-When use nearest enlargement to enlarge image size, it is easy to calculate and will reduce the step, but may cause intensity step, especially when pattern is very narrow.
+For all of five filters. median filter has best performance for salt pepper. It not only can remove noise point but also avoid blur. Median filter also has good enough performance for Gaussian noise. Geometric mean filter is bad for salt pepper filter. Because for salt pepper noise, there are many very low intensity point which even be $0$. Unfortunately, geometric mean filter calculate neighborhood product, this near zero point will decrease product to zero.
 
-When use bilinear interpolation to enlarge image size, the edge will be smooth , but it will blur the image, reduce the resolution.
-
-When use bilinear interpolation to enlarge image size, the edge will be shaper than bilinear interpolation, but the calculation is more complex and takes longer times to do interpolation. When there is intensity step at edge, it may induce pixel misplace.
-\section{\textbf{Reference}}\ \ \ \ \ \
-
-\url{https://blog.csdn.net/zhangfuliang123/article/details/76659467}
 
 \section{\textbf{Supplementary}}\ \ \ \ \ \
 

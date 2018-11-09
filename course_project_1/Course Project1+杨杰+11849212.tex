@@ -1,0 +1,552 @@
+
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for
+% including it in another document. To do this, you have two options:
+%
+% 1) Copy/paste everything between \begin{document} and \end{document}
+% starting at \begin{titlepage} and paste this into another LaTeX file where you
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and
+% move this file to the same directory as the LaTeX file you wish to add it to.
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+%\documentclass[UTF8]{ctexart}
+
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+ \setlength{\topskip}{1.75cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 0pt % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=1.35cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+\usepackage{longtable}
+%---------------代码插入-------------------------
+\usepackage{pythonhighlight}
+\usepackage{listings}
+\lstset{language=python}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = matlab,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\newcommand\mytitle{Basic image processing}
+\newcommand\myadvisor{Jianhong Shi}
+\newcommand\myshuxin{\large course project 1}
+
+
+
+
+\usepackage{makecell}
+\usepackage{array}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Southern University of Science and Technology}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\myshuxin}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries \mytitle}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{\myadvisor} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=8cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge \mytitle}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerate}
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+%\end{enumerate}
+\newsavebox{\mybox}
+\newcolumntype{X}[1]{>{\begin{lrbox}{\mybox}}c<{\end{lrbox}\makecell[#1]{\mbox{\usebox\mybox}}}}
+\section{\textbf{Introduction}}
+
+
+ These course project is compilation of former class projects. In this course project, we should do log transformation, gamma correction with different gamma value on three different PGM images. In second problem, we will generate a image which gray  levels varying from $200$ to $220$ using gaussian distribution. After that insert a square in the range $[80, 100]$, finally remove the gray background. In third problem, we should write a function which can set filter size and weight coefficients to do spatial filtering. In forth problem, noised be added into image, and different size mean filter will be used to remove noise. In fifth problem, unsharp masking technique required to enhance three images. In last problem, IHPF, BHPF, GHPF will be implied on three images.
+ 
+ After finishing all these six problems, students could know how to do basic image processing like enhancement, filtering, transformation.
+
+
+\section{\textbf{Method}}
+%\vspace{-1cm}
+\subsection{Log transformation}
+
+Log transformation is a kind of method to increase image intensity. The general form of the log transformation is \eref{eq:log}. Where $c$ is a constant, and it is assumed that $r \geq 0$. Before log transformation, image intensity should be normalized to $[0,1]$, so that the formulation we used is \eref{eq:mylog}.
+\begin{equation}\label{eq:log}
+  s=c*log(1+r)
+\end{equation}
+
+\begin{equation}\label{eq:mylog}
+  s=255*\frac{log(1+r/255)}{log2}
+\end{equation}
+
+\subsection{Gamma correction}
+
+Gamma correction used to map image intensity nonlinearly by exponential function. The less $\gamma$ \eref{eq:gamma} is the brighter image is, because it will increase the dark area intensity larger than brighter area. In this experiment, same to log transformation, we should normalize $r$ to $[0,1]$, so that the formulation used is \eref{eq:mygamma}.
+\begin{equation}\label{eq:gamma}
+  s=cr^\gamma
+\end{equation}
+\begin{equation}\label{eq:mygamma}
+  s=255*\Big(\frac{r}{255}\Big)^\gamma
+\end{equation}
+
+\subsection{Background removing}
+
+Base on the intensity difference of background and foreground, there is no crosstalk between them, so that we set a threshold ($130$) to distinguish which group the pixel should be classified. The algorithm is:
+\begin{lstlisting}
+for pixel in image:
+    if pixel >130:
+        pixel=0  
+\end{lstlisting}
+
+
+\subsection{Custom mask}
+
+First use standard input function to read input value from keyboard. Then transfer input values to mask. After that select the same size of mask area (ROI) from image and do dot multiplication to calculate summation value. Finally use mean value to reset intensity and remove to next pixel. The algorithm is:
+\begin{lstlisting}
+for pixel in image:
+    get ROI
+    S=sum(ROI*mask)
+    pixel=S/length(mask)
+\end{lstlisting}
+
+\subsection{Noise removing}
+
+At this session, first add random noise to image, we set the noise is in range $[0,100]$, then use the mask filter made in last section to do mean filtering by setting all wights  coefficients to $1$. The formulation is \eref{eq:cam}
+\begin{equation}\label{eq:cam}
+  \hat{f}(x,y)=\frac{1}{|mn|}\sum_{(s,t) \in Np(m*n)}g(s,t)
+\end{equation}
+
+\subsection{Image unsharpen}
+
+A process that has been used for many years by the printing and publishing industry to sharpen images consists of subtracting an unsharp (smoothed) version of an image from the original image.This process, called unsharp masking,
+consists of the following steps:
+\begin{enumerate}
+  \item Blur the original image.
+  \item Subtract the blurred image from the original (the resulting difference is called the *mask*.)
+  \item Add the mask to the original.
+\end{enumerate}
+Letting $\bar{f}(x,y)$ denote the blurred image, unsharp masking is expressed in equation form as follows. First we obtain the mask in \eref{eq:mask}.
+\begin{equation}\label{eq:mask}
+  g_{mask}(x, y) = f(x, y) - \bar{f} (x, y)
+\end{equation}
+Then we add a weighted portion of the mask back to the original image in \eref{eq:mask2}.
+\begin{equation}\label{eq:mask2}
+  g(x, y) = f(x, y) + g_{mask}(x, y)
+\end{equation}\
+
+
+
+
+
+\subsection{High pass filters}
+
+Filter is the transfer function in frequency domain. Image can be transform to frequency domain, then multiply with the filter select what we want. For ideal high pass filter.\eref{eq:ILPF} $D_0$ is the cut off frequency, it only pass frequency component which higher that $D_0$. In this report, we set $\frac{D_0}{D}$ as cut off frequency. 
+
+\begin{equation}\label{eq:ILPF}
+H(u,v)=
+\left\{
+\begin{array}{lr}
+0 & D(u,v)\leq D_0\\
+1 & D(u,v)> D_0
+\end{array}
+\right.
+\end{equation}
+Butterworth high pass filter (BHPF) is a wildly used low pass filter, when $D_0$ increase, it scut off frequency also increase, $n$ is the order of it.\eref{eq:BLPF} This polynomial filter can recede the ringing artifacts, for it has tails after cut off frequency. But as $n$ increase, the ringing artifacts will increase.
+\begin{equation}\label{eq:BLPF}
+H(u,v)=1-\frac{1}{1+[\frac{D(u,v)}{D_0}]^{2n}}
+\end{equation}
+Gaussian high pass filter (GHPF) is another common used low pass filter, it use Guassian function as transfer function, \eref{eq:GLPF}, it can remove ringing artifacts perfectly in reconstruct image.
+\begin{equation}\label{eq:GLPF}
+H(u,v)=1-e^{-D^2(u,v)/2D_0^2}
+\end{equation}
+To do frequency filtering, we can multiply the filter to get what we want in frequency, \eref{eq:PF} it is more easy to do in frequency domain. Because, in spatial domain, we should do convolution.
+\begin{equation}\label{eq:PF}
+G(u,v)=H(u,v)F(u,v)
+\end{equation}
+
+
+
+
+
+
+\section{\textbf{Results}}
+
+\subsection{Problem 1}
+
+The log transformation can increase image intensity. For lena and bridge image after log transformation, the background become brighter. It seem that the images become more clear. However, the log transformation increase background of fingerprint which decrease contrast let the fingerprint hard to distinguish. \fref{fig:log}
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}}
+     & Lena& Bridge & Fingerprint\\
+     \rotatebox{90}{Original} & \includegraphics[width=4 cm]{imagesave/lena_original.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_original.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_original.jpg} \\
+
+ \rotatebox{90}{Log transformation} &\includegraphics[width=4 cm]{imagesave/lena_logtrans.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_logtrans.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_logtrans.jpg} \\
+
+\end{longtable}
+\vspace{-0.9cm}
+\begin{figure}[H]
+%\setlength{\abovecaptionskip}{0cm}
+%\setlength{\belowcaptionskip}{0cm}
+\caption{Log transformation}
+\label{fig:log}
+\end{figure}
+As the $\gamma$ increase, the intensity of image gradually decrease, when $\gamma < 1$, gamma correct will increase lighter part while reverse to attenuate it when $\gamma > 1$. When $\gamma=1$, the corrected image is same to original image. \fref{fig:gamma}
+
+For Lena image, when $\gamma \leq 0.25$, the image be overexposure. The gamma correction
+also enhance background.
+For Bridge image, the best $\gamma$ is $0.5$, it increased dark part intensity so that plants near river are clear to see.
+For Fingerprint, when $\gamma=2$, it can increase contrast of fingerprint, in this condition,the veins be darker compare to background. \fref{fig:gamma}
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}}
+    & Lena& Bridge & Fingerprint1\\
+    \rotatebox{90}{Original} & \includegraphics[width=4 cm]{imagesave/lena_original.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_original.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_original.jpg} \\
+  \\
+\rotatebox{90}{$\gamma=0.25$} &\includegraphics[width=4 cm]{imagesave/lena_gamma_25.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_gamma_25.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_gamma_25.jpg} \\
+
+  \rotatebox{90}{$\gamma=0.5$} &\includegraphics[width=4 cm]{imagesave/lena_gamma_50.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_gamma_50.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_gamma_50.jpg} \\
+
+\rotatebox{90}{$\gamma=1$} &\includegraphics[width=4 cm]{imagesave/lena_gamma_100.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_gamma_100.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_gamma_100.jpg} \\
+
+\rotatebox{90}{$\gamma=1.5$} & \includegraphics[width=4 cm]{imagesave/lena_gamma_150.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_gamma_150.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_gamma_150.jpg} \\
+
+  \rotatebox{90}{$\gamma=2$} & \includegraphics[width=4 cm]{imagesave/lena_gamma_200.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_gamma_200.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_gamma_200.jpg} \\
+
+\end{longtable}
+\vspace{-0.8cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{-0.5cm}
+\caption{Gamma correction }
+\label{fig:gamma}
+\end{figure}
+\subsection{Problem 2}
+
+From histogram \ffref{fig:backgound}{b}, it is clear to see that the distribution of square of background are separate very well which means that the threshold method in proper for this problem. The result image \ffref{fig:backgound}{c} proof that the background be removed clearly. Its histogram \ffref{fig:backgound}{d} all indicate all pixels of background are reset to $0$ after processing.
+\begin{figure}[H]
+\centering
+\subfigure[Generated image]{
+\includegraphics[width=6 cm]{imagesave/Genimg_original.jpg}}
+\subfigure[Generated image histogram]{
+\includegraphics[height=6.25 cm]{imagesave/Genimg_original_hist.jpg}}
+\subfigure[Background removed]{
+\includegraphics[width=6 cm]{imagesave/Genimg_select.jpg}}
+\subfigure[Background removed histogram]{
+\includegraphics[height=6.25 cm]{imagesave/Genimg_select_hist.jpg}}
+\caption{Background removing}
+\label{fig:backgound}
+\end{figure}
+
+\subsection{Problem 3}
+In this section, we set the mask size to $3 \times 3$ and let all  weight coefficients to $1$. This is mean filter. After this mean filter, the image become little blurry. \ffref{fig:mymean}{b}.Compare to opencvv build in mean filter \ffref{fig:mymean}{c}. They have same blur performance.
+\begin{figure}[H]
+\centering
+\subfigure[Original]{
+\includegraphics[width=4 cm]{imagesave/lena_original.jpg}}
+\subfigure[Custom mean filter]{
+\includegraphics[height=4 cm]{imagesave/lena_mymean.jpg}}
+\subfigure[Opencv mean filter]{
+\includegraphics[width=4 cm]{imagesave/lena_opencvmean.jpg}}
+\caption{Custom filter}
+\label{fig:mymean}
+\end{figure}
+
+\subsection{Problem 4}
+After adding noise, there are many dots in image. The histogram also changed, seems to be a normal distribution. After filtering with $3 \times 3$ mean filter, the image be blurred, noise also decrease little. From the histogram, there is a little  fluctuation. The intensity near to $50$ be removed. After $5 \times 5$ mean filter. The image become more blurry with smoother noise. The histogram becomes more close to original histogram,. But still remove pixel near to $50$. At the same time, pixel near to $0$ increased compare with original image. \fref{fig:denoise}
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}X{cc}}
+
+    & Original& Noised &  $3 \times 3$ median filter & $5 \times 5$ median filter\\ 
+\rotatebox{90}{Image} & \includegraphics[width=4 cm]{imagesave/lena_original.jpg} &\includegraphics[width=4 cm]{imagesave/lena_noised.jpg} & \includegraphics[width=4 cm]{imagesave/lena_denoised_3x3.jpg} & \includegraphics[width=4 cm]{imagesave/lena_denoised_5x5.jpg}\\
+
+\rotatebox{90}{Histogram} &\includegraphics[height=4.5cm,width=4 cm]{imagesave/lena_original_hist.jpg} &\includegraphics[height=4.5cm,width=4 cm]{imagesave/lena_noised_hist.jpg} & \includegraphics[height=4.5cm,width=4 cm]{imagesave/lena_denoised_3x3_hist.jpg}& \includegraphics[height=4.5cm,width=4 cm]{imagesave/lena_denoised_5x5_hist.jpg} \\
+\end{longtable}
+\vspace{-1.5cm}
+\begin{figure}[H]
+\caption{Random noise removing}
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\label{fig:denoise}
+\end{figure}
+
+
+
+
+\subsection{Problem 5}
+In this section, we first use $3 \times 3$ Gaussian kernel to blur image, then subtract the mask image. It is clear to see that Mask image extract the edge or image. Finally add the mask image on the original image to get unsharp image. Compare to original image, unsharp image is more sharp. The edges becomes more clearly. \fref{fig:unsharpen}
+
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}}
+%\begin{tabular}
+     & Lena& Bridge & Fingerprint\\
+     \rotatebox{90}{Original} & \includegraphics[width=4 cm]{imagesave/lena_original.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_original.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_original.jpg} \\
+
+ \rotatebox{90}{Blur} &\includegraphics[width=4 cm]{imagesave/lena_blur.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_blur.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_blur.jpg} \\
+
+  \rotatebox{90}{Mask} &\includegraphics[width=4 cm]{imagesave/lena_mask.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_mask.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_mask.jpg} \\
+
+ \rotatebox{90}{Unsharpe} &\includegraphics[width=4 cm]{imagesave/lena_unsharpe.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_unsharpe.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_unsharpe.jpg} \\
+%\end{tabular}
+\end{longtable}
+\vspace{-0.3cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Image unsharpen}
+\label{fig:unsharpen}
+\end{figure}
+
+\subsection{Problem 6}
+It is clear to see that high pass filter can extract edges in image. For IHPF, there are artifacts image. BHPFcan attenuate the artifacts and GHPF has no artifacts. The GHPF has best performance in edge extraction of all three images. \fref{fig:HP}
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}}
+%\begin{tabular}
+     & Lena& Bridge & Fingerprint\\
+     \rotatebox{90}{Original} & \includegraphics[width=4 cm]{imagesave/lena_original.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_original.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_original.jpg} \\
+
+ \rotatebox{90}{IHPF} &\includegraphics[width=4 cm]{imagesave/lena_IHPF_D0_13.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_IHPF_D0_13.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_IHPF_D0_13.jpg} \\
+
+  \rotatebox{90}{BHPF} &\includegraphics[width=4 cm]{imagesave/lena_BHPF_D0_13.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_BHPF_D0_13.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_BHPF_D0_13.jpg} \\
+
+ \rotatebox{90}{GHPF} &\includegraphics[width=4 cm]{imagesave/lena_GHPF_D0_13.jpg} &\includegraphics[width=4 cm]{imagesave/bridge_GHPF_D0_13.jpg} & \includegraphics[width=4 cm]{imagesave/fingerprint1_GHPF_D0_13.jpg} \\
+%\end{tabular}
+\end{longtable}
+
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{High pass filters}
+\label{fig:HP}
+\end{figure}
+
+
+
+\section{\textbf{Discussion}}
+
+In this project, we practiced several basic image processing methods. From whole project, it is useful to know that log transform and gamma correct can change image intensity nonlinear. So that can select increase local intensity of image. Filtering is useful in image processing, it can be used to remove noise but also cause image blur. If there are big difference of histogram between ROI and background. The simple method ia that set a threshold to separate them. High pass filter can extract image edge. GHPF will have best performance, for it has no artifacts.
+
+There still is an interesting thing that after adding the noise. The histogram will change a lot. It is not the naive merge of image histogram and noise histogram. At this time the histogram is joint distribution of them.
+
+\section{\textbf{Supplementary}}
+
+This is the code used in this project.
+%\inputpython{./lab7.py}{1}{500}
+\inputpython{./CourseProj1.py}{1}{500}
+\end{CJK*}
+\end{document}

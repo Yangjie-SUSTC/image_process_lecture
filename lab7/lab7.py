@@ -35,7 +35,7 @@ class IMG:
         cv2.waitKey(0)
         cv2.destroyWindow(winName)
         return img
-    def psave(self,img,mark=None,cb=0):
+    def psave(self,img,mark=None,cb=0): # shown image in windows and save
         fig = plt.gcf() 
         plt.imshow(img,cmap='gray')
         if cb:
@@ -44,11 +44,12 @@ class IMG:
         savepath=self.savepath+self.name+'_'+mark+'.jpg'
         fig.savefig(savepath,dpi=500,bbox_inches='tight')
         plt.close()
-    def fsave(self,fig,mark=None):
+    def fsave(self,fig,mark=None): # save plot fihiure
         #plt.xticks([]), plt.yticks([])
         savepath=self.savepath+self.name+'_'+mark+'.jpg'
         fig.savefig(savepath,dpi=500,bbox_inches='tight')
         plt.close()
+
 
 def sfft(img):
     f = np.fft.fft2(img)

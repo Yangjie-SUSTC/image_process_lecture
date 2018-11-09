@@ -283,7 +283,7 @@ For this noised image, its noise seems to be salt pepper noise. So that we choos
 \end{equation}
 
 \subsection{Lena with noise}\ \ \ \ \ \ \
-This noised image has no salt pepper noise, so that transfer it to frequency domain and do low pass filtering to see whether it works 
+This noised image has no salt pepper noise, so that transfer it to frequency domain and do low pass filtering to see whether it works
 
 %arithmetic mean filter, geometric mean filter,
 %median filter, Alpha-trimmed mean filter, and adaptive
@@ -397,11 +397,6 @@ For Arithmetic mean filter $LenaD1$ has best performance. $LenaD2$ and $LenaD3$ 
 
 
 \begin{longtable}{rccc}
-%\setlength{\floatsep{-1cm}}
-
-%\setlength{\abovecaptionskip}{-2cm}
-%\setlength{\belowcaptionskip}{-2cm}
-  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
    filter & lenaD1& lenaD2 & lenaD3\\
     \rotatebox{90}{Original} & \includegraphics[width=4 cm]{python/lenaD1_original.jpg} &\includegraphics[width=4 cm]{python/lenaD2_original.jpg} & \includegraphics[width=4 cm]{python/lenaD3_original.jpg} \\
      \rotatebox{90}{Histogram} & \includegraphics[width=4 cm]{python/lenaD1_hist.jpg} &\includegraphics[width=4 cm]{python/lenaD2_hist.jpg} & \includegraphics[width=4 cm]{python/lenaD3_hist.jpg} \\
@@ -417,7 +412,6 @@ For Arithmetic mean filter $LenaD1$ has best performance. $LenaD2$ and $LenaD3$ 
   \rotatebox{90}{Adaptive mean} & \includegraphics[width=4 cm]{python/lenaD1_admf.jpg} &\includegraphics[width=4 cm]{python/lenaD2_admf.jpg} & \includegraphics[width=4 cm]{python/lenaD3_admf.jpg}
   \\
 \end{longtable}
-
 \vspace{-0.9cm}
 \begin{figure}[H]
 \setlength{\abovecaptionskip}{0cm}
@@ -426,12 +420,12 @@ For Arithmetic mean filter $LenaD1$ has best performance. $LenaD2$ and $LenaD3$ 
 \label{fig:denoise}
 \end{figure}
 
-For Geometric mean filter $LenaD1$ has best performance. $LenaD2$ and $LenaD3$ have dark dots. 
+For Geometric mean filter $LenaD1$ has best performance. $LenaD2$ and $LenaD3$ have dark dots.
 
-For Median filter $LenaD2$ has best performance. $LenaD1$ and $LenaD3$ blur too much. 
+For Median filter $LenaD2$ has best performance. $LenaD1$ and $LenaD3$ blur too much.
 
 For Alpha-trimmed mean filter $LenaD2$ has best performance. $LenaD1$ and $LenaD3$ blur too much.
- 
+
 For Adaptive mean filter $LenaD2$ has best performance. $LenaD1$ and $LenaD3$ have several granule in image.
 
 

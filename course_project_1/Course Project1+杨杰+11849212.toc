@@ -1,0 +1,19 @@
+\select@language {english}
+\contentsline {section}{\textbf {Introduction}}{1}{section*.2}
+\contentsline {section}{\textbf {Method}}{1}{section*.3}
+\contentsline {subsection}{Log transformation}{1}{section*.4}
+\contentsline {subsection}{Gamma correction}{1}{section*.5}
+\contentsline {subsection}{Background removing}{2}{section*.6}
+\contentsline {subsection}{Custom mask}{2}{section*.7}
+\contentsline {subsection}{Noise removing}{2}{section*.8}
+\contentsline {subsection}{Image unsharpen}{2}{section*.9}
+\contentsline {subsection}{High pass filters}{3}{section*.10}
+\contentsline {section}{\textbf {Results}}{3}{section*.11}
+\contentsline {subsection}{Problem 1}{4}{section*.12}
+\contentsline {subsection}{Problem 2}{6}{section*.13}
+\contentsline {subsection}{Problem 3}{6}{section*.14}
+\contentsline {subsection}{Problem 4}{7}{section*.15}
+\contentsline {subsection}{Problem 5}{8}{section*.16}
+\contentsline {subsection}{Problem 6}{9}{section*.17}
+\contentsline {section}{\textbf {Discussion}}{10}{section*.18}
+\contentsline {section}{\textbf {Supplementary}}{10}{section*.19}
