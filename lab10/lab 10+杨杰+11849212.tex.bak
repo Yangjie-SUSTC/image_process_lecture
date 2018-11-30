@@ -1,0 +1,582 @@
+\documentclass[12pt,a4paper]{report}
+%\documentclass[UTF8]{ctexart}
+
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage{geometry}
+\geometry{left=1.5cm,right=1.5cm,top=2cm,bottom=3.5cm}
+\renewcommand\tabcolsep{2pt}
+
+ %\setlength{\topskip}{-1cm}%{1.75cm}
+ %\setlength{\topmargin}{1cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 1cm % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=1.35cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+\usepackage{longtable}
+%---------------代码插入-------------------------
+\usepackage{pythonhighlight}
+\usepackage{listings}
+\lstset{language=python}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = matlab,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\newcommand{\tref}[1]{\textbf{Tab.\ref{#1}}}
+\newcommand{\aref}[1]{\textbf{Alg.\ref{#1}}}
+\newcommand\mytitle{ Image Segmentation \uppercase\expandafter{\romannumeral2}}
+\newcommand\myadvisor{Jianhong Shi}
+\newcommand\myshuxin{\large class project 10}
+
+
+\usepackage{makecell}
+\usepackage{array}
+%\usepackage{algorithm, algorithmic}
+%\usepackage{algpseudocode}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+
+
+\floatname{algorithm}{Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+
+
+\algnewcommand\algorithmicswitch{\textbf{switch}}
+\algnewcommand\algorithmiccase{\textbf{case}}
+\algnewcommand\algorithmicdefault{\textbf{default}}
+%\algnewcommand\algorithmicelse{\textbf{else}}
+
+
+
+% New "environments"
+\algdef{SE}[SWITCH]{Switch}{EndSwitch}[1]{\algorithmicswitch\ #1\ \algorithmicdo }{ \algorithmicend\  \algorithmicswitch}%
+
+\algdef{SE}[CASE]{Case}{EndCase}[1]{\algorithmiccase\ #1}{\algorithmicend\  \algorithmiccase}%
+\algdef{SE}[DEFAULT]{Default}{EndDefault}{\algorithmicdefault\ }{\algorithmicend\ \algorithmicdefault}%
+%\algdef{SE}[ELSE]{Else}{EndElse}{\algorithmicelse\}{\algorithmicend\  \algorithmicelse}%
+%\algtext*{EndSwitch}%
+
+\algtext*{EndCase}%
+\algtext*{EndDefault}%
+%\algtext*{EndElse}%
+
+
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Southern University of Science and Technology}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\myshuxin}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries \mytitle}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{\myadvisor} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=8cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge \mytitle}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerate}
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+%\end{enumerate}
+
+\newsavebox{\mybox}
+\newcolumntype{X}[1]{>{\begin{lrbox}{\mybox}}c<{\end{lrbox}\makecell[#1]{\mbox{\usebox\mybox}}}}
+%\end{enumerate}
+\section{\textbf{Introduction}}
+
+
+
+
+\section{\textbf{Method}}
+\subsection{Otus's method}
+
+%\begin{equation}\label{eq:otus}
+%\begin{array}
+%  P_k =& \sum_{i\in C_k} p_i\omega_1 =& \sum_{k=0}^l P_k \omega_2 =& \sum_{k=l+1}^{L-1} P_k\\
+%  \mu_1=&\frac{1}{\sum_{k=0}^l}\sum_{i\in C_k} iP_k
+%  \mu_2=&\frac{1}{\sum_{k=l+1}^{L-1}}\sum_{i\in C_k} iP_k
+%  \mu_T=&\frac{1}{\sum_{k=0}^L-1}\sum_{i\in C_k} iP_k \\
+%  \sigma_B^2=&\omega_1(\mu_1-\mu_T)^2+\omega_2(\mu_2-\mu_T)^2=&\omega_1\omega_2(\mu_1-\mu_2)^2\\
+%  =&\omega_1\omega_2(\mu_1-\mu_2)^2
+%\end{array}
+%\end{equation}
+
+\begin{equation}\label{eq:otus}
+\begin{array}{lcr}
+  P_k = \sum\limits_{i\in C_k} p_i&\omega_1 = \sum_{k=0}^l P_k &\omega_2 = \sum_{k=l+1}^{L-1} P_k\\
+  \mu_1=\frac{1}{\omega_1}\sum_{k=0}^l kP_k&
+  \mu_2=\frac{1}{\omega_2}\sum_{k=l+1}^{L-1} kP_k&
+  \mu_T=\frac{1}{\omega_1+\omega_2}\sum_{k=0  }^{L-1} kP_k \\
+\end{array}
+\end{equation}
+
+\begin{equation}\label{eq:sig}
+  \sigma_B^2=\omega_1(\mu_1-\mu_T)^2+\omega_2(\mu_2-\mu_T)^2=\omega_1\omega_2(\mu_1-\mu_2)^2\\
+\end{equation}
+
+\begin{equation}\label{eq:otsuT}
+  T = \mathop{argmax}\limits_{k\in \{0,\dots,  L-1\}}\frac{\sigma_B^2}{\sigma_B^T}=\mathop{argmax}\limits_{k\in \{0,\dots,  L-1\}}\sigma_B^2
+\end{equation}
+
+
+\begin{algorithm}[H]
+\caption{Otus's method}
+\label{alg:Otus}
+\begin{algorithmic}[1] %每行显示行号
+\Require image $A$,
+\Ensure segmented image $S$, threshold T
+\State mean value  $ A \to M$
+\For{each  $k$ \textbf{in} $[0,L-1]$}
+    \State Counter number of $A == k \to num$
+    \State background pixel number $wB += num$
+    \State Pixel number of $A - wB \to $ foreground pixel number $wF$
+    \State mean value of  background $\to sumB + num*k$
+    \State mean value of foreground $\to (M*A-sumB)/WF$
+
+    \If (wB == 0 or wF == 0)
+        \State continue
+    \EndIf
+    \State $\sigma=wF*wB*(M-mF)*(M-mB)$
+    \If ($\sigma > \sigma_{max}$)
+        \State Threshold $T \gets k$
+        \State $\sigma_{max} \gets \sigma$
+    \EndIf
+\EndFor
+\State $S \gets A \geq T$
+
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\subsection{Moving average thresholding}
+
+\begin{equation}\label{eq:mov}
+\begin{split}
+  m(k+1) =& \frac{1}{n}\sum^{k+1}_{k+2-n}z_i\\
+  =&m(k)+\frac{1}{n}(z_{k+1}-z_{k+1-n})
+\end{split}
+\end{equation}
+
+\begin{algorithm}[H]
+\caption{Region growing segmentation of defective weld X-ray image}
+\label{alg:mov}
+\begin{algorithmic}[1] %每行显示行号
+\Require image $f$, stroke size $n$
+\Ensure segmented image $S$
+\For{each double row line \textbf{in} $A$}
+    \State reverse this line
+\EndFor
+\State 1 D vector $D \gets$ stretch reversed image to 1 row
+\State zero padding vector $PD \gets$ pad $n$ 0s at head of $D$
+\For{x \textbf{in} range(len(D))}
+    \State $T[x]=\frac{1}{n}\sum_{i=x-1-n}^x PD_i$
+\EndFor
+\State thresholding 1 D vector $TD \gets D \geq T$
+\For{each double row line \textbf{in} $TD$}
+    \State reverse this line
+\EndFor
+\State  segmented image $S \gets$ double line reversed $TD$
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Region growing segmentation}
+
+\begin{algorithm}[H]
+\caption{Region growing segmentation of defective weld X-ray image}
+\label{alg:xray}
+\begin{algorithmic}[1] %每行显示行号
+\Require image $f$,
+\Ensure segmented image $Seg$
+\State initial seed img $S \gets f > 245$
+\State growing region $Q \gets |f-S|<=68$
+\State seed img $Sd \gets $ erose $S$ to each connection part only 1 pixel
+\State segmented image $Seg \gets$ connection analysis$(Q,Sd)$
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Region growing segmentation of noisy region image}
+\label{alg:noise}
+\begin{algorithmic}[1] %每行显示行号
+\Require image $f$,
+\Ensure segmented image $Seg$
+\State blur img $B \gets $ cv2.blur$(f)$
+\State initial seed img $S \gets |f - 127| > 10$
+\State seed img $Sd \gets $ erose $S$ to each connection part only 1 pixel
+\State growing region $Q \gets |B- 127| > 1$
+\State segmented image $Seg \gets$ connection analysis$(Q,Sd)$
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+
+
+\section{\textbf{Results}}
+
+
+\subsection{Otus's method}
+From \fref{fig:otsu}, it indicated that there are Gaussian noise ($\mu=0, \sigma^2=50$)added on the original image. Base on Otus's method, the threshold $T=118$. However, after thresholding, the noise cannot be removed. The only difference is that the  polygon region become brighter.
+
+The noisy image smoothed by a $5 \times 5$ kernel. After smoothing, the histogram becomes doublet. The threshold of Otus's method $T=126$, which between to Gaussian clusters. After thresholding, the noisy be removed clearly. All polygon region be extract from background. 
+
+Compare to Otus's thresholding, we get the same threshold and image with it \fref{fig:otsu}. So that, we write right Otus's thresholding code.
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}X{cc}}
+   & Image & Histogram & Otus's & Opencv OTSU  \\
+   \rotatebox{90}{Original} &
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_original.jpg} &
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_original_hist.jpg} &
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_original_118.jpg}&
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_original_opencv_118.jpg}\\
+    \rotatebox{90}{Smoothed} &
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_smoothed.jpg} &
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_smoothed_hist.jpg} &
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_smoothed_126.jpg}&
+   \includegraphics[width=4 cm]{imagesave/large_septagon_gaussian_noise_mean_0_std_50_added_smoothed_opencv_126.jpg}\\
+\end{longtable}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{ Otus's method on noised image}
+\label{fig:otsu}
+\end{figure}
+
+
+\subsection{Partition Otus's method}
+
+From left to right, the background intensity gradually increase in original image \ffref{fig:sub}{a}. Its histogram indicated that there are three peaks in image \ffref{fig:sub}{e}. Direct using Otus's method will remain some black noise point at left part and generate overexposure noise points at right part \ffref{fig:sub}{b}. After divide original image to six sub images \ffref{fig:sub}{c}, then use Otus's method. The over exposure noisy points at right part be removed clearly. The noise at left part also removed majority, only little remained \ffref{fig:sub}{d}. The performance are acceptable.
+\begin{figure}[H]
+\centering
+\subfigure[Original image]{
+\includegraphics[width=4 cm]{imagesave/septagon_noisy_shaded_original.jpg}}
+\subfigure[Otsu's method]{
+\includegraphics[width=4 cm]{imagesave/septagon_noisy_shaded_Otsu_49.jpg}}
+\subfigure[Subdivided image]{
+\includegraphics[width=4 cm]{imagesave/septagon_noisy_shaded_Partition_line.jpg}}
+\subfigure[Partition then Otus's ]{
+\includegraphics[width=4 cm]{imagesave/septagon_noisy_shaded_Partition.jpg}}
+\subfigure[Histogram of (a)]{
+\includegraphics[height=8cm]{imagesave/septagon_noisy_shaded__hist.jpg}}
+\caption{Partition then Otsu’s method to segmentation}
+\label{fig:sub}
+\end{figure}
+
+The histograms of each sub image \fref{fig:subhist} indicated that in each sub image, there are only two peaks, so that it can be seperated by Otus's method.
+
+
+
+\begin{longtable}{X{lc}X{cc}X{cc}}
+\renewcommand\tabcolsep{0pt}
+   \hspace{1.4cm}Threshold $= 37$& \hspace{0.5cm}Threshold $= 50$ &\hspace{0.5cm} Threshold $= 63$   \\
+   \includegraphics[width=5 cm]{imagesave/septagon_noisy_shaded_sub_0_0_Threshold_37_hist.jpg} &
+   \includegraphics[width=5 cm]{imagesave/septagon_noisy_shaded_sub_0_1_Threshold_50_hist.jpg}&
+   \includegraphics[width=5 cm]{imagesave/septagon_noisy_shaded_sub_0_2_Threshold_63_hist.jpg}\\
+   \hspace{1.4cm}Threshold $= 37$& \hspace{0.5cm}Threshold $= 50$ & \hspace{0.5cm}Threshold $= 64$   \\
+   \includegraphics[width=5 cm]{imagesave/septagon_noisy_shaded_sub_1_0_Threshold_37_hist.jpg} &
+   \includegraphics[width=5 cm]{imagesave/septagon_noisy_shaded_sub_1_1_Threshold_50_hist.jpg}&
+   \includegraphics[width=5 cm]{imagesave/septagon_noisy_shaded_sub_1_2_Threshold_64_hist.jpg}\\
+\end{longtable}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Histogram of subdivide images}
+\label{fig:subhist}
+\end{figure}
+
+\subsection{Moving average thresholding}
+
+This is a handwriting image with Gaussian illumination \ffref{fig:mov}{a}. The center part more brighter than border part. After using Otus's method directly, all border parts are removed although center part has well binaryzation performance \ffref{fig:mov}{b}. It is clear to see that moving average thresholding has perfect binaryzation performance, not only center part but also border part \ffref{fig:mov}{a}. All characters are extracted clearly.
+From the threshold image, it can extract the ununiform illumination and also has a mean smooth effect in line direction for writing characters \ffref{fig:mov}{d} .
+
+
+
+\begin{figure}[H]
+\centering
+\subfigure[Original image]{
+\includegraphics[width=4 cm]{imagesave/spot_shaded_text_image_original.jpg}}
+\subfigure[Otsu's method]{
+\includegraphics[width=4 cm]{imagesave/spot_shaded_text_image_moving_average_thresholding_opencv_124.jpg}}
+\subfigure[Histogram]{
+\includegraphics[width= 4 cm]{imagesave/spot_shaded_text_image_moving_average_thresholding.jpg}}
+\subfigure[Threshold]{
+\includegraphics[width= 4 cm]{imagesave/spot_shaded_text_image_moving_average_thresholding_thrmat.jpg}}
+\caption{Moving average thresholding segmentation}
+\label{fig:mov}
+\end{figure}
+
+
+\subsection{Region growing segmentation}
+From the original image, it is clear to see that defective weld has very high intensity \ffref{fig:region}{a}. From its histogram, the defective weld region is higher than $254$ \ffref{fig:region}{b}. So that after thresholding, defective weld region can be extract approximately \ffref{fig:region}{c}. Then erose it to each connected region only has one pixel \ffref{fig:region}{d}. It is clear to see that all connected region has one pixel. After that remove the initial seed region from original image \ffref{fig:region}{f}. From its histogram, it has two peaks, so that dual thresholds be used \ffref{fig:region}{g}. But the smallest one threshold can extract all defective weld region, so that use the small threshold to binarize \ffref{fig:region}{g}. Finally use the seed image \ffref{fig:region}{d} and \ffref{fig:region}{h} to do connection analysis can extract all specific  defective weld region \ffref{fig:region}{i}.
+
+\begin{figure}[H]
+\centering
+\subfigure[Original image]{
+\includegraphics[height=4 cm]{imagesave/defective_weld_original.jpg}}
+\subfigure[Histogram of (a)]{
+\includegraphics[height= 4 cm,width=7.4cm]{imagesave/defective_weld_orignal_hist.jpg}}
+\subfigure[ Initial seed]{
+\includegraphics[height=4 cm]{imagesave/defective_weld_Thr_254.jpg}}
+\subfigure[Final seed (dilated for clarity)]{
+\includegraphics[width=5 cm]{imagesave/defective_weld_oneP.jpg}}
+\subfigure[Histogram of (f)]{
+\includegraphics[height= 4 cm,width=7cm]{imagesave/defective_weld_dif_abs_hist.jpg}}
+\subfigure[difference between (a) and (c)]{
+\includegraphics[width=5 cm]{imagesave/defective_weld_dif_abs.jpg}}
+\subfigure[Dual thresholds]{
+\includegraphics[height=4 cm]{imagesave/defective_weld_double_thr.jpg}}
+\hspace{1.2cm}
+\subfigure[Thresholded Difference image]{\hspace{0.2cm}
+\includegraphics[height=4 cm]{imagesave/defective_weld_diff_thr.jpg}}
+\hspace{1.4cm}
+\subfigure[Segmentation result]{
+\includegraphics[height=4 cm]{imagesave/defective_weld_final.jpg}}
+\caption{Region growing segmentation on X-ray image of a defective weld}
+\label{fig:region}
+\end{figure}
+
+From the original image \ffref{fig:noisy}{a}, the center part is has noise while all around region has the same value. This is proved by its histogram \ffref{fig:noisy}{d}. The around region intensity is approximate $127$. So that if the difference is too large, it must be center region pixels. After blur, because of the mean effect, the difference will decrease \ffref{fig:noisy}{b}, so that threshold should decrease to include more potential region. Finally can see that the segmentation is perfect \ffref{fig:noisy}{c}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[Noisy region image ]{
+\includegraphics[width=4 cm]{imagesave/noisy_region_original.jpg}}
+\subfigure[Blur image]{
+\includegraphics[width=4 cm]{imagesave/noisy_region_blur.jpg}}
+\subfigure[Segmentation result]{
+\includegraphics[width=4 cm]{imagesave/noisy_region_final.jpg}}
+\subfigure[Histogram of (a)]{
+\includegraphics[height=8cm,]{imagesave/noisy_region_orignal_hist.jpg}}
+\caption{Region growing segmentation on noisy region image}
+\label{fig:noisy}
+\end{figure}
+
+
+\section{\textbf{Discussion}}
+\fref{fig:otsu} indicated that single threshold Otus's method has low robustness, it is very easy be influenced by noisy. The mean filter is necessary before using Otus's method. Otus;s method has perfect performance when image only has less than two peaks.
+
+When the illumination of image is not uniform, partition Otus's method can be used. So that in each sub image, the intensity variance will decrease, which let it can be segmented by Otus'   s method respectively. 
+
+From \fref{fig:subhist} can see that the second column sub images has overlap between two Gaussian cluster. Because of this overlap, Threshold $T$ is in polygon cluster, which induce classify several low intensity pixels as background. This is the origin of noise. To avoid this, original image can be divided into more sub images. But more partition require more calculation. Besides this,  too much partition may remove the peaks of sub image, which lead to bad performance. This is a tradeoff.
+
+It is of interest to note that successful segmentation results were obtained in
+both cases using the same parameters which shows the relative ruggedness of the approach. In general, thresholding based on moving averages
+works well when the objects of interest are small (or thin) with respect to the
+image size, a condition satisfied by images of typed or handwritten text.
+
+The region growing segmentation can be used to detect interested region precisely. Its seed is very to determine, they are like the high threshold in Canny while the second requirement is hard to determine, it like the low threshold in Canny. They both have two
+screening steps.
+
+
+
+\section{\textbf{Supplementary}}
+
+This is the code used in this project.
+\inputpython{./lab10.py}{1}{500}
+\end{CJK*}
+\end{document}

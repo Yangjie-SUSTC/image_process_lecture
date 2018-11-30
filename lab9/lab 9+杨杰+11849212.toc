@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {section}{\textbf {Introduction}}{1}{section*.2}
+\contentsline {section}{\textbf {Method}}{1}{section*.3}
+\contentsline {section}{\textbf {Results}}{5}{section*.4}
+\contentsline {subsection}{Different edge detection operators}{5}{section*.5}
+\contentsline {subsection}{Canny \& LOG}{8}{section*.6}
+\contentsline {subsection}{Global thresholding segmentation}{9}{section*.7}
+\contentsline {section}{\textbf {Discussion}}{10}{section*.8}
+\contentsline {section}{\textbf {Supplementary}}{10}{section*.9}

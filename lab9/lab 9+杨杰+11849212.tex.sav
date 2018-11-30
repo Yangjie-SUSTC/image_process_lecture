@@ -1,0 +1,729 @@
+
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for
+% including it in another document. To do this, you have two options:
+%
+% 1) Copy/paste everything between \begin{document} and \end{document}
+% starting at \begin{titlepage} and paste this into another LaTeX file where you
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and
+% move this file to the same directory as the LaTeX file you wish to add it to.
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+%\documentclass[UTF8]{ctexart}
+
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+ \setlength{\topskip}{1.75cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 0pt % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=1.35cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+\usepackage{longtable}
+%---------------代码插入-------------------------
+\usepackage{pythonhighlight}
+\usepackage{listings}
+\lstset{language=python}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = matlab,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\newcommand{\tref}[1]{\textbf{Tab.\ref{#1}}}
+\newcommand\mytitle{Image Segmentation}
+\newcommand\myadvisor{Jianhong Shi}
+\newcommand\myshuxin{\large class project 9}
+
+
+\usepackage{makecell}
+\usepackage{array}
+%\usepackage{algorithm, algorithmic}
+%\usepackage{algpseudocode}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+
+
+\floatname{algorithm}{Algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+
+
+\algnewcommand\algorithmicswitch{\textbf{switch}}
+\algnewcommand\algorithmiccase{\textbf{case}}
+\algnewcommand\algorithmicdefault{\textbf{default}}
+%\algnewcommand\algorithmicelse{\textbf{else}}
+
+
+
+% New "environments"
+\algdef{SE}[SWITCH]{Switch}{EndSwitch}[1]{\algorithmicswitch\ #1\ \algorithmicdo }{ \algorithmicend\  \algorithmicswitch}%
+
+\algdef{SE}[CASE]{Case}{EndCase}[1]{\algorithmiccase\ #1}{\algorithmicend\  \algorithmiccase}%
+\algdef{SE}[DEFAULT]{Default}{EndDefault}{\algorithmicdefault\ }{\algorithmicend\ \algorithmicdefault}%
+%\algdef{SE}[ELSE]{Else}{EndElse}{\algorithmicelse\}{\algorithmicend\  \algorithmicelse}%
+%\algtext*{EndSwitch}%
+
+\algtext*{EndCase}%
+\algtext*{EndDefault}%
+%\algtext*{EndElse}%
+
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Southern University of Science and Technology}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\myshuxin}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries \mytitle}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{\myadvisor} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=8cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge \mytitle}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerate}
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+%\end{enumerate}
+
+\newsavebox{\mybox}
+\newcolumntype{X}[1]{>{\begin{lrbox}{\mybox}}c<{\end{lrbox}\makecell[#1]{\mbox{\usebox\mybox}}}}
+%\end{enumerate}
+\section{\textbf{Introduction}}
+
+
+Use Roberts, Prewitt, Sobel gradient operators to obtain gradient images, then
+threshold the images to compare the results among different operators. The
+images are headCTVandy.pgm, buildingoriginal.pgm, noisyfingerprint.pgm
+
+
+Implement Canny edge detection and LoG detection algorithms on
+headCTVandy.pgm and noisyfingerprint.pgm
+
+
+ Use global thresholding to perform segmentation separately on
+polymersomes.pgm and noisyfingerprint.pgm
+
+
+
+
+\section{\textbf{Method}}
+There are several different edge detector operators, like Roberts Prewitt and Sobel, each of them has different form in x, y and orientation \tref{tab:LOGoperator}. In them Sobel is the widest used on for its proper size and has more weight for center pixel. 
+\begin{table}[H]
+\setlength{\fboxrule}{0pt}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  \multicolumn{2}{|c|}{Roberts}&\multicolumn{2}{c|}{Prewitt}&\multicolumn{2}{c|}{Sobel}\\
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+   x & y & x & y & x & y\\
+  \hline
+
+ \begin{tabular}{|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+ -1 & 0 \\
+ \hline
+ 0 & 1 \\
+  \hline
+\end{tabular} &
+  \begin{tabular}{|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  0 & -1 \\
+  \hline
+  1 & 0 \\
+  \hline
+\end{tabular}  &
+\fbox{
+%\vspace{5cm}
+\begin{tabular}{|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  -1 & -1 & -1 \\
+  \hline
+  0 & 0 & 0 \\
+  \hline
+  1 & 1 & 1 \\
+  \hline
+\end{tabular}
+}
+&
+\fbox{
+%\vspace{5cm}
+\begin{tabular}{|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  -1 & 0 & 1 \\
+  \hline
+  -1 & 0 & 1 \\
+  \hline
+  -1 & 0 & 1 \\
+  \hline
+\end{tabular}
+}&
+\fbox{
+%\vspace{5cm}
+\begin{tabular}{|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  -1 & -2 & -1 \\
+  \hline
+  0 & 0 & 0 \\
+  \hline
+  1 & 2 & 1 \\
+  \hline
+\end{tabular}
+} &
+\fbox{
+%\vspace{5cm}
+\begin{tabular}{|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  -1 & 0 & 1 \\
+  \hline
+  -2 & 0 & 2 \\
+  \hline
+  -1 & 0 & 1 \\
+  \hline
+\end{tabular}
+}\\ \hline
+\end{tabular}
+\caption{Edge detection operators}\label{tab:LOGoperator}
+\end{table}
+
+To use these operators in edge detection, it is like use filtering. Just slid the operator through the image, then use the sum value as intensity of this pixel in edge image. After that combine x  orientation edge and y   orientation edge image to get the edge magnitude image base \eref{eq:mag}. The last step is thresholding, only the intensity greater that threshold can be classified to validation edge image
+\begin{equation}\label{eq:mag}
+  M=\sqrt{M_x^2+G_y^2}
+\end{equation}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+ 0 &0 & 1 &0 &0 \\ \hline
+ 0 & 1 & 2 &1&0 \\\hline
+  1 & 2 & -16 &2& 1 \\\hline
+ 0 & 1 & 2 & 1 &0 \\\hline
+ 0 &0 & 1 &0 &0 \\
+  \hline
+\end{tabular}
+\caption{tab:LOG operator}
+\end{table}
+
+
+\begin{algorithm}[H]
+\caption{Canny}
+\begin{algorithmic}[1] %每行显示行号
+\Require image $A$,   LOG operator $G$, threshold $T$, Guassian kenel size $n$, edge detector operator $P$, threshold $T_H,T_L$
+\Ensure  Canny edge image $C$
+\State blur image \hspace{0.5cm}$B \gets$  blur $A$ with $n \times n$ Guassian kernel
+\State x edge image \hspace{0.5cm}$G_x \gets A \bigotimes P_x $
+\State y edge image \hspace{0.5cm}$G_y \gets A \bigotimes P_y $
+\State edge image magnitude \hspace{0.5cm}$M \gets \sqrt{G_x^2+G_y^2}$
+\State edge image angle \hspace{0.5cm}$Angle \gets \arctan(\frac{G_y}{G_x}) $
+
+\State // - - -\textbf{ nonmaxima suppression}:
+    \For{each  $Ang[x,y]$ \textbf{in} $Angle$}
+        \Switch{$Ang$}
+            \Case{$\frac{\pi}{8} \leq Ang < \frac{3\pi}{8}$}
+              \State $-45^o$ neighbor pixels \hspace{0.5cm}$ N \gets [B[x-1,y-1],B[x+1,y+1]] $
+            \EndCase
+            \Case{$\frac{3\pi}{8} \leq Ang < \frac{5\pi}{8}$}
+              \State horizontal neighbor pixels \hspace{0.5cm}$ N \gets [B[x,y-1],B[x,y+1]]$
+            \EndCase
+            \Case{$\frac{5\pi}{8} \leq Ang < \frac{7\pi}{8}$}
+              \State $+45^o$ neighbor pixels \hspace{0.5cm} $ N \gets [B[x+1,y-1],B[x-1,y+1]]$
+            \EndCase
+            \Default
+                \State vertical neighbor  pixels \hspace{0.5cm}$ N \gets [B[x-1,y],B[x+1,y]]$
+            \EndDefault
+       \EndSwitch
+
+        \If {$ (N > M[x,y]).any() $}
+        \State G[x,y]=0
+        \Else
+        \State G[x,y]=M[x,y]
+    \EndIf
+    \EndFor
+
+    \State // - - -\textbf{ double thresholding}:
+    \State  $G_H \gets G \geq T_H$
+    \State  $G_L \gets T_H > G \geq T_H$
+    \State $C \gets G_H$
+    \State // - - - \textbf{ connection analysis}:
+    \For{ $g[x,y]$ \textbf{in} $G_L$}
+        \If {$N_8(g) \in G_H $}
+        \State $C[x,y] \gets g$
+        \EndIf
+    \EndFor
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\begin{algorithm}[H]
+\caption{LoG}
+\begin{algorithmic}[1] %每行显示行号
+\Require image $A$,   LOG operator $G$, threshold $T$
+\Ensure  Edge image $E$
+\State Laplacian edge image \hspace{0.5cm} $ L  \gets  A \bigotimes G $
+
+\For{each pixel $p[x,y]$ \textbf{in} $L$}
+    \State horizontal neighbor  pixels \hspace{0.5cm}$p1_0,p2_0 \gets p[y-1],p[y+1]$
+    \State vertical neighbor  pixels \hspace{0.5cm}$p1_1,p2_1 \gets p[x-1],p[x+1]$
+    \State $+45^o$ neighbor  pixels \hspace{0.5cm} $p1_2,p2_2 \gets p[x+1,y-1],p[x-1,y+1]$
+    \State $+45^o$ neighbor  pixels \hspace{0.5cm} $p1_3,p2_3 \gets p[x-1,y-1],p[x+1,y+1]$
+    \State neighbor pixels \hspace{0.5cm} $N \gets [[p1_0,p2_0 ],[p1_1,p2_1],[p1_2,p2_2],[p1_3,p2_3]] $
+    \For{each neighbors  $p1, p2$ \textbf{in} $N$}
+        \If {$abs(p1-p2)> T\ \textbf{and}\ p1*P2 <0 $}
+        \State pixel $\gets$ cross zero point   \hspace{0.5cm} $E[x,y]=255$
+        \State \textbf{break}
+    \EndIf
+    \EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\section{\textbf{Results}}
+
+
+\subsection{Different edge detection operators}
+From \fref{fig:p1_headCT_Vandy}, it is clear to see that Roberts operator generate darker edge image than Prewitt and Sobel operators. Compar to x orientation operator, y orientation operator has strong signal in vertical axis while x orientation operator has strong signal in horizontal axis. In final edge image, Roberts operator  remove some thin edge while others has better performance.
+
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}}
+   & Roberts & Prewitt & Sobel  \\
+   \rotatebox{90}{Original} &
+   \includegraphics[width=4 cm]{imagesave/headCT_Vandy_original.jpg} &
+   \includegraphics[width=4 cm]{imagesave/headCT_Vandy_original.jpg} &
+   \includegraphics[width=4 cm]{imagesave/headCT_Vandy_original.jpg}\\
+
+    \rotatebox{90}{X edge} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Roberts_x.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Prewitt_x.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Sobel_x.jpg}\\
+
+    \rotatebox{90}{Y edge} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Roberts_y.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Prewitt_y.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Sobel_y.jpg}\\
+
+    \rotatebox{90}{Edge} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Roberts.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Prewitt.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Sobel.jpg}\\
+
+    \rotatebox{90}{Thresholding} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Roberts33.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Prewitt33.jpg} &
+    \includegraphics[width=4 cm]{imagesave/headCT_Vandy_Sobel33.jpg}\\
+\end{longtable}
+\vspace{-0.9cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Edge detection of headCT Vandy image with different operators}
+\label{fig:p1_headCT_Vandy}
+\end{figure}
+
+ \fref{fig:p1_building} indicated that x orientation operator can detect roof while y orientation operator can detect wall. The difference between three operators are very small after thresholding.
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}}
+   & Roberts & Prewitt & Sobel  \\
+   \rotatebox{90}{Original} &
+   \includegraphics[width=4 cm]{imagesave/building_original_original.jpg} &
+   \includegraphics[width=4 cm]{imagesave/building_original_original.jpg} &
+   \includegraphics[width=4 cm]{imagesave/building_original_original.jpg}\\
+
+    \rotatebox{90}{X edge} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Roberts_x.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Prewitt_x.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Sobel_x.jpg}\\
+
+    \rotatebox{90}{Y edge} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Roberts_y.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Prewitt_y.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Sobel_y.jpg}\\
+
+    \rotatebox{90}{Edge} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Roberts.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Prewitt.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Sobel.jpg}\\
+
+    \rotatebox{90}{Thresholding} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Roberts33.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Prewitt33.jpg} &
+    \includegraphics[width=4 cm]{imagesave/building_original_Sobel33.jpg}\\
+\end{longtable}
+\vspace{-0.9cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Edge detection of original building image with different operators}
+\label{fig:p1_building}
+\end{figure}
+
+
+
+
+
+
+
+In \fref{fig:p1_noisy_fingerprint}, there are so many nosy points in image. For Roberts operator, x  orientation operator prefer to detect left half of image while y  orientation operator prefer right half part. While other two operators can detect whole finger print edge in x orientation operator, but has same dark in center with y orientation operator. After thresholding, the noise cannot be removed, but Roberts operator has best performance, for it has thinnest edge.
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}}
+   & Roberts & Prewitt & Sobel  \\
+   \rotatebox{90}{Original} &
+   \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_original.jpg} &
+   \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_original.jpg} &
+   \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_original.jpg}\\
+
+    \rotatebox{90}{X edge} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Roberts_x.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Prewitt_x.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Sobel_x.jpg}\\
+
+    \rotatebox{90}{Y edge} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Roberts_y.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Prewitt_y.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Sobel_y.jpg}\\
+
+    \rotatebox{90}{Edge} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Roberts.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Prewitt.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Sobel.jpg}\\
+
+    \rotatebox{90}{Thresholding} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Roberts33.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Prewitt33.jpg} &
+    \includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Sobel33.jpg}\\
+\end{longtable}
+\vspace{-0.9cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Edge detection of noisy fingerprint image with different operators}
+\label{fig:p1_noisy_fingerprint}
+\end{figure}
+
+\subsection{Canny \& LOG}
+After blur with $5 \times 5$ Gaussian kernel, the image be more smooth. Especially for head CT vandy image. The contrast of brain increased. \fref{fig:blur}
+\begin{figure}[H]
+\centering
+\subfigure[Noisy fingerprint]{
+\includegraphics[width=4 cm]{imagesave/noisy_fingerprint_original.jpg}}
+\subfigure[Blur noisy fingerprint]{
+\includegraphics[width=4 cm]{imagesave/noisy_fingerprint_Canny_blur.jpg}}
+\subfigure[Head CT vandy ]{
+\includegraphics[width=4 cm]{imagesave/headCT_Vandy_original.jpg}}
+\subfigure[Blur head CT vandy]{
+\includegraphics[width=4 cm]{imagesave/headCT_Vandy_Canny_blur.jpg}}
+\caption{Original and blur images}
+\label{fig:blur}
+\end{figure}
+
+\fref{fig:canny} indicated that although angle image has little information about edge, it can still show the outer of image. For noisy finger print image, the nonmaxima suppression cannot remove noisy, but after double thrersholding and connection analysis, there are no noisy points in final edge image while with no break points. So that Canny edge detection has perfect performance. For head CT vandy image, in this condition, after nonmaxima suppression all most full validate edge points be determined, there is little difference with final edge image.
+
+
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}X{cc}}
+   & Magnitude & Angle & Suppression & Edge \\
+
+    \rotatebox{90}{Noisy fingerprint} &
+   \includegraphics[width=3.5 cm]{imagesave/noisy_fingerprint_Canny_edge.jpg} &
+   \includegraphics[width=3.5 cm]{imagesave/noisy_fingerprint_Canny_angle.jpg}&
+    \includegraphics[width=3.5 cm]{imagesave/noisy_fingerprint_Canny_supres.jpg}&
+   \includegraphics[width=3.5 cm]{imagesave/noisy_fingerprint_Canny_final.jpg}  \\
+
+    \rotatebox{90}{Head CT vandy } &
+    \includegraphics[width=3.5 cm]{imagesave/headCT_Vandy_Canny_edge.jpg}&
+   \includegraphics[width=3.5 cm]{imagesave/headCT_Vandy_Canny_angle.jpg} &
+   \includegraphics[width=3.5 cm]{imagesave/headCT_Vandy_Canny_supres.jpg} &
+   \includegraphics[width=3.5 cm]{imagesave/headCT_Vandy_Canny_final.jpg} \\
+\end{longtable}
+\vspace{-0.9cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Canny edge detection}
+\label{fig:canny}
+\end{figure}
+In LOG detection method, it cannot remove noisy points like Canny. But has better performance than Canny in  head CT vandy image. For this image, LOG has thinner edge and less break points. \fref{fig:log}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[Operator]{\hspace{0.6cm}
+\fbox{\includegraphics[scale=2]{imagesave/noisy_fingerprint_LOG_op.jpg}}\hspace{0.6cm}}
+\subfigure[Edge]{
+\includegraphics[width=3.5cm]{imagesave/noisy_fingerprint_LOG_lap.jpg}}
+\subfigure[Cross zero points]{
+\includegraphics[width=3.5 cm]{imagesave/noisy_fingerprint_LOG_finaledge.jpg}}
+\subfigure[Edge]{
+\includegraphics[width=3.5 cm]{imagesave/headCT_Vandy_LOG_lap.jpg}}
+\subfigure[Cross zero points]{
+\includegraphics[width=3.5 cm]{imagesave/headCT_Vandy_LOG_finaledge.jpg}}
+\caption{LOG edge detection}
+\label{fig:log}
+\end{figure}
+
+\subsection{Global thresholding segmentation}
+
+For noisy fingerprint image, there is no difference between original image and thresholding segmentation image. The reason is that this image is already binary image. But in polymersomes image, it is clear to see that image be segmented into two part, bubble is black while ring is white. \fref{fig:p3}. However there is a problem that right bottom of image be over exposure. 
+\begin{figure}[H]
+\centering
+\subfigure[Original image]{
+\includegraphics[width=4 cm]{imagesave/noisy_fingerprint_original.jpg}}
+\subfigure[Segmentation]{
+\includegraphics[width=4 cm]{imagesave/noisy_fingerprint__127.jpg}}
+\subfigure[Original polymersomes]{
+\includegraphics[width=4 cm]{imagesave/polymersomes_original.jpg}}
+\subfigure[Segmentation]{
+\includegraphics[width=4 cm]{imagesave/polymersomes__168.jpg}}
+\caption{Global thresholding segmentation images}
+\label{fig:p3}
+\end{figure}
+
+\section{\textbf{Discussion}}
+The little difference between each operator in \fref{fig:p1_building} indicated that for line shape edge, there is only little difference between three operator. The reason that line is very to detect, if only line edge overlap with edge of Prewitt operator edge, it must over lap with Sobel, it must overlap with other two operators. The only difference is that the threshold of them. If we select proper threshold, these three operators would generate same edge image.
+
+In several conditions, Roberts operator may have better performance. Because its size is smaller, which means it can generate thinner edge. But may also induce more break points.
+
+The reason why the Canny detect edge image has thicker image \fref{fig:canny} is that, the hyper parameters did not set very well, like the Gaussian kernel size that double thresholds. In canny method, hyper parameters setting is a skillful work. In noisy image condition, it is better to use Canny method, for other condition, may LOG has better performance.
+
+Global thresholding segmentation cannot segment binary image. Because in each iteration the threshold cannot de update. It has another problem is that over exposure, because of the global threshold cannot handle inhomogeneous illumination. This can be solved by local window thresholding.
+
+
+
+\section{\textbf{Supplementary}}
+
+This is the code used in this project.
+\inputpython{./lab9.py}{1}{500}
+\end{CJK*}
+\end{document}

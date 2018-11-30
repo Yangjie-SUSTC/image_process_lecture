@@ -1,0 +1,9 @@
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  X &  Y &  area &  mx &  my \\
+\midrule
+1 &  1 &  2 &     2 &   4 &   5 \\
+2 &  1 &  2 &     2 &   4 &   5 \\
+0 &  1 &  2 &     3 &   4 &   5 \\
+\bottomrule
+\end{tabular}

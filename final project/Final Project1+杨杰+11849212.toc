@@ -1,0 +1,7 @@
+\select@language {english}
+\contentsline {section}{\textbf {Introduction}}{1}{section*.2}
+\contentsline {section}{\textbf {Method}}{1}{section*.3}
+\contentsline {section}{\textbf {Results}}{1}{section*.4}
+\contentsline {subsection}{Noise reconstruction}{1}{section*.5}
+\contentsline {section}{\textbf {Discussion}}{1}{section*.6}
+\contentsline {section}{\textbf {Supplementary}}{1}{section*.7}

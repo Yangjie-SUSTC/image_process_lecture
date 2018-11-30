@@ -1,0 +1,688 @@
+
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for
+% including it in another document. To do this, you have two options:
+%
+% 1) Copy/paste everything between \begin{document} and \end{document}
+% starting at \begin{titlepage} and paste this into another LaTeX file where you
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and
+% move this file to the same directory as the LaTeX file you wish to add it to.
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+%\documentclass[UTF8]{ctexart}
+\usepackage{booktabs}
+%_____________________________________________________________________
+%my package
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+ \setlength{\topskip}{1.75cm}
+\usepackage{xcolor}
+%\usepackage{amssymb}
+\usepackage{CJK,CJKnumb,CJKulem}
+\usepackage{graphicx,psfrag} % 图形宏包
+\usepackage{fancyhdr} %页眉设置
+\usepackage[Lenny]{fncychap} %章节样式
+%\usepackage{color} % 支持彩色
+\usepackage{lastpage}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{paralist}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{varioref}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{float}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\headheight 0pt % 页眉高
+\addtolength{\headheight}{\baselineskip}
+
+\fancyhead[L]{\usebox{\headpic}}
+\fancyhead[c]{\color{gray} Adventurous\\Arduous\\Amiable}
+\fancyhead[r]{\usebox{\pp}}
+%\fancyhead[r]{\textsc{south university of science and technology of china} \\
+	%\textsc{department of biomedical engineering }}
+
+\renewcommand{\headrule}{%
+	\hrule width\headwidth height 1.2pt \vspace{1pt}%
+	\hrule width\headwidth}
+\fancyfoot[c]{\hrule width\headwidth height 1.2pt \thepage / \pageref{LastPage} }
+
+%调用页眉：rhead是logo图标放在右上角，左上角为lhead，中间位chead
+%\setlength{\headheight}{0.136pt} % Customize the height of the header
+
+
+\newsavebox{\headpic}
+\sbox{\headpic}{\includegraphics[height=1.35cm]{school.png}} %校徽
+\newsavebox{\pp}
+\sbox{\pp}{\includegraphics[height=1.35cm,width=5.5cm]{department.png}} %系徽
+
+%	TITLE SECTION
+
+
+%____________________________________________________________________________________________
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{epstopdf}
+
+
+\usepackage{pifont}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+\renewcommand\appendix{\setcounter{secnumdepth}{-1}}
+\usepackage{titlesec}
+%\titleformat{\section}%{\bfseries}
+\usepackage{mdframed}
+
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subfigure}
+\usepackage{longtable}
+%---------------代码插入-------------------------
+\usepackage{pythonhighlight}
+\usepackage{listings}
+\lstset{language=python}
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+ backgroundcolor=\color{lightgray},
+ basicstyle = \footnotesize,
+ breakatwhitespace = false,
+ breaklines = true,
+ captionpos = b,
+ commentstyle = \color{mygreen}\bfseries,
+ extendedchars = false,
+ frame =shadowbox,
+ framerule=0.5pt,
+ keepspaces=true,
+ keywordstyle=\color{blue}\bfseries, % keyword style
+ language = matlab,                     % the language of code
+ otherkeywords={string,Mat},
+ numbers=left,
+ numbersep=5pt,
+ numberstyle=\tiny\color{mygray},
+ rulecolor=\color{black},
+ showspaces=false,
+ showstringspaces=false,
+ showtabs=false,
+ stepnumber=1,
+ stringstyle=\color{mymauve},        % string literal style
+ tabsize=2,
+ title=\lstname
+}
+
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\section}{\@startsection{section}{0}{0mm}
+  {-\baselineskip}{0\baselineskip}{\LARGE \bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsection}{\@startsection{subsection}{0}{4mm}
+  {-\baselineskip}{1\baselineskip}{\Large\bf\leftline}}
+\makeatother
+\makeatletter %使\section中的内容左对齐
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{0}{8mm}
+  {-\baselineskip}{1\baselineskip}{\large\bf\leftline}}
+\makeatother
+
+\newcommand{\tref}[1]{\textbf{Tab.\ref{#1}}}
+\newcommand{\fref}[1]{\textbf{Fig.\ref{#1}}}
+\newcommand{\ffref}[2]{\textbf{Fig.\ref{#1}-#2}}
+\newcommand{\eref}[1]{\textbf{Eq.\ref{#1}}}
+\newcommand\mytitle{Morphological Operations}
+\newcommand\myadvisor{Jianhong Shi}
+\newcommand\myshuxin{\large class project 8}
+
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{algorithm, algorithmic}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Southern University of Science and Technology}\\[1.5cm] % Name of your university/college
+\textsc{\Large Image and Video Processing }\\[0.5cm] % Major heading such as course name
+\textsc{\myshuxin}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries \mytitle}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Jie \textsc{Yang} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+ \textsc{\myadvisor} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[height=8cm]{logo.png}\\%[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+
+
+
+\tableofcontents
+\newpage
+
+
+\pagestyle{fancyplain}
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%article start
+%----------------------------------------------------------------
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\centerline{\textbf{\huge \mytitle}}
+
+\setcounter{page}{1}
+\appendix
+%\subsection{\textbf{objective}}
+%\begin{enumerate}
+%  \item Know the principle of spectrophotometer.
+%  \item Understand the principle of the law of Lambert-Beer.
+%  \item Master how to calculate absorbance and extinction coefficient base on the law of Lambert-Beer.
+\newsavebox{\mybox}
+\newcolumntype{X}[1]{>{\begin{lrbox}{\mybox}}c<{\end{lrbox}\makecell[#1]{\mbox{\usebox\mybox}}}}
+%\end{enumerate}
+\section{\textbf{Introduction}}
+
+Morphological operations are important operations in image processing. It used to operate some interested component in the image. It can increase of decrease the interested component area by erosion and dilation, respectively. All the operations need a structural element, which is a small component compare to whole image. Like the window, it can select neighbor pixels of interested pixel as ROI, then compare to original image to determine the values of this ROI. 
+\begin{equation}\label{eq:ero}
+  A\ominus B =\big \{z \big |(B)_z \subseteq A \big \}
+\end{equation}
+
+The erosion of a set $A$ by a structural element $B$ is defined as the set of all points $z$ such that $B$, translated by $z$ is still contained in $A$ \eref{eq:ero}.
+
+\begin{equation}\label{eq:dia}
+  A \oplus B =\big \{z \big |(\hat{B})_z \bigcap A \neq \emptyset \big \} \Leftrightarrow \big \{z \big |\big [(\hat{B})_z \bigcap A \big ]\subseteq A \big \}
+\end{equation}
+
+The dilation of a set A by a structuring element B is defined as \eref{eq:dia}. Of course $A \subseteq A \oplus B$, the dilation expands/dilutes the image. 
+
+\begin{equation}\label{eq:ope}
+  A \circ B =  (A\ominus B)\oplus B  \Leftrightarrow \bigcup \big \{(B)_z \big |(B)_z \subseteq A \big \}
+\end{equation}
+
+Opening is a process of erosion followed by dilation. It has the effect to eliminate small and thin object, breaking the object at thin points and smoothing the boundaries of the objects. The operation is defined as \eref{eq:ope}.
+
+\begin{equation}\label{eq:clo}
+  A \bullet B =(A \oplus B) \ominus B  \Leftrightarrow  \bigcup \big \{(B)_z \big |(B)_z \bigcap A \neq \emptyset \big \}
+\end{equation}
+
+Closing is a process of dilation followed by erosion. It has the effect of filling small and thin holes, connecting nearby objects and smoothing the boundaries of the objects \eref{eq:clo}. 
+
+In this experiment, we will practice four problems. Problem 1 requires to define two structural elements, perform binary dilation, erosion, opening, and closing operations on two noise image. Problem 2 should extract the boundaries of two images. Problem 3 should extract the connected components from original image. Problem 4 require to separate particles based on merged with boundary, overlapping and nonoverlapping.
+
+From this practice, student should know how to use basic morphological operations to process image and how to apply them.
+
+\section{\textbf{Method}}
+The structural elements are binary image, 255 for white and 0 for dark pixel. The size of SE must be odd.
+\vspace{-0.5cm}
+\subsection{Problem 1}
+First padding original image with radius of SE $r=(l-1)/2$. So that the edge pixels can be processed. Finally remove padded boundary so that the image size does not change.
+
+
+\begin{itemize}
+  \item Dilation
+
+  Padding with 0, then  find all bright pixels as seed. For each bright pixel select the window part as the same size of SE and do \textbf{OR} operation bit by bit. Finally use the result as the value of window then delete this bright pixel from list until list be null.
+  \item Erosion
+
+  Padding with 255 and choose dark pixels as seed, then reverse the value of SE. Same to dilation select ROI with same size to SE but do \textbf{AND} operation bit by bit and use the result as the value of part in erosion image until list be null.
+  \item Opening
+
+  Opening is done by erosion then dilation.
+  \item Closing
+
+  Closing is done by dilation then erosion.
+
+\end{itemize}
+
+
+
+\subsection{Problem 2}
+\vspace{-0.2cm}
+
+Use $3 \times 3$ full bright square as SE. Then erose image with this SE, finally  use original image subtract the erosion image to get the boundary image.
+\subsection{Problem 3}
+\vspace{-0.2cm}
+
+
+\begin{algorithm}[H]
+	\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+	\renewcommand{\algorithmicensure}{\textbf{Output:}}
+	\caption{Search all connected component from binary image}
+	\label{alg:1}
+	\begin{algorithmic}[1]
+		\REQUIRE binary image $A$, structural element $E$
+		\ENSURE connected component $Y$, area $A$, x center $x$, y center $y$
+		\STATE Given binary image $A$, structural element $E$
+		\STATE Find out all white pixels as seed
+		\WHILE {seed $\neq \emptyset$}
+        \STATE Find white pixel coordinates in seed
+        \STATE $X_0$ = one white pixel in seed
+        \WHILE{$X_k \neq X_{k-1}$}
+        \STATE $X_k = (X_{k-1}\bigoplus E)\bigcap A$
+        \ENDWHILE
+        \STATE $Y=X_k$
+        \STATE A = the number of white pixels in Y
+        \STATE x = mean coordinate of white pixels in Y
+        \STATE y = mean coordinate of white pixels in Y
+
+
+        \STATE Remove connected component from seed
+		\ENDWHILE
+		\STATE \textbf{return} Y, A, x, y
+	\end{algorithmic}
+\end{algorithm}
+Use $3 \times 3$ full bright square as SE. Find out all bright pixels as seed, then choose one pixels to search all of its connected pixels and get the area of this connected area. The area is the number of white pixels. Then remove this connected component from seed. Repeat above procedures until there is no white pixels in the image. So that all connected component be caught and get its area and center point. Center point is the mean value of horizontal axis and vertical axis the component takes. The whole algorithm is listed in \textbf{Alg. \ref{alg:1}}
+
+The method of how to find out connected component from one pixel is that first dilate the pixel with SE, then find the intersection with original image. Use this intersection to update source pixels. After that dilate all updated source pixels to repeat above steps until there is no change. The whole procedure is show as \fref{fig:do}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{imagesave/do.png}
+\caption{Find connected component}
+\label{fig:do}
+\end{figure}
+
+
+
+
+\subsection{Problem 4}
+
+Color the image border pixels the same color as the particles (white). Call the resulting set of border pixels B. Apply the connected component algorithm \textbf{Alg. \ref{alg:1}}. All connected component that contain elements from B are particles that have merged with the border of the image.
+
+It is given that all particles are of the same size. Determine the area of a single particle; denote the area by A. Eliminate from the image the particles that were merged with the border of the image. Apply the connected component algorithm. Count the number of pixels of each component. A components is then designated as a single particle if the number of pixels is less than or equal to $k*A (k>1)$, where k is a  coefficient to account for variation in size due to noise.
+
+Subtract from the image single particles and the particles that have merged with the border, and the remaining particles are overlapping particles. 
+
+
+
+
+
+
+\section{\textbf{Results}}
+
+
+\subsection{Problem 1}
+\setlength{\fboxsep}{0cm}
+\setlength{\fboxrule}{1pt}
+
+The first structural element (SE) is a cross element, whose vertical and vertical that pass center is light while other pixels are are zero. Second SE is full bright SE, all pixels are bright. They are both $5 \times 5$  structural element.\fref{fig:p1se}
+
+
+
+\begin{figure}[H]
+\centering
+\subfigure[Noisy fingerprint]{
+\includegraphics[height=3  cm]{imagesave/noisy_fingerprint_original.jpg}}
+\subfigure[Noise rectangle]{
+\includegraphics[height=3 cm]{imagesave/noise_rectangle_original.jpg}}
+\subfigure[$5 \times 5 $ cross SE ]{ \hspace{2cm}
+\fbox{\includegraphics[scale=2]{imagesave/noisy_fingerprint_EM_0.jpg}}\hspace{2cm}}
+\subfigure[$5 \times 5$ SE ]{\hspace{2cm}
+\fbox{\includegraphics[scale=2]{imagesave/noisy_fingerprint_EM_1.jpg}}\hspace{2cm}}
+\caption{Original images and structural elements}
+\label{fig:p1se}
+\end{figure}
+For dilation, both SE increase the size of white component. In noisy fingerprint image. First SE has more clear grooves. And for single point, first SE dilation dilate it to cross shape while second one is square.
+
+For erosion, there is only little bright component in noisy fingerprint with second SE while first SE remain more bright component. It is similar to noise rectangle.\fref{fig:p1}
+
+\begin{longtable}{X{lc}X{cc}X{cc}X{cc}X{cc}}
+
+   & Noisy fingerprint & Noisy fingerprint & Noise rectangle & Noise rectangle \\
+
+   \rotatebox{90}{SE} &
+   \fbox{\includegraphics[scale=2]{imagesave/noisy_fingerprint_EM_0.jpg}} &
+   \fbox{\includegraphics[scale=2]{imagesave/noisy_fingerprint_EM_1.jpg}} &
+   \fbox{\includegraphics[scale=2]{imagesave/noise_rectangle_EM_0.jpg}} &
+   \fbox{\includegraphics[scale=2]{imagesave/noise_rectangle_EM_1.jpg}}\\
+
+    \rotatebox{90}{Dilation} &
+     \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_dilation_EM_0.jpg} &
+     \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_dilation_EM_1.jpg} &
+    \includegraphics[height=3 cm]{imagesave/noise_rectangle_dilation_EM_0.jpg}& \includegraphics[height=3cm]{imagesave/noise_rectangle_dilation_EM_1.jpg}\\
+   
+
+    \rotatebox{90}{Erosion} &
+    \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_erosion_EM_0.jpg} &
+    \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_erosion_EM_1.jpg} &
+    \includegraphics[height=3 cm]{imagesave/noise_rectangle_erosion_EM_0.jpg}&
+    \includegraphics[height=3 cm]{imagesave/noise_rectangle_erosion_EM_1.jpg}\\
+ \\
+    \rotatebox{90}{Opening} &
+    \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_opening_EM_0.jpg} &
+    \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_opening_EM_1.jpg} &
+    \includegraphics[height=3 cm]{imagesave/noise_rectangle_opening_EM_0.jpg}&
+    \includegraphics[height=3 cm]{imagesave/noise_rectangle_opening_EM_1.jpg}\\
+
+    \rotatebox{90}{Closing} &
+    \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_closing_EM_0.jpg} &
+    \includegraphics[height=3 cm]{imagesave/noisy_fingerprint_closing_EM_1.jpg} &
+    \includegraphics[height=3 cm]{imagesave/noise_rectangle_closing_EM_0.jpg}&
+    \includegraphics[height=3 cm]{imagesave/noise_rectangle_closing_EM_1.jpg}\\
+
+\end{longtable}
+\vspace{-0.9cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Basic morphological Operations}
+\label{fig:p1}
+\end{figure}
+
+For opening operation, it remain more bright component that erosion operation the line width also thicker than erosion. Compare to first SE, second SE still remains less.
+
+For closing operation, there are more bright component. The small noisy point around fingerprint also appeared. Compare to second SE, first SE has better performance. It separate the ridges in finger and attenuate the background noise. The ridges od second fingerprint is thicker and has several holes.
+
+Compare to fingerprint image. the difference between two Se in noise rectangle image is not clear enough.
+
+
+\subsection{Problem 2}
+The structural element applied there is a square SE whose size is $3 \times 3$. \ffref{fig:p2}{a}I t is clear to see that after boundary extraction, the boundary of man appears. The width is is 1 pixel. \ffref{fig:p2}{c} For U image, there is a sunk in the inner right corner, it is still be catched. \ffref{fig:p2}{e}
+
+\begin{figure}[H]
+\centering
+\subfigure[SE]{
+\fbox{\includegraphics[scale=2]{imagesave/licoln_EM.jpg}}\hspace{0.7cm}}
+\subfigure[Original licoln]{
+\includegraphics[height=4 cm]{imagesave/licoln_original.jpg}}
+\subfigure[Licoln boundary]{
+\includegraphics[height=4 cm]{imagesave/licoln_boundary.jpg}}
+\subfigure[Original U]{
+\includegraphics[height=4 cm]{imagesave/U_original.jpg}}
+\subfigure[U boundary]{
+\includegraphics[height=4 cm]{imagesave/U_boundary.jpg}}
+\caption{Boundary extraction}
+\label{fig:p2}
+\end{figure}
+
+\subsection{Problem 3}
+The structural element applied there is a square SE whose size is $3 \times 3$. \ffref{fig:p3}{a} From the original image, there are several squares in the image. \ffref{fig:p3}{b} The area histogram of original image indicated that $4 \times 4$ square takes most amount. Second and third is 2 pixels and 1 pixel point. The biggest square $20 \times 20$. The counting number also shows that all connect component be extracted. \ffref{fig:p3}{c} There are totally 120 connect component in the image. According to the distribution of center point of each connected components, their mean values close to half size of image, which indicated that the connect component distribute nearly to uniform in image. \ffref{fig:p3}{c,d} The separated images of each size connect component is in \fref{fig:sup_con} and the center point of each of them are in \tref{tab:sup1}.
+\begin{figure}[H]
+\centering
+\subfigure[SE]{\hspace{0.7cm}
+\fbox{\includegraphics[scale=2]{imagesave/connected_EM.jpg}}\hspace{0.7cm}}
+\subfigure[Original connected image]{
+\includegraphics[height=6 cm]{imagesave/connected_original.jpg}}
+\subfigure[Connected area histogram]{
+\includegraphics[height=6 cm,width=8 cm]{imagesave/connected_count.jpg}}
+\subfigure[Connected component center at x]{
+\includegraphics[height=6 cm,width=8 cm]{imagesave/connected_x.jpg}}
+\subfigure[Connected component center at y]{
+\includegraphics[height=6 cm,width=8 cm]{imagesave/connected_y.jpg}}
+\caption{Boundary extraction}
+\label{fig:p3}
+\end{figure}
+
+\subsection{Problem 4}
+The structural element applied there is a cross SE whose size is $3 \times 3$. ffref{fig:p4}{a} The radius of sigle particle is 11 pixels.\ffref{fig:p4}{b} From the connect area histogram, there are close to 70 single particles in the image. The biggest connected component takes larger than 6000 pixels.\ffref{fig:p4}{c}
+
+Compare to original image \ffref{fig:p4}{d}, all merged with boundary particles be extracted.\ffref{fig:p4}{e} There is no connect particles in nonoverlapping image\ffref{fig:p4}{g} and all overlapped particles are in last image.\ffref{fig:p4}{h} All the images indicate that the separation result is very well. All connect components are 4 pixels connected.
+\begin{figure}[H]
+\centering
+\subfigure[SE]{
+\fbox{\includegraphics[scale=2]{imagesave/bubbles_on_black_background_EM.jpg}}\hspace{0.7cm}}
+\subfigure[Single particle]{\hspace{1cm}
+\fbox{\includegraphics[scale=1]{imagesave/bubbles_on_black_background_particle.jpg}}\hspace{1cm}}
+\subfigure[Connect area histogram]{
+\includegraphics[height=6 cm,width= 12 cm]{imagesave/bubbles_on_black_background_area_hist.jpg}}
+\subfigure[Original image]{
+\includegraphics[height=5.4 cm]{imagesave/bubbles_on_black_background_original.jpg}}
+\subfigure[Boundary merged]{
+\includegraphics[height=5.4cm]{imagesave/bubbles_on_black_background_boundary.jpg}}
+\subfigure[Without boundary]{
+\includegraphics[height=5.4 cm]{imagesave/bubbles_on_black_background_seperate+connect.jpg}}
+\subfigure[Nonoverlapping]{
+\includegraphics[height=5.4 cm]{imagesave/bubbles_on_black_background_seperate.jpg}}
+\subfigure[Overlapping]{
+\includegraphics[height=5.4 cm]{imagesave/bubbles_on_black_background_connect.jpg}}
+\caption{Bubbles on black background particle}
+\label{fig:p4}
+\end{figure}
+
+
+
+
+\section{\textbf{Discussion}}
+When you perform erosion, one needs to pad the object and the structuring element to rectangular arrays. During erosion process, the structuring element erodes the input image A at its boundaries. So, erosion shrinks the input image.
+
+Dilation operation grows or thickens objects in a binary image, that is, increasing the boundary thickness by half side of the structuring element. So, dilation and erosion are opposite operation, dilation is the thickening process and erosion is the thinning process.
+
+The SE should be select based to specific problem. Morphological operations match the SE in original image. For example, if you only want to select $N_4$ neighbor pixels, SE should be $N_4$ rather full. 
+
+In connected component search procedure, if just use the definition to select ROI and compare, it takes too much time. Because for each pixels, it require to search image. Use modified algorithm, it speed much.
+
+
+
+\section{\textbf{Supplementary}}
+
+Supplementary images and tables:
+
+
+
+
+\begin{longtable}[H]{X{cc}X{cc}X{cc}}
+
+    1 & 2 & 6  \\
+   \includegraphics[height=4 cm]{imagesave/connected_1.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_2.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_6.jpg} \\
+    7&12 & 13 \\
+   \includegraphics[height=4 cm]{imagesave/connected_7.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_12.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_13.jpg} \\
+  16 & 20 & 23  \\
+   \includegraphics[height=4 cm]{imagesave/connected_16.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_20.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_23.jpg} \\
+\\
+\\
+   24 & 36 & 42  \\
+   \includegraphics[height=4 cm]{imagesave/connected_24.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_36.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_42.jpg} \\
+
+   49 & 50 & 81 \\
+   \includegraphics[height=4 cm]{imagesave/connected_49.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_50.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_81.jpg} \\
+
+   90 & 100 & 144  \\
+   \includegraphics[height=4 cm]{imagesave/connected_90.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_100.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_144.jpg} \\
+
+   156 & 380 & 400  \\
+   \includegraphics[height=4 cm]{imagesave/connected_156.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_380.jpg} &
+   \includegraphics[height=4 cm]{imagesave/connected_400.jpg} \\
+
+\end{longtable}
+\vspace{-0.9cm}
+\begin{figure}[H]
+\setlength{\abovecaptionskip}{0cm}
+\setlength{\belowcaptionskip}{0cm}
+\caption{Connect components in connected image}
+\label{fig:sup_con}
+\end{figure}
+
+
+\setcounter{table}{0}
+\begin{longtable}[H]{lllllllll}
+\toprule
+Index &  Area &$\bar{x}$ &  $\bar{y}$ & & Index &  Area &   $\bar{x}$ &  $\bar{y}$\\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\caption{All connected components in connected image}\label{tab:sup1}
+\endlastfoot
+0   &     1 &  123.0 &  149.0&    & 60  &    16 &  332.5 &  109.5\\
+1   &     1 &  303.0 &  185.0&   &  61  &     16 &   97.5 &  110.5\\
+2   &     1 &  308.0 &  271.0&  &  62  &    16 &    6.5 &    4.5\\
+3   &     1 &   95.0 &  107.0&    &   63  &    16 &   34.5 &  215.5\\
+4   &     1 &  226.0 &  160.0&   &   64  &    16 &   16.5 &  248.5\\
+5   &     1 &  286.0 &  290.0&  &   65  &     16 &  161.5 &   10.5\\
+6   &     1 &   26.0 &   90.0&  & 66  &     16 &   39.5 &  153.5\\
+7   &     1 &  316.0 &  164.0& & 67   &     16 &   24.5 &  232.5\\
+8   &     1 &  283.0 &   96.0&  &   68 &    16 &   61.5 &  128.5\\
+9   &     1 &  282.0 &  168.0& & 69    &    16 &  110.5 &  265.5\\
+10  &     1 &   71.0 &   50.0& &   70  &    16 &   71.5 &  283.5\\
+11  &     1 &  145.0 &  267.0&  &  71  &    16 &   76.5 &  268.5\\
+12  &     1 &  324.0 &  173.0&  & 72  &     16 &  128.5 &  155.5\\
+13  &     1 &  149.0 &  210.0& & 73   &     20 &  224.0 &  302.5\\
+14  &     1 &  197.0 &   21.0& & 74   &     20 &   68.0 &  249.5\\
+15  &     1 &    5.0 &  323.0& &  75   &    20 &   28.0 &   28.5\\
+16  &     1 &  275.0 &  312.0& &   76  &    23 &   89.0 &   57.0\\
+17  &     1 &  291.0 &   46.0&&   77   &    24 &  322.5 &  262.5\\
+18  &     2 &   99.0 &  141.5& &   78  &    24 &  307.5 &  206.5\\
+19  &     2 &  101.5 &  291.0& &  79   &    24 &  117.5 &   92.5\\
+20  &     2 &  260.5 &   21.0&      &  80  &    24 &  264.083333 &   76.083333 \\
+21  &     2 &  113.5 &  234.0&    &   81  &    36 &  142.5 &  178.5\\
+22  &     2 &  115.0 &  195.5&    &    82  &    42 &  181.0 &  244.5\\
+23  &     2 &  221.0 &  117.5&    &   83  &    42 &  144.0 &  129.5\\
+24  &     2 &  219.5 &  160.0&    &   84  &    42 &  202.0 &   43.5\\
+25  &     2 &  197.0 &  284.5&    &   85  &    42 &  223.5 &   18.0\\
+26  &     2 &  144.0 &   97.5&    &   86  &    42 &   87.0 &  223.5\\
+27  &     2 &  193.0 &  313.5&    &   87  &    42 &   86.0 &  166.5\\
+28  &     2 &  178.5 &  103.0&    &   88  &    42 &  280.5 &  217.0\\
+29  &     2 &  238.0 &   52.5&    &   89  &    49 &  238.0 &  103.0\\
+30  &     2 &   90.0 &  199.5&    &   90  &    49 &   70.0 &   90.0\\
+31  &     2 &  329.5 &  185.0&    &   91  &    49 &  173.0 &  307.0\\
+32  &     2 &   31.5 &  278.0&    &   92  &    49 &  283.0 &  271.0\\
+33  &     2 &    3.5 &  312.0&    &   93  &    50 &  220.920000 &  185.86 \\
+34  &     2 &  329.5 &  161.0&    &   94  &    81 &   86.0 &  308.0\\
+35  &     2 &   60.5 &  266.0&    &  95  &    81 &   21.0 &  144.0\\
+36  &     2 &   54.0 &   60.5&    &    96  &    81 &  327.0 &   66.0\\
+37  &     2 &   52.5 &  308.0&    &   97  &    81 &  206.0 &  226.0\\
+38  &     2 &  325.5 &  189.0&    &   98  &    81 &  202.0 &  144.0\\
+39  &     2 &   18.0 &   48.5&    &   99  &    81 &  226.0 &  328.0\\
+40  &     2 &  316.0 &  190.5&    &   100 &    90 &  252.5 &  173.0\\
+41  &     2 &  321.5 &   14.0&    &   101 &    90 &  133.5 &  225.0\\
+42  &     6 &    8.0 &  333.5&    &   102 &    90 &  300.0 &  325.5\\
+43  &     7 &  239.285714 &  149.714286     &       &   103 &    90 &  131.0 &   35.5\\
+44  &    12 &   95.0 &   22.5&    &   104 &    90 &  242.0 &  231.5\\
+45  &    12 &  144.0 &   69.5&    &   105 &    90 &   29.0 &  313.5\\
+46  &    13 &  154.307692 &   46.076923     &       &   106 &   100 &   23.5 &  186.5\\
+47  &    16 &  322.5 &  320.5&    &   107 &   100 &  117.5 &   64.5\\
+48  &    16 &  253.5 &  265.5&    &   108 &   100 &  223.5 &   72.5\\
+49  &    16 &  206.5 &  302.5&    & 109 &   144 &  322.5 &  247.5\\
+50  &    16 &  251.5 &  129.5&    &   110 &   144 &  182.5 &  185.5\\
+51  &    16 &  316.5 &  136.5&    &   111 &   144 &   71.5 &  206.5\\
+52  &    16 &  312.5 &  306.5&    &   112 &   144 &  289.5 &  132.5\\
+53  &    16 &  228.5 &  279.5&    & 113 &   144 &  171.5 &  118.5\\
+54  &    16 &  300.5 &    6.5&    &   114 &   144 &   47.5 &  101.5\\
+55  &    16 &  279.5 &  236.5&    &   115 &   144 &  177.5 &   57.5\\
+56  &    16 &  244.5 &  301.5&    &   116 &   156 &  130.5 &  305.0\\
+57  &    16 &  177.5 &  166.5&    &   117 &   380 &   54.0 &   27.5\\
+58  &    16 &  199.5 &   81.5&    &   118 &   400 &  305.5 &   97.5\\
+59  &    16 &    3.5 &   68.5&    &   119 &   400 &  169.5 &  272.5\\
+\end{longtable}
+
+
+
+
+This is the code used in this project.
+\inputpython{./lab8.py}{1}{500}
+
+\end{CJK*}
+\end{document}
